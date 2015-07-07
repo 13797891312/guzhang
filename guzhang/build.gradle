@@ -1,0 +1,52 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        applicationId "com.caiyun.app.guzhang"
+        minSdkVersion 11
+        targetSdkVersion 22
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+    }
+    packagingOptions {
+        exclude 'META-INF/NOTICE'
+    }
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-project.txt'
+        }
+    }
+}
+
+dependencies {
+    compile project(':library')
+    compile project(':zhaojin_Library')
+    compile 'com.google.code.gson:gson:2.3.1'
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile 'com.android.support:appcompat-v7:22.+'
+    compile 'com.android.support:gridlayout-v7:19.1.0'
+    compile files('libs/httpclient-4.3.5.jar')
+    compile files('libs/httpcore-4.3.2.jar')
+    compile files('libs/httpmime-4.3.5.jar')
+    compile files('libs/litepal-1.2.1-src.jar')
+    compile files('libs/renderscript-v8.jar')
+    compile files('libs/SocialSDK_QQZone_1.jar')
+    compile files('libs/SocialSDK_QQZone_2.jar')
+    compile files('libs/SocialSDK_QQZone_3.jar')
+    compile files('libs/SocialSDK_Sina.jar')
+    compile files('libs/SocialSDK_WeiXin_1.jar')
+    compile files('libs/SocialSDK_WeiXin_2.jar')
+    compile files('libs/umeng_social_sdk.jar')
+    compile project(':SMSSDK')
+    compile files('libs/jose4j-0.4.3.jar')
+}

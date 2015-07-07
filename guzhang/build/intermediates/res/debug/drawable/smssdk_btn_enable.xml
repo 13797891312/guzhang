@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <solid android:color="#45c01a" />
+
+    <corners
+        android:radius="4dp"/>
+
+</shape><!-- From: file:/D:/studiowork/guzhang/SMSSDK/res/drawable/smssdk_btn_enable.xml --><!-- From: file:/D:/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/guzhang/SMSSDK/unspecified/res/drawable/smssdk_btn_enable.xml -->

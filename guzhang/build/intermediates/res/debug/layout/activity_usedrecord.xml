@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <include layout="@layout/layout_backbar_red"
+        android:id="@+id/tab"/>
+
+    <View
+        android:layout_width="1px"
+        android:layout_below="@+id/tab"
+        android:layout_marginLeft="21dp"
+        android:layout_height="match_parent"
+        android:background="@color/black_26" />
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:layout_below="@+id/tab"
+        android:id="@+id/mListView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="@color/white"
+        android:dividerHeight="0dp"
+        android:fastScrollEnabled="false"
+        android:scrollbars="none" />
+
+    <include
+        android:id="@+id/list_result_cover"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tab"
+        layout="@layout/layout_no_data" />
+    <include
+        android:id="@+id/list_loading_cover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tab"
+        android:visibility="gone"
+        layout="@layout/layout_show_loading" />
+</RelativeLayout><!-- From: file:/D:/studiowork/guzhang/guzhang/src/main/res/layout/activity_usedrecord.xml -->

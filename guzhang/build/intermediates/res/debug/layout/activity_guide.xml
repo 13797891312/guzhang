@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhaojin.myviews.TagViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tagViewPager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+</com.zhaojin.myviews.TagViewPager>
+<!-- From: file:/D:/studiowork/guzhang/guzhang/src/main/res/layout/activity_guide.xml -->

@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_height"
+        android:background="@color/red_bg" >
+
+        <RelativeLayout
+            android:layout_width="40dp"
+            android:layout_height="@dimen/action_height"
+            android:background="@drawable/select_backbtn_gb"
+            android:clickable="true"
+            android:onClick="backClick" >
+
+            <ImageView
+                android:layout_width="@dimen/back_image_width"
+                android:id="@+id/back_image"
+                android:layout_height="@dimen/back_image_height"
+                android:layout_centerInParent="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/last"/>
+
+            <TextView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="4dp"
+                android:layout_toRightOf="@+id/back_image"
+                android:text="返回"
+                android:textColor="@color/red_bg"
+                android:textSize="@dimen/txt_18"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="宁波海运"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_20" />
+
+            <TextView
+                android:id="@+id/code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="000712"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_10" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/reFresh_layout"
+            android:layout_width="54dp"
+            android:background="@drawable/select_backbtn_gb"
+            android:layout_height="@dimen/action_height"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:onClick="reFreshClick" >
+
+            <ImageView
+                android:id="@+id/refresh_image"
+                android:layout_width="@dimen/back_image_height"
+                android:layout_height="@dimen/back_image_height"
+                android:layout_centerInParent="true"
+                android:src="@drawable/refresh_big" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_height"
+        android:background="@color/red_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:text="18.12"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="+0.17"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="8dp"
+            android:text="0.13%"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <com.caiyun.guzhang.view.IphoneTreeView
+        android:id="@+id/iphone_tree_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@color/black_12"
+        android:dividerHeight="1px"
+        android:scrollbars="none"
+        android:transcriptMode="normal" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#e1e1e1" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#f5f5f5"
+        android:gravity="center_vertical"
+        android:minHeight="60dp"
+        android:orientation="horizontal"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="30.0dip"
+                android:layout_height="30.0dip"
+                android:scaleType="fitXY"
+                android:clickable="true"
+                android:src="@drawable/select_buy_btn" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="18.0dip"
+                android:gravity="center_vertical"
+                android:text="买入"
+                android:textColor="@color/black_54"
+                android:textSize="11.0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="30.0dip"
+                android:layout_height="30.0dip"
+                android:scaleType="fitXY"
+                android:clickable="true"
+                android:src="@drawable/select_sell_btn" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="18.0dip"
+                android:gravity="center_vertical"
+                android:text="卖出"
+                android:textColor="@color/black_54"
+                android:textSize="11.0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="30.0dip"
+                android:layout_height="30.0dip"
+                android:clickable="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/select_zixuan_btn" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="18.0dip"
+                android:gravity="center_vertical"
+                android:text="加自选"
+                android:textColor="@color/black_54"
+                android:textSize="11.0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="30.0dip"
+                android:layout_height="30.0dip"
+                android:scaleType="fitXY"
+                android:clickable="true"
+                android:src="@drawable/select_tixing_btn" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="18.0dip"
+                android:gravity="center_vertical"
+                android:text="提醒"
+                android:textColor="@color/black_54"
+                android:textSize="11.0sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

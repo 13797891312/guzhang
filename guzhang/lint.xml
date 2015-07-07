@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lint>
+    <issue id="DuplicateIds">
+        <ignore path="res/layout/tablayout.xml" />
+        <ignore path="res/layout/tablayout1.xml" />
+        <ignore path="res/layout/tablayout1_fragment3.xml" />
+        <ignore path="res/layout/tablayout1_notification.xml" />
+        <ignore path="res/layout/tablayout2.xml" />
+        <ignore path="res/layout/tablayout3.xml" />
+        <ignore path="res/layout/tablayout_fragment3.xml" />
+        <ignore path="res/layout/tablayout_transation.xml" />
+        <ignore path="res/layout/tablayout_treeview_group.xml" />
+    </issue>
+    <issue id="MissingPrefix" severity="ignore" />
+    <issue id="MissingTranslation" severity="ignore" />
+    <issue id="NewApi">
+        <ignore path="res/values/styles.xml" />
+        <ignore path="src/com/android/volley/NetworkDispatcher.java" />
+        <ignore path="src/com/cloudiya/weitongnian/view/MyVideoPlayer.java" />
+    </issue>
+</lint>

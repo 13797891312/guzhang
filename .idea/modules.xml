@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/SMSSDK/SMSSDK.iml" filepath="$PROJECT_DIR$/SMSSDK/SMSSDK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/guzhang.iml" filepath="$PROJECT_DIR$/guzhang.iml" />
+      <module fileurl="file://$PROJECT_DIR$/guzhang/guzhang-guzhang.iml" filepath="$PROJECT_DIR$/guzhang/guzhang-guzhang.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zhaojin_Library/zhaojin_Library.iml" filepath="$PROJECT_DIR$/zhaojin_Library/zhaojin_Library.iml" />
+    </modules>
+  </component>
+</project>

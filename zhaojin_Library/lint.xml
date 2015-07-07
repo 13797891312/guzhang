@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lint>
+    <issue id="ClickableViewAccessibility">
+        <ignore path="src/com/zhaojin/myviews/MyFragmentLayout_line.java" />
+    </issue>
+    <issue id="DuplicateIds">
+        <ignore path="res/layout/tablayout.xml" />
+        <ignore path="res/layout/tablayout.xml" />
+        <ignore path="res/layout/tablayout1.xml" />
+    </issue>
+</lint>

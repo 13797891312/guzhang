@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="16dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="600000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="16dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:text="宁波海运"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/black_12" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:paddingBottom="16dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="16dp">
+
+                <Button
+                    android:id="@+id/button_reduce"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="48dp"
+                    android:layout_height="36dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/select_jianhao_btn"/>
+
+                <Button
+                    android:id="@+id/button_add"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="48dp"
+                    android:layout_height="36dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/select_jiahao_btn"/>
+
+                <EditText
+                    android:id="@+id/textView_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/button_reduce"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_toLeftOf="@+id/button_add"
+                    android:layout_toRightOf="@+id/button_reduce"
+                    android:background="@color/Transparent"
+                    android:gravity="center"
+                    android:hint="--"
+                    android:textColor="@color/black_87"
+                    android:numeric="decimal"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/txt_16" />
+
+                <TextView
+                    android:id="@+id/textView_limit_down"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/button_reduce"
+                    android:layout_marginTop="4dp"
+                    android:layout_toLeftOf="@+id/textView_price"
+                    android:gravity="right"
+                    android:text="跌停 12.50"
+                    android:textColor="@color/green_bg"
+                    android:textSize="@dimen/txt_14" />
+
+                <TextView
+                    android:id="@+id/textView_limit_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/button_reduce"
+                    android:layout_marginTop="4dp"
+                    android:layout_toRightOf="@+id/textView_price"
+                    android:text="涨停 12.50"
+                    android:textColor="@color/red_bg"
+                    android:textSize="@dimen/txt_14" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/black_12" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:gravity="bottom|center_horizontal"
+                    android:textCursorDrawable="@null"
+                    android:hint="数量"
+                    android:inputType="number"
+                    android:textColor="@color/black_87" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.7"
+                    android:gravity="center"
+                    android:text="￥ 5000"
+                    android:textColor="@color/black_54" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/black_12" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/black_12" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.50"
+            android:background="@color/backgroud"
+            android:orientation="vertical"
+            android:paddingTop="4dp">
+
+            <LinearLayout
+                android:id="@+id/layout_sell"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.50"
+                android:background="@color/backgroud"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/sell5"
+                    layout="@layout/includ_price" />
+
+                <include
+                    android:id="@+id/sell4"
+                    layout="@layout/includ_price" />
+
+                <include
+                    android:id="@+id/sell3"
+                    layout="@layout/includ_price" />
+
+                <include
+                    android:id="@+id/sell2"
+                    layout="@layout/includ_price" />
+
+                <include
+                    android:id="@+id/sell1"
+                    layout="@layout/includ_price" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:background="@color/black_12" />
+
+            <LinearLayout
+                android:id="@+id/layout_buy"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.50"
+                android:background="@color/backgroud"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/buy1"
+                    layout="@layout/includ_price" />
+
+                <include
+                    android:id="@+id/buy2"
+                    layout="@layout/includ_price" />
+
+                <include
+                    android:id="@+id/buy3"
+                    layout="@layout/includ_price" />
+
+                <include
+                    android:id="@+id/buy4"
+                    layout="@layout/includ_price" />
+
+                <include
+                    android:id="@+id/buy5"
+                    layout="@layout/includ_price" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="4dp"
+                android:background="@color/black_12" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_submit"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/select_red_button"
+        android:text="买入"
+        android:textColor="@color/white"
+        android:textSize="@dimen/txt_18"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/tab_bg">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="市值"
+            android:textSize="@dimen/txt_14" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/black_12" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="盈亏"
+            android:textSize="@dimen/txt_14" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/black_12" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="持仓/可用"
+            android:textSize="@dimen/txt_14" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/black_12" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="成本/现价"
+            android:textSize="@dimen/txt_14" />
+    </LinearLayout>
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/mListView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="@color/black_12"
+        android:dividerHeight="1px"
+        android:fastScrollEnabled="false"
+        android:scrollbars="none" />
+
+</LinearLayout><!-- From: file:/D:/studiowork/guzhang/guzhang/src/main/res/layout/fragment_transaction.xml -->

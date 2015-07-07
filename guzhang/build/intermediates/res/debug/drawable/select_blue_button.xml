@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="false">
+        <shape>
+            <corners android:radius="3dp" />
+            <gradient android:centerColor="@color/blue_button" android:startColor="@color/blue_button" android:endColor="@color/blue_button" />
+        </shape>
+    </item>
+    
+     <item android:state_pressed="true">
+        <shape>
+            <corners android:radius="3dp" />
+            <gradient android:centerColor="@color/blue_button_press" android:startColor="@color/blue_button_press" android:endColor="@color/blue_button_press" />
+        </shape>
+    </item>
+
+</selector><!-- From: file:/D:/studiowork/guzhang/guzhang/src/main/res/drawable/select_blue_button.xml -->

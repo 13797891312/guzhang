@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/shape_tab_jiaoyi"
+        android:id="@+id/tabLayout"
+        android:gravity="center_vertical"
+        android:minHeight="100dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/tab_img"
+                android:layout_width="48.0dip"
+                android:layout_height="48.0dip"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_sy_yue" />
+
+            <TextView
+                android:id="@+id/tab_text"
+                android:layout_width="wrap_content"
+                android:layout_height="18.0dip"
+                android:gravity="center_vertical"
+                android:text="月收益"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/black_54"
+                android:textSize="14.0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/tab_img"
+                android:layout_width="48.0dip"
+                android:layout_height="48.0dip"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_sy_zhou" />
+
+            <TextView
+                android:id="@+id/tab_text"
+                android:layout_width="wrap_content"
+                android:layout_height="18.0dip"
+                android:gravity="center_vertical"
+                android:text="周收益"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/black_54"
+                android:textSize="14.0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/tab_img"
+                android:layout_width="48.0dip"
+                android:layout_height="48.0dip"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_sy_zong" />
+
+            <TextView
+                android:id="@+id/tab_text"
+                android:layout_width="wrap_content"
+                android:layout_height="18.0dip"
+                android:gravity="center_vertical"
+                android:text="总收益"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/black_54"
+                android:textSize="14.0sp" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout><!-- From: file:/D:/studiowork/guzhang/guzhang/src/main/res/layout/tablayout_rank.xml -->

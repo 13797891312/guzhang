@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/red_bg"
+    android:layout_height="@dimen/action_height" >
+    <RelativeLayout android:layout_width="40dp"
+        android:onClick="backClick"
+        android:clickable="true"
+        android:background="@drawable/select_backbtn_gb"
+        android:layout_height="@dimen/action_height">
+        <ImageView 
+            android:layout_width="@dimen/back_image_width"
+            android:id="@+id/back_image"
+            android:layout_height="@dimen/back_image_height"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/last"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/txt_20"
+        android:textColor="@color/white"
+        android:text="标题" />
+    
+    <RelativeLayout android:layout_width="54dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/reFresh_layout"
+
+        android:onClick="reFreshClick"
+        android:clickable="true"
+        android:layout_height="@dimen/action_height">
+        <ImageView 
+            android:layout_width="@dimen/back_image_height"
+            android:id="@+id/refresh_image"
+            android:layout_height="@dimen/back_image_height"
+            android:layout_centerInParent="true"
+            android:src="@drawable/refresh_big"/>
+    </RelativeLayout>
+</RelativeLayout>
+<!-- From: file:/D:/studiowork/guzhang/guzhang/src/main/res/layout/layout_backbar_red.xml -->

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/Transparent"
+    android:paddingLeft="13dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="40dp"
+            android:background="@color/Transparent" />
+
+        <View
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/shape_red_timeline_circle" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/Transparent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:paddingRight="8dp"
+        android:orientation="vertical"
+        android:paddingTop="41dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2016-06-29 10:12:34"
+            android:textColor="@color/black_54"
+            android:textSize="12sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/black_87"
+            android:text="兑换50元话费，消费500000虚拟币"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/black_87"
+            android:text="状态: 兑换成功"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</LinearLayout><!-- From: file:/D:/studiowork/guzhang/guzhang/src/main/res/layout/item_usedrecord_listview.xml -->

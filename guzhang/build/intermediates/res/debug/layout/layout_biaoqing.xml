@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <com.zhaojin.myviews.TagViewPagerPhotos
+        android:id="@+id/biaoqing_viewPager"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:paddingBottom="8dp"
+        android:background="#fff"
+        android:visibility="gone"
+        android:layout_height="158dp" >
+     </com.zhaojin.myviews.TagViewPagerPhotos>
+<!-- From: file:/D:/studiowork/guzhang/guzhang/src/main/res/layout/layout_biaoqing.xml -->

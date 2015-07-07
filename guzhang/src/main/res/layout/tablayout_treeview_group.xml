@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@drawable/shape_main_tab"
+    android:gravity="center_vertical"
+    android:minHeight="40dp"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/lin1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tab1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:enabled="true"
+            android:gravity="center_vertical"
+            android:text="牛人交易"
+            android:textColor="@color/select_tab_color"
+            android:textSize="14.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+         android:id="@+id/lin2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tab2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:enabled="false"
+            android:gravity="center_vertical"
+            android:text="内参"
+            android:textColor="@color/select_tab_color"
+            android:textSize="14.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+         android:id="@+id/lin3"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tab3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:enabled="false"
+            android:gravity="center_vertical"
+            android:text="新闻"
+            android:textColor="@color/select_tab_color"
+            android:textSize="14.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+         android:id="@+id/lin4"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tab4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:enabled="false"
+            android:gravity="center_vertical"
+            android:text="公告"
+            android:textColor="@color/select_tab_color"
+            android:textSize="14.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+         android:id="@+id/lin5"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tab5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:enabled="false"
+            android:gravity="center_vertical"
+            android:text="F10"
+            android:textColor="@color/select_tab_color"
+            android:textSize="14.0sp" />
+    </LinearLayout>
+
+</LinearLayout>

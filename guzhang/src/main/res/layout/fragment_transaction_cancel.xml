@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/mListView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="@color/black_12"
+        android:dividerHeight="1px"
+        android:fastScrollEnabled="false"
+        android:scrollbars="none" />
+    <include
+        android:id="@+id/list_result_cover"
+         android:visibility="gone"
+        layout="@layout/layout_no_data" />
+
+    <include
+        android:id="@+id/list_loading_cover"
+        android:visibility="gone"
+        layout="@layout/layout_show_loading" />
+</RelativeLayout>

@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroud"
+        android:orientation="vertical">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/tab"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/action_height"
+            android:background="@color/red_bg">
+
+            <RelativeLayout
+                android:layout_width="40dp"
+                android:layout_height="@dimen/action_height"
+                android:background="@drawable/select_backbtn_gb"
+                android:clickable="true"
+                android:onClick="backClick">
+
+                <ImageView
+                    android:id="@+id/back_image"
+                    android:layout_width="@dimen/back_image_width"
+                    android:layout_height="@dimen/back_image_width"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/last" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="智能预警"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_20" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:paddingRight="8dp"
+                android:gravity="center"
+                android:text="完成"
+                android:paddingLeft="8dp"
+                android:textColor="@color/white_76"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="宁波海运"
+                android:textColor="@color/black_87"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+                android:text="600798"
+                android:textColor="@color/black_54"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/percent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="1.65%"
+                android:textColor="@color/red_bg"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="17.98"
+                android:textColor="@color/red_bg"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="股价上涨到"
+                    android:textColor="@color/black_87"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="4dp"
+                    android:numeric="decimal"
+                    android:textCursorDrawable="@null"
+                    android:singleLine="true"
+                    android:textColor="@color/black_87"
+                    android:layout_marginBottom="4dp"
+                    android:textSize="16sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="元"
+                    android:textColor="@color/black_87"
+                    android:textSize="18sp" />
+
+                <com.caiyun.guzhang.view.CheckSwitchButton
+                    android:id="@+id/mCheckSwithcButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:enabled="true" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/black_12"
+                android:layout_height="1px" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="股价下跌到"
+                    android:textColor="@color/black_87"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="4dp"
+                    android:numeric="decimal"
+                    android:textCursorDrawable="@null"
+                    android:singleLine="true"
+                    android:textColor="@color/black_87"
+                    android:layout_marginBottom="4dp"
+                    android:textSize="16sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="元"
+                    android:textColor="@color/black_87"
+                    android:textSize="18sp" />
+
+                <com.caiyun.guzhang.view.CheckSwitchButton
+                    android:id="@+id/mCheckSwithcButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:enabled="true" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="日涨幅到"
+                    android:textColor="@color/black_87"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="4dp"
+                    android:numeric="decimal"
+                    android:textCursorDrawable="@null"
+                    android:singleLine="true"
+                    android:textColor="@color/black_87"
+                    android:layout_marginBottom="4dp"
+                    android:textSize="16sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="元"
+                    android:textColor="@color/black_87"
+                    android:textSize="18sp" />
+
+                <com.caiyun.guzhang.view.CheckSwitchButton
+                    android:id="@+id/mCheckSwithcButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:enabled="true" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/black_12"
+                android:layout_height="1px" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="日跌幅到"
+                    android:textColor="@color/black_87"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="4dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black_87"
+                    android:layout_marginBottom="4dp"
+                    android:textSize="16sp"
+                    android:numeric="decimal"
+                    android:textCursorDrawable="@null"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="元"
+                    android:textColor="@color/black_87"
+                    android:textSize="18sp" />
+
+                <com.caiyun.guzhang.view.CheckSwitchButton
+                    android:id="@+id/mCheckSwithcButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:enabled="true" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="智能量化预警"
+                    android:layout_weight="1"
+                    android:textColor="@color/black_87"
+                    android:textSize="18sp" />
+
+                <com.caiyun.guzhang.view.CheckSwitchButton
+                    android:id="@+id/mCheckSwithcButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:enabled="true" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/black_12"
+                android:layout_height="1px" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="持仓成本"
+                    android:textColor="@color/black_87"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="4dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black_87"
+                    android:numeric="decimal"
+                    android:textCursorDrawable="@null"
+                    android:layout_marginBottom="4dp"
+                    android:textSize="16sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="元"
+                    android:textColor="@color/black_87"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="16dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="智能量化预警"
+                    android:layout_weight="1"
+                    android:textColor="@color/black_87"
+                    android:textSize="18sp" />
+
+                <com.caiyun.guzhang.view.CheckSwitchButton
+                    android:id="@+id/mCheckSwithcButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:enabled="true" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView><!-- From: file:/D:/studiowork/guzhang/guzhang/src/main/res/layout/activity_warninginfo.xml -->

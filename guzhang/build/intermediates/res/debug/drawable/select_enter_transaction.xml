@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:state_pressed="false"><color android:color="#fff"/></item>
+    <item android:state_pressed="true"><color android:color="@color/black_12"/></item>
+
+</selector>
+<!-- From: file:/D:/studiowork/guzhang/guzhang/src/main/res/drawable/select_enter_transaction.xml -->
