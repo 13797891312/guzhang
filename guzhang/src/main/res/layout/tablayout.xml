@@ -28,7 +28,7 @@
             android:gravity="center_vertical"
             android:text="题材"
             android:textColor="@color/black_54"
-            android:textSize="14.0sp" />
+            android:textSize="12.0sp" />
     </LinearLayout>
 
      <LinearLayout
@@ -52,7 +52,7 @@
             android:gravity="center_vertical"
             android:text="我的"
             android:textColor="@color/red_bg"
-            android:textSize="14.0sp" />
+            android:textSize="12.0sp" />
     </LinearLayout>
 
      <LinearLayout
@@ -76,6 +76,6 @@
             android:gravity="center_vertical"
             android:text="资讯"
             android:textColor="@color/black_54"
-            android:textSize="14.0sp" />
+            android:textSize="12.0sp" />
     </LinearLayout>
 </LinearLayout>

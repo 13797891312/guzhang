@@ -69,12 +69,13 @@ public class GetPwdActivity extends BaseActivity implements OnClickListener,
             super.handleMessage(msg);
             CustomProgressDialog.dismissDialog(progressDialog);
             switch (msg.what) {
-                case SMSSDK.EVENT_GET_VERIFICATION_CODE:
+                case 2:
                     Toast.makeText(GetPwdActivity.this, "获取验证码成功", Toast.LENGTH_SHORT).show();
                     getCode.setEnabled(false);
                     set60S();
                     break;
-                case SMSSDK.EVENT_SUBMIT_VERIFICATION_CODE:
+                case 1:
+                    LogUtils.e("*******",msg.what+"  ");
                     Intent intent = new Intent(GetPwdActivity.this, GetPwd2Activity.class);
                     intent.putExtra("type", type);
                     GetPwdActivity.this.startActivity(intent);
@@ -109,12 +110,13 @@ public class GetPwdActivity extends BaseActivity implements OnClickListener,
         @Override
         public void afterEvent(int event, int result, Object data) {
             if (result == SMSSDK.RESULT_COMPLETE) {
-                hd.sendEmptyMessage(event);
                 //回调完成
                 if (event == SMSSDK.EVENT_SUBMIT_VERIFICATION_CODE) {
                     //提交验证码成功
+                    hd.sendEmptyMessage(1);
                 } else if (event == SMSSDK.EVENT_GET_VERIFICATION_CODE) {
                     //获取验证码成功
+                    hd.sendEmptyMessage(2);
                 } else if (event == SMSSDK.EVENT_GET_SUPPORTED_COUNTRIES) {
                     //返回支持发送验证码的国家列表
                 }

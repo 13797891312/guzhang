@@ -9,6 +9,7 @@ import android.app.Activity;
 import android.graphics.Rect;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.v4.widget.DrawerLayout;
 import android.util.DisplayMetrics;
 import android.view.Gravity;
 import android.view.View;
@@ -34,11 +35,13 @@ public class MainActivity extends BaseActivity {
     public static float screenScale;// px dip比例
     public static RequestQueue mQueue;
     public MyFragmentLayout myFragmentLayout;
+    private DrawerLayout mDrawerLayout;
     public ArrayList<Fragment> fragBaseFragments = new ArrayList<Fragment>();
-    private int tabImages[][] = {
+    public int tabImages[][] = {
             {R.drawable.tab1_active, R.drawable.tab1_normal},
             {R.drawable.tab2_active, R.drawable.tab2_normal},
             {R.drawable.tab3_active, R.drawable.tab3_normal}};
+    public int menuItemId[]={R.id.item1,R.id.item2,R.id.item3,R.id.item4,R.id.item6,};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,6 +73,7 @@ public class MainActivity extends BaseActivity {
      * 初始化布局
      */
     private void initView() {
+        mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         fragBaseFragments.add(new Fragment1());
         fragBaseFragments.add(new Fragment2());
         fragBaseFragments.add(new Fragment3());
@@ -176,5 +180,38 @@ public class MainActivity extends BaseActivity {
         // TODO Auto-generated method stub
         super.onDestroy();
         mQueue = null;
+    }
+
+    /**
+     *
+     * @param v 侧边菜单点击监听
+     */
+    public void  menuClick(View v){
+        mDrawerLayout.closeDrawers();
+        switch (v.getId()) {
+            case R.id.item1 :
+                Toast.makeText(this,"第一项",Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.item2 :
+                Toast.makeText(this,"第二项",Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.item3 :
+                Toast.makeText(this,"第三项",Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.item4 :
+                Toast.makeText(this,"第四项",Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.item5 :
+                Toast.makeText(this,"第五项",Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.item6 :
+                Toast.makeText(this,"第六项",Toast.LENGTH_SHORT).show();
+                break;
+        }
+    }
+
+    /**打开菜单**/
+    public void openMenu(){
+        mDrawerLayout.openDrawer(Gravity.LEFT);
     }
 }

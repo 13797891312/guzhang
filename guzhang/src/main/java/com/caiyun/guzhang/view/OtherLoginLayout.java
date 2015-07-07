@@ -13,6 +13,7 @@ import com.umeng.socialize.exception.SocializeException;
 import com.umeng.socialize.media.UMImage;
 import com.umeng.socialize.sso.UMQQSsoHandler;
 import com.umeng.socialize.weixin.controller.UMWXHandler;
+import com.zhaojin.utils.LogUtils;
 
 import android.app.Activity;
 import android.content.Context;
@@ -101,6 +102,8 @@ public class OtherLoginLayout extends LinearLayout implements
                         Toast.makeText(context, "授权完成", Toast.LENGTH_SHORT)
                                 .show();
                         getInfo(type);
+                        LogUtils.e("******",value.toString());
+
 
                     }
 
@@ -129,6 +132,7 @@ public class OtherLoginLayout extends LinearLayout implements
                     }
                     Toast.makeText(context, sb.toString(), Toast.LENGTH_LONG)
                             .show();
+                    LogUtils.e("授权成功",sb.toString());
                 } else {
                     Log.d("TestData", "发生错误：" + status);
                 }
