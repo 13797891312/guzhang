@@ -27,7 +27,7 @@ public class VolleyListerner implements Listener<JSONObject>{
 		LogUtils.e("JSONObject", response.toString());
 		CustomProgressDialog.dismissDialog(dialog);
 		try {
-			if (response.getInt("code")!=0) {
+			if (response.getInt("code")!=200) {
 				Toast.makeText(context, ErrorCode.getString(response.getInt("code")), Toast.LENGTH_SHORT).show();
 				onRet_0(response);
 				return;

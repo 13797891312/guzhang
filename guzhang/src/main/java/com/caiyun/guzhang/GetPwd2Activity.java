@@ -38,12 +38,13 @@ public class GetPwd2Activity extends BaseActivity implements OnClickListener,
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_getpwd2);
 		type=getIntent().getIntExtra("type", 0);
 		if (type==0) {
-			setTitle(R.id.title, "找回密码");
+			setContentView(R.layout.activity_getpwd2);
+			setTitle(R.id.title, "找回密码(第二步)");
 		}else {
-			setTitle(R.id.title, "注册");
+			setContentView(R.layout.activity_regist2);
+			setTitle(R.id.title, "注册(第二步)");
 		}
 		mQueue = Volley.newRequestQueue(this);// 网络请求队列
 		initLoginView();// 初始化登陆框
@@ -121,22 +122,6 @@ public class GetPwd2Activity extends BaseActivity implements OnClickListener,
 
 			}
 		});
-
-		if (type==0) {
-			setTitle(R.id.title, "找回密码");
-			edit1.setHint("新密码");
-			edit1.setInputType(InputType.TYPE_TEXT_VARIATION_PASSWORD);
-			edit2.setHint("确认新密码");
-			edit2.setInputType(InputType.TYPE_TEXT_VARIATION_PASSWORD);
-			next.setText("确认");
-		}else {
-			setTitle(R.id.title, "注册");
-			edit1.setHint("昵称");
-			edit1.setInputType(InputType.TYPE_DATETIME_VARIATION_NORMAL);
-			edit2.setHint("设置密码");
-			edit2.setInputType(InputType.TYPE_TEXT_VARIATION_PASSWORD);
-			next.setText("确认注册");
-		}
 	}
 
 	@Override

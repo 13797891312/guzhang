@@ -2,21 +2,20 @@ package com.caiyun.guzhang.fragment;
 
 import com.caiyun.guzhang.MyFriendsActivity;
 import com.caiyun.guzhang.MyStockActivity;
+import com.caiyun.guzhang.NoticeActivity;
 import com.caiyun.guzhang.RankActivity;
-import com.caiyun.guzhang.TiCaiInfoActivity;
 import com.caiyun.guzhang.WarningListActivity;
+import com.caiyun.guzhang.ZiXuanActivity;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.assist.ImageScaleType;
 import com.caiyun.app.guzhang.R;
 import com.caiyun.guzhang.MainActivity;
 import com.caiyun.guzhang.TransactionActivity;
-import com.caiyun.guzhang.util.ImageUtils;
 import com.nostra13.universalimageloader.core.display.RoundedBitmapDisplayer;
 
 import android.content.Intent;
 import android.graphics.Bitmap.Config;
-import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
@@ -26,7 +25,6 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout.LayoutParams;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class Fragment2 extends BaseFragment implements OnClickListener {
     private View view;
@@ -35,7 +33,7 @@ public class Fragment2 extends BaseFragment implements OnClickListener {
     private String str[] = {"自选股", "通知", "持仓/历史", "预警", "收益榜", "我的关注", "交易中心", "商城"};
     private int resIds[] = {R.drawable.zxg_icon, R.drawable.icon_tz, R.drawable.icon_cc, R.drawable.icon_yj, R.drawable.icon_syb, R.drawable.icon_gz, R.drawable.icon_jyzx, R.drawable.icon_sc};
     private Class myClass[] = {
-            TiCaiInfoActivity.class,null, MyStockActivity.class, WarningListActivity.class, RankActivity.class, MyFriendsActivity.class,TransactionActivity.class,null};
+            ZiXuanActivity.class, NoticeActivity.class, MyStockActivity.class, WarningListActivity.class, RankActivity.class, MyFriendsActivity.class,TransactionActivity.class,null};
 
     @Override
     public View onCreateView(LayoutInflater inflater,

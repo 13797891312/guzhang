@@ -20,11 +20,6 @@
         <include
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            layout="@layout/base_login_layout" />
+            layout="@layout/base_getpwd2_layout" />
     </RelativeLayout>
-    <com.caiyun.guzhang.view.OtherLoginLayout
-        android:layout_width="match_parent"
-        android:orientation="vertical"
-        android:layout_height="wrap_content"/>
-
 </LinearLayout><!-- From: file:/D:/studiowork/guzhang/guzhang/src/main/res/layout/activity_getpwd2.xml -->

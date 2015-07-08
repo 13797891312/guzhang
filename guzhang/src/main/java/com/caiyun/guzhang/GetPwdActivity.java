@@ -63,6 +63,10 @@ public class GetPwdActivity extends BaseActivity implements OnClickListener,
     /**
      * 短信验证回调
      */
+
+    /**由于第三方SDK会重复反馈，所以加个bool值判断下***/
+    boolean isGetCode=false;//是否获取到
+    boolean isSubmit=false;//是否验证过
     Handler hd = new Handler() {
         @Override
         public void handleMessage(Message msg) {
@@ -70,16 +74,21 @@ public class GetPwdActivity extends BaseActivity implements OnClickListener,
             CustomProgressDialog.dismissDialog(progressDialog);
             switch (msg.what) {
                 case 2:
-                    Toast.makeText(GetPwdActivity.this, "获取验证码成功", Toast.LENGTH_SHORT).show();
-                    getCode.setEnabled(false);
-                    set60S();
+                    if (!isGetCode) {
+                        isGetCode=true;
+                        Toast.makeText(GetPwdActivity.this, "获取验证码成功", Toast.LENGTH_SHORT).show();
+                        getCode.setEnabled(false);
+                        set60S();
+                    }
                     break;
                 case 1:
-                    LogUtils.e("*******",msg.what+"  ");
-                    Intent intent = new Intent(GetPwdActivity.this, GetPwd2Activity.class);
-                    intent.putExtra("type", type);
-                    GetPwdActivity.this.startActivity(intent);
-                    GetPwdActivity.this.finish();
+                    if (!isSubmit) {
+                        isSubmit=true;
+                        Intent intent = new Intent(GetPwdActivity.this, GetPwd2Activity.class);
+                        intent.putExtra("type", type);
+                        GetPwdActivity.this.startActivity(intent);
+                        GetPwdActivity.this.finish();
+                    }
                     break;
                 case 100:
                     Toast.makeText(GetPwdActivity.this, "短信验证失败", Toast.LENGTH_SHORT).show();
@@ -100,6 +109,7 @@ public class GetPwdActivity extends BaseActivity implements OnClickListener,
             public void onFinish() {
                 getCode.setText("获取验证码");
                 getCode.setEnabled(true);
+                isGetCode=false;
             }
         }.start();
     }
