@@ -13,4 +13,4 @@
     <item android:duration="50" android:drawable="@drawable/loading_dark10" />
     <item android:duration="50" android:drawable="@drawable/loading_dark11" />
     <item android:duration="50" android:drawable="@drawable/loading_dark12" />
-</animation-list><!-- From: file:/D:/studiowork/guzhang/zhaojin_Library/src/main/res/anim/progress_round.xml -->
+</animation-list><!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/zhaojin_Library/src/main/res/anim/progress_round.xml -->

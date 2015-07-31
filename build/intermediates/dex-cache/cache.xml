@@ -2,179 +2,25 @@
 <items version="2" >
 
     <item
-        jar="D:\studiowork\guzhang\guzhang\libs\httpclient-4.3.5.jar"
+        jar="/Users/zhaojin/Documents/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/guzhang/zhaojin_Library/unspecified/jars/classes.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="9783d89b8eea20a517a4afc5f979bd2882b54c44">
-        <dex dex="D:\studiowork\guzhang\guzhang\build\intermediates\pre-dexed\debug\httpclient-4.3.5-5cdcecf7082375116bb1353407f7f7b9a04a8ac1.jar" />
+        sha1="92e46f3a6242620c3bc8654e0ab44b0b405bb247">
+        <dex dex="/Users/zhaojin/Documents/studiowork/guzhang/guzhang/build/intermediates/pre-dexed/debug/classes-e18ae75e4f0c0ac4a4ce47d50746ddbe47a18ac1.jar" />
     </item>
     <item
-        jar="D:\studiowork\guzhang\guzhang\libs\httpcore-4.3.2.jar"
+        jar="/Users/zhaojin/Documents/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/guzhang/library/unspecified/jars/classes.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="31fbbff1ddbf98f3aa7377c94d33b0447c646b6e">
-        <dex dex="D:\studiowork\guzhang\guzhang\build\intermediates\pre-dexed\debug\httpcore-4.3.2-8b32a371ccfa608e14135ed8c59675873b37e762.jar" />
+        sha1="fca6854aff84598e5cbddd6b59b0045654878d3d">
+        <dex dex="/Users/zhaojin/Documents/studiowork/guzhang/guzhang/build/intermediates/pre-dexed/debug/classes-83759999ba5a06b9bdc04396ab5b7fb16d2b0625.jar" />
     </item>
     <item
-        jar="D:\studiowork\guzhang\guzhang\libs\SocialSDK_QQZone_2.jar"
+        jar="/Users/zhaojin/Documents/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/guzhang/SMSSDK/unspecified/jars/classes.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="4a69b33758dcba3ef519cbd4b6c8af5f41603c4f">
-        <dex dex="D:\studiowork\guzhang\guzhang\build\intermediates\pre-dexed\debug\SocialSDK_QQZone_2-b6a034124c1404f9bb84d01b0ade49cbd0f160e4.jar" />
-    </item>
-    <item
-        jar="D:\studiowork\guzhang\guzhang\build\intermediates\exploded-aar\guzhang\zhaojin_Library\unspecified\jars\libs\nineoldandroids-2.4.0.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="59f19e43354d32de831379c23ce03bb259a4c2b7">
-        <dex dex="D:\studiowork\guzhang\guzhang\build\intermediates\pre-dexed\debug\nineoldandroids-2.4.0-4e350d2cf09e5bd24f3794955c665485d53171f2.jar" />
-    </item>
-    <item
-        jar="D:\studiowork\guzhang\guzhang\libs\jose4j-0.4.3.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="f86e2a78f90342762ca174bea8a48c89623c482e">
-        <dex dex="D:\studiowork\guzhang\guzhang\build\intermediates\pre-dexed\debug\jose4j-0.4.3-85edb357d8bd828bfc3330a390103ccea21b63ec.jar" />
-    </item>
-    <item
-        jar="D:\studiowork\guzhang\guzhang\libs\httpmime-4.3.5.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="1dd0d38df9c6d21e893f2e52403f1cd99e91cd81">
-        <dex dex="D:\studiowork\guzhang\guzhang\build\intermediates\pre-dexed\debug\httpmime-4.3.5-9f406a75976c8271163c53fad266fbc504c0e4ec.jar" />
-    </item>
-    <item
-        jar="D:\studiowork\guzhang\guzhang\build\intermediates\exploded-aar\guzhang\SMSSDK\unspecified\jars\libs\SMSSDK-1.2.2.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="fdbdc82cc81d5d26e2ef56ab5f4ffb0fc04b4b00">
-        <dex dex="D:\studiowork\guzhang\guzhang\build\intermediates\pre-dexed\debug\SMSSDK-1.2.2-478fa7c787c1279b6f24c153fdca2e88e93386c1.jar" />
-    </item>
-    <item
-        jar="D:\studiowork\guzhang\guzhang\libs\SocialSDK_WeiXin_2.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="4aa8d4cde1e2201e5360daaae4bd9fdbf4194d2a">
-        <dex dex="D:\studiowork\guzhang\guzhang\build\intermediates\pre-dexed\debug\SocialSDK_WeiXin_2-0d0c98846f96be92cb900d1adad1b53fc512e959.jar" />
-    </item>
-    <item
-        jar="D:\studiowork\guzhang\guzhang\build\intermediates\exploded-aar\guzhang\library\unspecified\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="e62d073accba667ddad2f4d0d8df1614eb9668b3">
-        <dex dex="D:\studiowork\guzhang\guzhang\build\intermediates\pre-dexed\debug\classes-745487ea51283bdf33d5ce77459cfa8c7f681aa1.jar" />
-    </item>
-    <item
-        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.3.1\ecb6e1f8e4b0e84c4b886c2f14a1500caf309757\gson-2.3.1.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
-        <dex dex="D:\studiowork\guzhang\guzhang\build\intermediates\pre-dexed\debug\gson-2.3.1-3d67bc6296728dce11d45e3fe02a4d0f0bf336e9.jar" />
-    </item>
-    <item
-        jar="D:\studiowork\guzhang\guzhang\libs\renderscript-v8.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="2b276904cd854be6d460f2bcec9cf2cddaf580c1">
-        <dex dex="D:\studiowork\guzhang\guzhang\build\intermediates\pre-dexed\debug\renderscript-v8-22bb70077800eb1afd02b771914ccc35aa21598d.jar" />
-    </item>
-    <item
-        jar="D:\studiowork\guzhang\guzhang\libs\SocialSDK_QQZone_1.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="c184c69f43b1fe46390f7123717c65bd844bccb6">
-        <dex dex="D:\studiowork\guzhang\guzhang\build\intermediates\pre-dexed\debug\SocialSDK_QQZone_1-f0233e0184eb28ec7a7a58b424b7ae2ccb4bdb8a.jar" />
-    </item>
-    <item
-        jar="D:\studiowork\guzhang\guzhang\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.1\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="c95ba8152923e4872e86a82cfcba9a51c0214328">
-        <dex dex="D:\studiowork\guzhang\guzhang\build\intermediates\pre-dexed\debug\classes-4991d84988d2715d4531a149a3aea4888c310eac.jar" />
-    </item>
-    <item
-        jar="D:\studiowork\guzhang\guzhang\libs\SocialSDK_Sina.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="f11202cb71112f923a80c75d42e029fc53257e9c">
-        <dex dex="D:\studiowork\guzhang\guzhang\build\intermediates\pre-dexed\debug\SocialSDK_Sina-6cd3b17df595768eb0fc3c1529753ffcc6aab4a5.jar" />
-    </item>
-    <item
-        jar="D:\studiowork\guzhang\guzhang\build\intermediates\exploded-aar\guzhang\SMSSDK\unspecified\jars\libs\MobTools.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="c41aaf9ac27d8a39338463e980799f855ee3d432">
-        <dex dex="D:\studiowork\guzhang\guzhang\build\intermediates\pre-dexed\debug\MobTools-56a25046346588aa64ba3d803aebeed829695d1b.jar" />
-    </item>
-    <item
-        jar="D:\studiowork\guzhang\guzhang\libs\SocialSDK_QQZone_3.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="8962f50f03ab83787c2c3035d0c79fe79cb0f67d">
-        <dex dex="D:\studiowork\guzhang\guzhang\build\intermediates\pre-dexed\debug\SocialSDK_QQZone_3-3bcf3178012cb4d7d24015ff2b876a469413c614.jar" />
-    </item>
-    <item
-        jar="D:\studiowork\guzhang\guzhang\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.1.1\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="a3ff3c506644c820eb2bdf06e8339f72be578551">
-        <dex dex="D:\studiowork\guzhang\guzhang\build\intermediates\pre-dexed\debug\classes-7bd08b2a75805e55f4bff6dd47dbb0bfdd03f1ab.jar" />
-    </item>
-    <item
-        jar="D:\studiowork\guzhang\guzhang\libs\SocialSDK_WeiXin_1.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="47f4993168154fa73377d7470b9f6887d48a8023">
-        <dex dex="D:\studiowork\guzhang\guzhang\build\intermediates\pre-dexed\debug\SocialSDK_WeiXin_1-966893a1314062b0d416983056f1481a6df3e870.jar" />
-    </item>
-    <item
-        jar="D:\studiowork\guzhang\guzhang\libs\umeng_social_sdk.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="03e186fabdab66983e2b2aa42a2b2de7cb37dc4a">
-        <dex dex="D:\studiowork\guzhang\guzhang\build\intermediates\pre-dexed\debug\umeng_social_sdk-670704126c4285b8eda2118edeee4ba753e44de4.jar" />
-    </item>
-    <item
-        jar="D:\studiowork\guzhang\guzhang\build\intermediates\exploded-aar\guzhang\SMSSDK\unspecified\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="80745c680f367264f51f21a5897306cb651a31aa">
-        <dex dex="D:\studiowork\guzhang\guzhang\build\intermediates\pre-dexed\debug\classes-cf5eaa822455fbc9cf467d0bf6cb9d14ab0189ae.jar" />
-    </item>
-    <item
-        jar="D:\studiowork\guzhang\guzhang\libs\litepal-1.2.1-src.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="2fe0b14b0fbb722c72470337a2f09ac27a9ad9b8">
-        <dex dex="D:\studiowork\guzhang\guzhang\build\intermediates\pre-dexed\debug\litepal-1.2.1-src-3d8fa65b151612ba2d5941e3bd5d9f7c1ea66a9c.jar" />
-    </item>
-    <item
-        jar="D:\studiowork\guzhang\guzhang\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.1\jars\libs\internal_impl-22.1.1.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="9e070ad32b2700b0343e8e0cccc437733d91ba3a">
-        <dex dex="D:\studiowork\guzhang\guzhang\build\intermediates\pre-dexed\debug\internal_impl-22.1.1-a5131bf33c4815a061d9222a241dd0ddb47a6402.jar" />
-    </item>
-    <item
-        jar="D:\studiowork\guzhang\guzhang\build\intermediates\exploded-aar\com.android.support\gridlayout-v7\19.1.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="af4cc326e6cd92f88db12298767e521743aedd36">
-        <dex dex="D:\studiowork\guzhang\guzhang\build\intermediates\pre-dexed\debug\classes-9aa25a1ea652ce88287fe38d179c39207bc06af8.jar" />
-    </item>
-    <item
-        jar="D:\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.1.1\support-annotations-22.1.1.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="01d051a6bfb1218b1db2d3a5af0480ac2c25c42a">
-        <dex dex="D:\studiowork\guzhang\guzhang\build\intermediates\pre-dexed\debug\support-annotations-22.1.1-2ef664910a9b1d11909711714c2671029fd040ed.jar" />
-    </item>
-    <item
-        jar="D:\studiowork\guzhang\guzhang\build\intermediates\exploded-aar\guzhang\zhaojin_Library\unspecified\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="df10f2a01eefe5719ff0dfb2945bba90759bbcae">
-        <dex dex="D:\studiowork\guzhang\guzhang\build\intermediates\pre-dexed\debug\classes-9597709e6cf742ec12f9c47f99afdbbc0bc1aa4d.jar" />
+        sha1="b716f7460190da1fca3e5f06df1e41238a2e6fd8">
+        <dex dex="/Users/zhaojin/Documents/studiowork/guzhang/guzhang/build/intermediates/pre-dexed/debug/classes-c784f00b9e357d58fbfc5af10952169dd2943a71.jar" />
     </item>
 
 </items>

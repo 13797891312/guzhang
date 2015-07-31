@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="D:\studiowork\guzhang\library\src\main\assets"/></dataSet><dataSet config="debug"><source path="D:\studiowork\guzhang\library\src\debug\assets"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="/Users/zhaojin/Documents/studiowork/guzhang/library/src/main/assets"/></dataSet><dataSet config="debug"><source path="/Users/zhaojin/Documents/studiowork/guzhang/library/src/debug/assets"/></dataSet></merger>
