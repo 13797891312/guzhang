@@ -70,6 +70,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         screenHeigth = dm.heightPixels;
         screenScale = dm.scaledDensity;
         mQueue = Volley.newRequestQueue(this);
+
         if (savedInstanceState == null) {
         } else {
         }
@@ -82,6 +83,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 e.printStackTrace();
             }
         }
+        String str;
         initView();
         if (!StringUtils.isNullOrBlanK(SaveDate.getInstence(this).getUid())) {//如果以前有登录过就自动登录
             LoginActivity.login(this, mQueue, SaveDate.getInstence(this).getUid(), SaveDate.getInstence(this).getPwd(), null);
