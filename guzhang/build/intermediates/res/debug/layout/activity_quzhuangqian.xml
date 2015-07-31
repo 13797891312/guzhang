@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/backgroud"
+    android:layout_height="match_parent">
+    <include layout="@layout/layout_backbar_red" />
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/mListView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="@color/backgroud"
+        android:fastScrollEnabled="false"
+        android:scrollbars="none" />
+</LinearLayout><!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/src/main/res/layout/activity_quzhuangqian.xml -->

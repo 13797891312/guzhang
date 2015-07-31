@@ -19,11 +19,11 @@ uses-sdk
 ADDED from AndroidManifest.xml:8:5
 MERGED from guzhang:library:unspecified:7:5
 MERGED from guzhang:zhaojin_Library:unspecified:7:5
-MERGED from com.android.support:support-v4:22.1.1:20:5
-MERGED from com.android.support:appcompat-v7:22.1.1:20:5
-MERGED from com.android.support:support-v4:22.1.1:20:5
-MERGED from com.android.support:gridlayout-v7:19.1.0:18:5
-MERGED from com.android.support:support-v4:22.1.1:20:5
+MERGED from com.android.support:support-v4:22.2.1:20:5
+MERGED from com.android.support:appcompat-v7:22.2.1:20:5
+MERGED from com.android.support:support-v4:22.2.1:20:5
+MERGED from com.android.support:gridlayout-v7:22.2.1:20:5
+MERGED from com.android.support:support-v4:22.2.1:20:5
 MERGED from guzhang:SMSSDK:unspecified:7:5
 	android:targetSdkVersion
 		ADDED from AndroidManifest.xml:10:9
@@ -33,403 +33,687 @@ MERGED from guzhang:SMSSDK:unspecified:7:5
 		ADDED from AndroidManifest.xml:9:9
 		INJECTED from AndroidManifest.xml:0:0
 		INJECTED from AndroidManifest.xml:0:0
-uses-permission#android.permission.CAMERA
-ADDED from AndroidManifest.xml:12:5
-	android:name
-		ADDED from AndroidManifest.xml:12:22
-uses-permission#android.permission.VIBRATE
+permission#com.caiyun.app.guzhang.permission.JPUSH_MESSAGE
 ADDED from AndroidManifest.xml:13:5
+	android:protectionLevel
+		ADDED from AndroidManifest.xml:13:80
 	android:name
-		ADDED from AndroidManifest.xml:13:22
-uses-permission#android.permission.FLASHLIGHT
+		ADDED from AndroidManifest.xml:13:17
+uses-permission#com.caiyun.app.guzhang.permission.JPUSH_MESSAGE
 ADDED from AndroidManifest.xml:14:5
 	android:name
 		ADDED from AndroidManifest.xml:14:22
-uses-permission#android.permission.READ_CONTACTS
+uses-permission#android.permission.CAMERA
 ADDED from AndroidManifest.xml:15:5
 	android:name
 		ADDED from AndroidManifest.xml:15:22
-uses-permission#com.android.browser.permission.READ_HISTORY_BOOKMARKS
+uses-permission#android.permission.VIBRATE
 ADDED from AndroidManifest.xml:16:5
 	android:name
 		ADDED from AndroidManifest.xml:16:22
-uses-permission#android.permission.CHANGE_WIFI_STATE
+uses-permission#android.permission.FLASHLIGHT
 ADDED from AndroidManifest.xml:17:5
 	android:name
 		ADDED from AndroidManifest.xml:17:22
-uses-permission#android.permission.ACCESS_WIFI_STATE
+uses-permission#android.permission.READ_CONTACTS
 ADDED from AndroidManifest.xml:18:5
 	android:name
 		ADDED from AndroidManifest.xml:18:22
-uses-permission#android.permission.ACCESS_NETWORK_STATE
+uses-permission#com.android.browser.permission.READ_HISTORY_BOOKMARKS
 ADDED from AndroidManifest.xml:19:5
 	android:name
 		ADDED from AndroidManifest.xml:19:22
-uses-permission#android.permission.INTERNET
+uses-permission#android.permission.CHANGE_WIFI_STATE
 ADDED from AndroidManifest.xml:20:5
 	android:name
 		ADDED from AndroidManifest.xml:20:22
-uses-permission#android.permission.WRITE_SETTINGS
+uses-permission#android.permission.ACCESS_WIFI_STATE
 ADDED from AndroidManifest.xml:21:5
 	android:name
 		ADDED from AndroidManifest.xml:21:22
-uses-permission#android.permission.READ_EXTERNAL_STORAGE
+uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from AndroidManifest.xml:22:5
 	android:name
 		ADDED from AndroidManifest.xml:22:22
-uses-permission#android.permission.READ_PHONE_STATE
+uses-permission#android.permission.INTERNET
 ADDED from AndroidManifest.xml:23:5
 	android:name
 		ADDED from AndroidManifest.xml:23:22
-uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+uses-permission#android.permission.WRITE_SETTINGS
 ADDED from AndroidManifest.xml:24:5
 	android:name
 		ADDED from AndroidManifest.xml:24:22
-uses-permission#android.permission.WAKE_LOCK
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
 ADDED from AndroidManifest.xml:25:5
 	android:name
 		ADDED from AndroidManifest.xml:25:22
-uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+uses-permission#android.permission.READ_PHONE_STATE
 ADDED from AndroidManifest.xml:26:5
 	android:name
 		ADDED from AndroidManifest.xml:26:22
-uses-permission#android.permission.GET_TASKS
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from AndroidManifest.xml:27:5
+	android:name
+		ADDED from AndroidManifest.xml:27:22
+uses-permission#android.permission.WAKE_LOCK
+ADDED from AndroidManifest.xml:28:5
+	android:name
+		ADDED from AndroidManifest.xml:28:22
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
 ADDED from AndroidManifest.xml:29:5
 	android:name
 		ADDED from AndroidManifest.xml:29:22
+uses-permission#android.permission.GET_TASKS
+ADDED from AndroidManifest.xml:32:5
+	android:name
+		ADDED from AndroidManifest.xml:32:22
 uses-permission#android.permission.CHANGE_NETWORK_STATE
-ADDED from AndroidManifest.xml:30:5
-	android:name
-		ADDED from AndroidManifest.xml:30:22
-uses-permission#com.android.launcher.permission.READ_SETTINGS
-ADDED from AndroidManifest.xml:31:5
-	android:name
-		ADDED from AndroidManifest.xml:31:22
-uses-permission#android.permission.RECEIVE_SMS
 ADDED from AndroidManifest.xml:33:5
 	android:name
 		ADDED from AndroidManifest.xml:33:22
-uses-permission#android.permission.ACCESS_FINE_LOCATION
+uses-permission#com.android.launcher.permission.READ_SETTINGS
 ADDED from AndroidManifest.xml:34:5
 	android:name
 		ADDED from AndroidManifest.xml:34:22
-uses-permission#com.android.launcher.permission.INSTALL_SHORTCUT
+uses-permission#android.permission.RECEIVE_SMS
+ADDED from AndroidManifest.xml:36:5
+	android:name
+		ADDED from AndroidManifest.xml:36:22
+uses-permission#android.permission.ACCESS_LOCATION_EXTRA_COMMANDS
 ADDED from AndroidManifest.xml:37:5
 	android:name
 		ADDED from AndroidManifest.xml:37:22
-uses-permission#com.android.launcher.permission.UNINSTALL_SHORTCUT
+uses-permission#android.permission.ACCESS_FINE_LOCATION
 ADDED from AndroidManifest.xml:38:5
 	android:name
 		ADDED from AndroidManifest.xml:38:22
+uses-permission#com.android.launcher.permission.INSTALL_SHORTCUT
+ADDED from AndroidManifest.xml:41:5
+	android:name
+		ADDED from AndroidManifest.xml:41:22
+uses-permission#com.android.launcher.permission.UNINSTALL_SHORTCUT
+ADDED from AndroidManifest.xml:42:5
+	android:name
+		ADDED from AndroidManifest.xml:42:22
 application
-ADDED from AndroidManifest.xml:40:5
+ADDED from AndroidManifest.xml:44:5
 MERGED from guzhang:library:unspecified:11:5
 MERGED from guzhang:zhaojin_Library:unspecified:11:5
-MERGED from com.android.support:support-v4:22.1.1:22:5
-MERGED from com.android.support:appcompat-v7:22.1.1:22:5
-MERGED from com.android.support:support-v4:22.1.1:22:5
-MERGED from com.android.support:gridlayout-v7:19.1.0:19:5
-MERGED from com.android.support:support-v4:22.1.1:22:5
+MERGED from com.android.support:support-v4:22.2.1:22:5
+MERGED from com.android.support:appcompat-v7:22.2.1:22:5
+MERGED from com.android.support:support-v4:22.2.1:22:5
+MERGED from com.android.support:gridlayout-v7:22.2.1:22:5
+MERGED from com.android.support:support-v4:22.2.1:22:5
 MERGED from guzhang:SMSSDK:unspecified:11:5
 	android:label
-		ADDED from AndroidManifest.xml:43:9
+		ADDED from AndroidManifest.xml:47:9
 	android:debuggable
 		ADDED from guzhang:SMSSDK:unspecified:13:9
 	android:icon
-		ADDED from AndroidManifest.xml:42:9
+		ADDED from AndroidManifest.xml:46:9
 	android:persistent
-		ADDED from AndroidManifest.xml:44:9
+		ADDED from AndroidManifest.xml:48:9
 	android:allowBackup
 		ADDED from guzhang:SMSSDK:unspecified:12:9
 	android:theme
+		ADDED from AndroidManifest.xml:49:9
+	android:name
 		ADDED from AndroidManifest.xml:45:9
-	android:name
-		ADDED from AndroidManifest.xml:41:9
 meta-data#UMENG_APPKEY
-ADDED from AndroidManifest.xml:48:9
+ADDED from AndroidManifest.xml:52:9
 	android:value
-		ADDED from AndroidManifest.xml:50:13
+		ADDED from AndroidManifest.xml:54:13
 	android:name
-		ADDED from AndroidManifest.xml:49:13
-meta-data#UMENG_CHANNEL
-ADDED from AndroidManifest.xml:51:9
-	android:value
 		ADDED from AndroidManifest.xml:53:13
-	android:name
-		ADDED from AndroidManifest.xml:52:13
-activity#com.caiyun.guzhang.StartActivity
+meta-data#UMENG_CHANNEL
 ADDED from AndroidManifest.xml:55:9
-	android:screenOrientation
-		ADDED from AndroidManifest.xml:58:13
-	android:label
+	android:value
 		ADDED from AndroidManifest.xml:57:13
-	android:theme
-		ADDED from AndroidManifest.xml:59:13
 	android:name
 		ADDED from AndroidManifest.xml:56:13
-intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from AndroidManifest.xml:60:13
-action#android.intent.action.MAIN
-ADDED from AndroidManifest.xml:61:17
+meta-data#JPUSH_CHANNEL
+ADDED from AndroidManifest.xml:59:9
+	android:value
+		ADDED from AndroidManifest.xml:59:49
 	android:name
-		ADDED from AndroidManifest.xml:61:25
-category#android.intent.category.LAUNCHER
-ADDED from AndroidManifest.xml:63:17
+		ADDED from AndroidManifest.xml:59:20
+meta-data#JPUSH_APPKEY
+ADDED from AndroidManifest.xml:61:9
+	android:value
+		ADDED from AndroidManifest.xml:61:48
 	android:name
-		ADDED from AndroidManifest.xml:63:27
-activity#com.caiyun.guzhang.Activitys
-ADDED from AndroidManifest.xml:67:9
-	android:screenOrientation
-		ADDED from AndroidManifest.xml:70:13
-	android:label
-		ADDED from AndroidManifest.xml:69:13
-	android:theme
-		ADDED from AndroidManifest.xml:71:13
+		ADDED from AndroidManifest.xml:61:20
+service#cn.jpush.android.service.PushService
+ADDED from AndroidManifest.xml:64:9
+	android:enabled
+		ADDED from AndroidManifest.xml:66:13
+	android:exported
+		ADDED from AndroidManifest.xml:67:13
 	android:name
-		ADDED from AndroidManifest.xml:68:13
-activity#com.caiyun.guzhang.LoginActivity
-ADDED from AndroidManifest.xml:73:9
-	android:screenOrientation
-		ADDED from AndroidManifest.xml:76:13
-	android:label
-		ADDED from AndroidManifest.xml:75:13
-	android:theme
+		ADDED from AndroidManifest.xml:65:13
+intent-filter#cn.jpush.android.intent.PUSH_TIME+cn.jpush.android.intent.PushService+cn.jpush.android.intent.REGISTER+cn.jpush.android.intent.REPORT
+ADDED from AndroidManifest.xml:68:13
+action#cn.jpush.android.intent.REGISTER
+ADDED from AndroidManifest.xml:69:17
+	android:name
+		ADDED from AndroidManifest.xml:69:25
+action#cn.jpush.android.intent.REPORT
+ADDED from AndroidManifest.xml:70:17
+	android:name
+		ADDED from AndroidManifest.xml:70:25
+action#cn.jpush.android.intent.PushService
+ADDED from AndroidManifest.xml:71:17
+	android:name
+		ADDED from AndroidManifest.xml:71:25
+action#cn.jpush.android.intent.PUSH_TIME
+ADDED from AndroidManifest.xml:72:17
+	android:name
+		ADDED from AndroidManifest.xml:72:25
+receiver#cn.jpush.android.service.PushReceiver
+ADDED from AndroidManifest.xml:76:9
+	android:enabled
+		ADDED from AndroidManifest.xml:78:13
+	android:name
 		ADDED from AndroidManifest.xml:77:13
+intent-filter#cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY+com.caiyun.app.guzhang
+ADDED from AndroidManifest.xml:79:13
+	android:priority
+		ADDED from AndroidManifest.xml:79:28
+action#cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY
+ADDED from AndroidManifest.xml:80:17
 	android:name
-		ADDED from AndroidManifest.xml:74:13
-activity#com.caiyun.guzhang.StockInfoActivity
-ADDED from AndroidManifest.xml:80:9
-	android:screenOrientation
-		ADDED from AndroidManifest.xml:83:13
-	android:label
-		ADDED from AndroidManifest.xml:82:13
-	android:theme
-		ADDED from AndroidManifest.xml:84:13
+		ADDED from AndroidManifest.xml:80:25
+category#com.caiyun.app.guzhang
+ADDED from AndroidManifest.xml:81:17
 	android:name
-		ADDED from AndroidManifest.xml:81:13
-activity#com.caiyun.guzhang.GetPwdActivity
-ADDED from AndroidManifest.xml:85:9
-	android:screenOrientation
-		ADDED from AndroidManifest.xml:88:13
-	android:label
-		ADDED from AndroidManifest.xml:87:13
-	android:theme
-		ADDED from AndroidManifest.xml:89:13
+		ADDED from AndroidManifest.xml:81:27
+intent-filter#android.intent.action.USER_PRESENT+android.net.conn.CONNECTIVITY_CHANGE
+ADDED from AndroidManifest.xml:83:13
+action#android.intent.action.USER_PRESENT
+ADDED from AndroidManifest.xml:84:17
 	android:name
-		ADDED from AndroidManifest.xml:86:13
-activity#com.caiyun.guzhang.GetPwd2Activity
-ADDED from AndroidManifest.xml:90:9
-	android:screenOrientation
-		ADDED from AndroidManifest.xml:93:13
-	android:label
-		ADDED from AndroidManifest.xml:92:13
-	android:theme
-		ADDED from AndroidManifest.xml:94:13
+		ADDED from AndroidManifest.xml:84:25
+action#android.net.conn.CONNECTIVITY_CHANGE
+ADDED from AndroidManifest.xml:85:17
 	android:name
-		ADDED from AndroidManifest.xml:91:13
-activity#com.caiyun.guzhang.TransactionActivity
+		ADDED from AndroidManifest.xml:85:25
+intent-filter#android.intent.action.PACKAGE_ADDED+android.intent.action.PACKAGE_REMOVED
+ADDED from AndroidManifest.xml:88:13
+action#android.intent.action.PACKAGE_ADDED
+ADDED from AndroidManifest.xml:89:17
+	android:name
+		ADDED from AndroidManifest.xml:89:25
+action#android.intent.action.PACKAGE_REMOVED
+ADDED from AndroidManifest.xml:90:17
+	android:name
+		ADDED from AndroidManifest.xml:90:25
+data
+ADDED from AndroidManifest.xml:91:17
+	android:scheme
+		ADDED from AndroidManifest.xml:91:23
+activity#cn.jpush.android.ui.PushActivity
 ADDED from AndroidManifest.xml:95:9
-	android:screenOrientation
+	android:configChanges
 		ADDED from AndroidManifest.xml:98:13
-	android:label
-		ADDED from AndroidManifest.xml:97:13
 	android:theme
-		ADDED from AndroidManifest.xml:99:13
+		ADDED from AndroidManifest.xml:97:13
 	android:name
 		ADDED from AndroidManifest.xml:96:13
-activity#com.caiyun.guzhang.GuideActivity
-ADDED from AndroidManifest.xml:100:9
-	android:screenOrientation
-		ADDED from AndroidManifest.xml:103:13
-	android:configChanges
-		ADDED from AndroidManifest.xml:102:13
-	android:theme
-		ADDED from AndroidManifest.xml:104:13
+intent-filter#android.intent.category.DEFAULT+cn.jpush.android.ui.PushActivity+com.caiyun.app.guzhang
+ADDED from AndroidManifest.xml:99:13
+action#cn.jpush.android.ui.PushActivity
+ADDED from AndroidManifest.xml:100:17
 	android:name
-		ADDED from AndroidManifest.xml:101:13
-activity#com.zhaojin.activity.BaseActivity
-ADDED from AndroidManifest.xml:105:9
-	android:screenOrientation
+		ADDED from AndroidManifest.xml:100:25
+category#android.intent.category.DEFAULT
+ADDED from AndroidManifest.xml:101:17
+	android:name
+		ADDED from AndroidManifest.xml:101:27
+service#cn.jpush.android.service.DownloadService
+ADDED from AndroidManifest.xml:106:9
+	android:enabled
 		ADDED from AndroidManifest.xml:108:13
-	android:configChanges
-		ADDED from AndroidManifest.xml:107:13
+	android:exported
+		ADDED from AndroidManifest.xml:109:13
 	android:name
-		ADDED from AndroidManifest.xml:106:13
-activity#com.caiyun.guzhang.MainActivity
-ADDED from AndroidManifest.xml:109:9
-	android:screenOrientation
-		ADDED from AndroidManifest.xml:114:13
-	android:label
-		ADDED from AndroidManifest.xml:112:13
-	android:launchMode
-		ADDED from AndroidManifest.xml:113:13
-	android:windowSoftInputMode
-		ADDED from AndroidManifest.xml:116:13
-	android:configChanges
-		ADDED from AndroidManifest.xml:111:13
-	android:theme
+		ADDED from AndroidManifest.xml:107:13
+receiver#cn.jpush.android.service.AlarmReceiver
+ADDED from AndroidManifest.xml:112:9
+	android:name
+		ADDED from AndroidManifest.xml:112:19
+receiver#com.caiyun.guzhang.util.JpushReceiver
+ADDED from AndroidManifest.xml:113:9
+	android:enabled
 		ADDED from AndroidManifest.xml:115:13
 	android:name
-		ADDED from AndroidManifest.xml:110:13
-activity#com.caiyun.guzhang.RankActivity
-ADDED from AndroidManifest.xml:117:9
-	android:screenOrientation
-		ADDED from AndroidManifest.xml:120:13
-	android:configChanges
-		ADDED from AndroidManifest.xml:119:13
-	android:theme
-		ADDED from AndroidManifest.xml:121:13
+		ADDED from AndroidManifest.xml:114:13
+intent-filter#cn.jpush.android.intent.MESSAGE_RECEIVED+cn.jpush.android.intent.NOTIFICATION_OPENED+cn.jpush.android.intent.NOTIFICATION_RECEIVED+cn.jpush.android.intent.REGISTRATION+com.caiyun.app.guzhang
+ADDED from AndroidManifest.xml:116:13
+action#cn.jpush.android.intent.REGISTRATION
+ADDED from AndroidManifest.xml:117:17
 	android:name
-		ADDED from AndroidManifest.xml:118:13
-activity#com.caiyun.guzhang.TiCaiInfoActivity
-ADDED from AndroidManifest.xml:122:9
-	android:screenOrientation
-		ADDED from AndroidManifest.xml:125:13
-	android:configChanges
-		ADDED from AndroidManifest.xml:124:13
-	android:theme
-		ADDED from AndroidManifest.xml:126:13
+		ADDED from AndroidManifest.xml:117:25
+action#cn.jpush.android.intent.MESSAGE_RECEIVED
+ADDED from AndroidManifest.xml:118:17
 	android:name
-		ADDED from AndroidManifest.xml:123:13
-activity#com.caiyun.guzhang.TrendsActivity
+		ADDED from AndroidManifest.xml:118:25
+action#cn.jpush.android.intent.NOTIFICATION_RECEIVED
+ADDED from AndroidManifest.xml:119:17
+	android:name
+		ADDED from AndroidManifest.xml:119:25
+action#cn.jpush.android.intent.NOTIFICATION_OPENED
+ADDED from AndroidManifest.xml:120:17
+	android:name
+		ADDED from AndroidManifest.xml:120:25
+activity#com.caiyun.guzhang.StartActivity
 ADDED from AndroidManifest.xml:127:9
 	android:screenOrientation
 		ADDED from AndroidManifest.xml:130:13
-	android:configChanges
+	android:label
 		ADDED from AndroidManifest.xml:129:13
 	android:theme
 		ADDED from AndroidManifest.xml:131:13
 	android:name
 		ADDED from AndroidManifest.xml:128:13
-activity#com.caiyun.guzhang.WarningListActivity
-ADDED from AndroidManifest.xml:132:9
-	android:screenOrientation
-		ADDED from AndroidManifest.xml:135:13
-	android:configChanges
-		ADDED from AndroidManifest.xml:134:13
-	android:theme
-		ADDED from AndroidManifest.xml:136:13
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from AndroidManifest.xml:132:13
+action#android.intent.action.MAIN
+ADDED from AndroidManifest.xml:133:17
 	android:name
-		ADDED from AndroidManifest.xml:133:13
-activity#com.caiyun.guzhang.WarningInfoActivity
-ADDED from AndroidManifest.xml:137:9
+		ADDED from AndroidManifest.xml:133:25
+category#android.intent.category.LAUNCHER
+ADDED from AndroidManifest.xml:135:17
+	android:name
+		ADDED from AndroidManifest.xml:135:27
+activity#com.caiyun.guzhang.Activitys
+ADDED from AndroidManifest.xml:139:9
 	android:screenOrientation
-		ADDED from AndroidManifest.xml:140:13
-	android:configChanges
-		ADDED from AndroidManifest.xml:139:13
-	android:theme
+		ADDED from AndroidManifest.xml:142:13
+	android:label
 		ADDED from AndroidManifest.xml:141:13
-	android:name
-		ADDED from AndroidManifest.xml:138:13
-activity#com.caiyun.guzhang.MyStockActivity
-ADDED from AndroidManifest.xml:142:9
-	android:screenOrientation
-		ADDED from AndroidManifest.xml:145:13
-	android:configChanges
-		ADDED from AndroidManifest.xml:144:13
 	android:theme
-		ADDED from AndroidManifest.xml:146:13
-	android:name
 		ADDED from AndroidManifest.xml:143:13
-activity#com.caiyun.guzhang.UsedRecordActivity
-ADDED from AndroidManifest.xml:147:9
-	android:screenOrientation
-		ADDED from AndroidManifest.xml:150:13
-	android:configChanges
-		ADDED from AndroidManifest.xml:149:13
-	android:theme
-		ADDED from AndroidManifest.xml:151:13
 	android:name
+		ADDED from AndroidManifest.xml:140:13
+activity#com.caiyun.guzhang.LoginActivity
+ADDED from AndroidManifest.xml:145:9
+	android:screenOrientation
 		ADDED from AndroidManifest.xml:148:13
-activity#com.caiyun.guzhang.MyFriendsActivity
+	android:label
+		ADDED from AndroidManifest.xml:147:13
+	android:theme
+		ADDED from AndroidManifest.xml:149:13
+	android:name
+		ADDED from AndroidManifest.xml:146:13
+activity#com.caiyun.guzhang.StockInfoActivity
 ADDED from AndroidManifest.xml:152:9
 	android:screenOrientation
 		ADDED from AndroidManifest.xml:155:13
-	android:configChanges
+	android:label
 		ADDED from AndroidManifest.xml:154:13
 	android:theme
 		ADDED from AndroidManifest.xml:156:13
 	android:name
 		ADDED from AndroidManifest.xml:153:13
-activity#com.caiyun.guzhang.AboutStockActivity
+activity#com.caiyun.guzhang.GetCodeActivity
 ADDED from AndroidManifest.xml:157:9
 	android:screenOrientation
 		ADDED from AndroidManifest.xml:160:13
-	android:configChanges
+	android:label
 		ADDED from AndroidManifest.xml:159:13
 	android:theme
 		ADDED from AndroidManifest.xml:161:13
 	android:name
 		ADDED from AndroidManifest.xml:158:13
-activity#com.caiyun.guzhang.ZiXuanActivity
+activity#com.caiyun.guzhang.GetPwd2Activity
 ADDED from AndroidManifest.xml:162:9
 	android:screenOrientation
 		ADDED from AndroidManifest.xml:165:13
-	android:configChanges
+	android:label
 		ADDED from AndroidManifest.xml:164:13
 	android:theme
 		ADDED from AndroidManifest.xml:166:13
 	android:name
 		ADDED from AndroidManifest.xml:163:13
-activity#com.caiyun.guzhang.NoticeActivity
+activity#com.caiyun.guzhang.TransactionActivity
 ADDED from AndroidManifest.xml:167:9
 	android:screenOrientation
 		ADDED from AndroidManifest.xml:170:13
-	android:configChanges
+	android:label
 		ADDED from AndroidManifest.xml:169:13
 	android:theme
 		ADDED from AndroidManifest.xml:171:13
 	android:name
 		ADDED from AndroidManifest.xml:168:13
-activity#com.tencent.tauth.AuthActivity
-ADDED from AndroidManifest.xml:173:9
-	android:launchMode
+activity#com.caiyun.guzhang.GuideActivity
+ADDED from AndroidManifest.xml:172:9
+	android:screenOrientation
 		ADDED from AndroidManifest.xml:175:13
-	android:noHistory
+	android:configChanges
+		ADDED from AndroidManifest.xml:174:13
+	android:theme
 		ADDED from AndroidManifest.xml:176:13
 	android:name
-		ADDED from AndroidManifest.xml:174:13
-intent-filter#android.intent.action.VIEW+android.intent.category.BROWSABLE+android.intent.category.DEFAULT
-ADDED from AndroidManifest.xml:177:13
-action#android.intent.action.VIEW
-ADDED from AndroidManifest.xml:178:17
-	android:name
-		ADDED from AndroidManifest.xml:178:25
-category#android.intent.category.DEFAULT
-ADDED from AndroidManifest.xml:180:17
-	android:name
-		ADDED from AndroidManifest.xml:180:27
-category#android.intent.category.BROWSABLE
-ADDED from AndroidManifest.xml:181:17
-	android:name
-		ADDED from AndroidManifest.xml:181:27
-data
-ADDED from AndroidManifest.xml:183:17
-	android:scheme
-		ADDED from AndroidManifest.xml:183:23
-activity#com.tencent.connect.common.AssistActivity
-ADDED from AndroidManifest.xml:186:9
+		ADDED from AndroidManifest.xml:173:13
+activity#com.zhaojin.activity.BaseActivity
+ADDED from AndroidManifest.xml:177:9
 	android:screenOrientation
-		ADDED from AndroidManifest.xml:188:13
-	android:theme
-		ADDED from AndroidManifest.xml:189:13
-	android:name
-		ADDED from AndroidManifest.xml:187:13
-activity#com.umeng.socialize.view.ShareActivity
-ADDED from AndroidManifest.xml:190:9
-	android:launchMode
-		ADDED from AndroidManifest.xml:193:13
-	android:noHistory
-		ADDED from AndroidManifest.xml:194:13
-	android:windowSoftInputMode
-		ADDED from AndroidManifest.xml:196:13
+		ADDED from AndroidManifest.xml:180:13
 	android:configChanges
-		ADDED from AndroidManifest.xml:192:13
+		ADDED from AndroidManifest.xml:179:13
+	android:name
+		ADDED from AndroidManifest.xml:178:13
+activity#com.caiyun.guzhang.MainActivity
+ADDED from AndroidManifest.xml:181:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:186:13
+	android:label
+		ADDED from AndroidManifest.xml:184:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:185:13
+	android:windowSoftInputMode
+		ADDED from AndroidManifest.xml:188:13
+	android:configChanges
+		ADDED from AndroidManifest.xml:183:13
 	android:theme
-		ADDED from AndroidManifest.xml:195:13
+		ADDED from AndroidManifest.xml:187:13
 	android:name
+		ADDED from AndroidManifest.xml:182:13
+activity#com.caiyun.guzhang.RankActivity
+ADDED from AndroidManifest.xml:189:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:192:13
+	android:configChanges
 		ADDED from AndroidManifest.xml:191:13
-uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from AndroidManifest.xml:206:5
+	android:theme
+		ADDED from AndroidManifest.xml:193:13
 	android:name
-		ADDED from AndroidManifest.xml:206:22
+		ADDED from AndroidManifest.xml:190:13
+activity#com.caiyun.guzhang.TiCaiInfoActivity
+ADDED from AndroidManifest.xml:194:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:197:13
+	android:configChanges
+		ADDED from AndroidManifest.xml:196:13
+	android:theme
+		ADDED from AndroidManifest.xml:198:13
+	android:name
+		ADDED from AndroidManifest.xml:195:13
+activity#com.caiyun.guzhang.TrendsActivity
+ADDED from AndroidManifest.xml:199:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:202:13
+	android:configChanges
+		ADDED from AndroidManifest.xml:201:13
+	android:theme
+		ADDED from AndroidManifest.xml:203:13
+	android:name
+		ADDED from AndroidManifest.xml:200:13
+activity#com.caiyun.guzhang.WarningListActivity
+ADDED from AndroidManifest.xml:204:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:207:13
+	android:configChanges
+		ADDED from AndroidManifest.xml:206:13
+	android:theme
+		ADDED from AndroidManifest.xml:208:13
+	android:name
+		ADDED from AndroidManifest.xml:205:13
+activity#com.caiyun.guzhang.WarningInfoActivity
+ADDED from AndroidManifest.xml:209:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:212:13
+	android:configChanges
+		ADDED from AndroidManifest.xml:211:13
+	android:theme
+		ADDED from AndroidManifest.xml:213:13
+	android:name
+		ADDED from AndroidManifest.xml:210:13
+activity#com.caiyun.guzhang.MyStockActivity
+ADDED from AndroidManifest.xml:214:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:217:13
+	android:configChanges
+		ADDED from AndroidManifest.xml:216:13
+	android:theme
+		ADDED from AndroidManifest.xml:218:13
+	android:name
+		ADDED from AndroidManifest.xml:215:13
+activity#com.caiyun.guzhang.UsedRecordActivity
+ADDED from AndroidManifest.xml:219:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:222:13
+	android:configChanges
+		ADDED from AndroidManifest.xml:221:13
+	android:theme
+		ADDED from AndroidManifest.xml:223:13
+	android:name
+		ADDED from AndroidManifest.xml:220:13
+activity#com.caiyun.guzhang.MyFriendsActivity
+ADDED from AndroidManifest.xml:224:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:227:13
+	android:configChanges
+		ADDED from AndroidManifest.xml:226:13
+	android:theme
+		ADDED from AndroidManifest.xml:228:13
+	android:name
+		ADDED from AndroidManifest.xml:225:13
+activity#com.caiyun.guzhang.AboutStockActivity
+ADDED from AndroidManifest.xml:229:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:232:13
+	android:configChanges
+		ADDED from AndroidManifest.xml:231:13
+	android:theme
+		ADDED from AndroidManifest.xml:233:13
+	android:name
+		ADDED from AndroidManifest.xml:230:13
+activity#com.caiyun.guzhang.ZiXuanActivity
+ADDED from AndroidManifest.xml:234:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:237:13
+	android:configChanges
+		ADDED from AndroidManifest.xml:236:13
+	android:theme
+		ADDED from AndroidManifest.xml:238:13
+	android:name
+		ADDED from AndroidManifest.xml:235:13
+activity#com.caiyun.guzhang.NoticeActivity
+ADDED from AndroidManifest.xml:239:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:242:13
+	android:configChanges
+		ADDED from AndroidManifest.xml:241:13
+	android:theme
+		ADDED from AndroidManifest.xml:243:13
+	android:name
+		ADDED from AndroidManifest.xml:240:13
+activity#com.caiyun.guzhang.UpdataActivity
+ADDED from AndroidManifest.xml:244:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:247:13
+	android:configChanges
+		ADDED from AndroidManifest.xml:246:13
+	android:theme
+		ADDED from AndroidManifest.xml:248:13
+	android:name
+		ADDED from AndroidManifest.xml:245:13
+activity#com.caiyun.guzhang.ChangeImageActivity
+ADDED from AndroidManifest.xml:249:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:252:13
+	android:configChanges
+		ADDED from AndroidManifest.xml:251:13
+	android:theme
+		ADDED from AndroidManifest.xml:253:13
+	android:name
+		ADDED from AndroidManifest.xml:250:13
+activity#com.caiyun.guzhang.ChangeNickNameActivity
+ADDED from AndroidManifest.xml:254:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:257:13
+	android:configChanges
+		ADDED from AndroidManifest.xml:256:13
+	android:theme
+		ADDED from AndroidManifest.xml:258:13
+	android:name
+		ADDED from AndroidManifest.xml:255:13
+activity#com.caiyun.guzhang.ChangePWDActivity
+ADDED from AndroidManifest.xml:259:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:262:13
+	android:configChanges
+		ADDED from AndroidManifest.xml:261:13
+	android:theme
+		ADDED from AndroidManifest.xml:263:13
+	android:name
+		ADDED from AndroidManifest.xml:260:13
+activity#com.caiyun.guzhang.NoticeConfigActivity
+ADDED from AndroidManifest.xml:264:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:267:13
+	android:configChanges
+		ADDED from AndroidManifest.xml:266:13
+	android:theme
+		ADDED from AndroidManifest.xml:268:13
+	android:name
+		ADDED from AndroidManifest.xml:265:13
+activity#com.caiyun.guzhang.MyAccountActivity
+ADDED from AndroidManifest.xml:269:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:272:13
+	android:configChanges
+		ADDED from AndroidManifest.xml:271:13
+	android:theme
+		ADDED from AndroidManifest.xml:273:13
+	android:name
+		ADDED from AndroidManifest.xml:270:13
+activity#com.caiyun.guzhang.NewsInfoActivity
+ADDED from AndroidManifest.xml:274:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:277:13
+	android:configChanges
+		ADDED from AndroidManifest.xml:276:13
+	android:theme
+		ADDED from AndroidManifest.xml:278:13
+	android:name
+		ADDED from AndroidManifest.xml:275:13
+activity#com.caiyun.guzhang.QuZhuanQianActivity
+ADDED from AndroidManifest.xml:279:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:282:13
+	android:configChanges
+		ADDED from AndroidManifest.xml:281:13
+	android:theme
+		ADDED from AndroidManifest.xml:283:13
+	android:name
+		ADDED from AndroidManifest.xml:280:13
+activity#com.caiyun.guzhang.AccountRecordActivity
+ADDED from AndroidManifest.xml:284:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:287:13
+	android:configChanges
+		ADDED from AndroidManifest.xml:286:13
+	android:theme
+		ADDED from AndroidManifest.xml:288:13
+	android:name
+		ADDED from AndroidManifest.xml:285:13
+activity#com.caiyun.guzhang.SearchStockActivity
+ADDED from AndroidManifest.xml:289:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:292:13
+	android:windowSoftInputMode
+		ADDED from AndroidManifest.xml:293:13
+	android:configChanges
+		ADDED from AndroidManifest.xml:291:13
+	android:theme
+		ADDED from AndroidManifest.xml:294:13
+	android:name
+		ADDED from AndroidManifest.xml:290:13
+activity#com.caiyun.guzhang.PeopleInfoActivity
+ADDED from AndroidManifest.xml:295:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:298:13
+	android:configChanges
+		ADDED from AndroidManifest.xml:297:13
+	android:theme
+		ADDED from AndroidManifest.xml:299:13
+	android:name
+		ADDED from AndroidManifest.xml:296:13
+activity#com.caiyun.guzhang.view.GongGaoInfoActivity
+ADDED from AndroidManifest.xml:300:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:303:13
+	android:configChanges
+		ADDED from AndroidManifest.xml:302:13
+	android:theme
+		ADDED from AndroidManifest.xml:304:13
+	android:name
+		ADDED from AndroidManifest.xml:301:13
+activity#com.caiyun.guzhang.KChartActivity
+ADDED from AndroidManifest.xml:305:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:308:13
+	android:configChanges
+		ADDED from AndroidManifest.xml:307:13
+	android:theme
+		ADDED from AndroidManifest.xml:309:13
+	android:name
+		ADDED from AndroidManifest.xml:306:13
+activity#com.tencent.tauth.AuthActivity
+ADDED from AndroidManifest.xml:311:9
+	android:launchMode
+		ADDED from AndroidManifest.xml:313:13
+	android:noHistory
+		ADDED from AndroidManifest.xml:314:13
+	android:name
+		ADDED from AndroidManifest.xml:312:13
+intent-filter#android.intent.action.VIEW+android.intent.category.BROWSABLE+android.intent.category.DEFAULT
+ADDED from AndroidManifest.xml:315:13
+action#android.intent.action.VIEW
+ADDED from AndroidManifest.xml:316:17
+	android:name
+		ADDED from AndroidManifest.xml:316:25
+category#android.intent.category.BROWSABLE
+ADDED from AndroidManifest.xml:319:17
+	android:name
+		ADDED from AndroidManifest.xml:319:27
+activity#com.tencent.connect.common.AssistActivity
+ADDED from AndroidManifest.xml:324:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:326:13
+	android:theme
+		ADDED from AndroidManifest.xml:327:13
+	android:name
+		ADDED from AndroidManifest.xml:325:13
+activity#com.umeng.socialize.view.ShareActivity
+ADDED from AndroidManifest.xml:328:9
+	android:launchMode
+		ADDED from AndroidManifest.xml:331:13
+	android:noHistory
+		ADDED from AndroidManifest.xml:332:13
+	android:windowSoftInputMode
+		ADDED from AndroidManifest.xml:334:13
+	android:configChanges
+		ADDED from AndroidManifest.xml:330:13
+	android:theme
+		ADDED from AndroidManifest.xml:333:13
+	android:name
+		ADDED from AndroidManifest.xml:329:13
+service#com.umeng.update.net.DownloadingService
+ADDED from AndroidManifest.xml:342:9
+	android:process
+		ADDED from AndroidManifest.xml:344:13
+	android:name
+		ADDED from AndroidManifest.xml:343:13
+activity#com.umeng.update.UpdateDialogActivity
+ADDED from AndroidManifest.xml:346:9
+	android:theme
+		ADDED from AndroidManifest.xml:348:13
+	android:name
+		ADDED from AndroidManifest.xml:347:13
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from AndroidManifest.xml:353:5
+	android:name
+		ADDED from AndroidManifest.xml:353:22

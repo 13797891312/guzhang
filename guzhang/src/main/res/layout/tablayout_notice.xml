@@ -88,7 +88,8 @@
     </FrameLayout>
     <TextView
         android:id="@+id/textView_config"
-        android:layout_width="@dimen/action_height"
+        android:layout_width="56dp"
+        android:paddingBottom="3dp"
         android:layout_height="@dimen/action_height"
         android:layout_alignParentRight="true"
         android:layout_weight="1"
@@ -97,5 +98,5 @@
         android:clickable="true"
         android:background="@drawable/select_backbtn_gb"
         android:textColor="@color/white"
-        android:textSize="@dimen/txt_18" />
+        android:textSize="16sp" />
 </RelativeLayout>

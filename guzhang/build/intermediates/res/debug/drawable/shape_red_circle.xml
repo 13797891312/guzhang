@@ -3,4 +3,4 @@
     <corners android:radius="12dp"/>
     <gradient android:startColor="@color/red_bg" android:centerColor="@color/red_bg" android:endColor="@color/red_bg"/>
 </shape>
-<!-- From: file:/D:/studiowork/guzhang/guzhang/src/main/res/drawable/shape_red_circle.xml -->
+<!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/src/main/res/drawable/shape_red_circle.xml -->

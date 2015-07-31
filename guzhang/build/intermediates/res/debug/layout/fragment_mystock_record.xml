@@ -22,4 +22,4 @@
         android:visibility="gone"
         layout="@layout/layout_show_loading" />
 
-</RelativeLayout><!-- From: file:/D:/studiowork/guzhang/guzhang/src/main/res/layout/fragment_mystock_record.xml -->
+</RelativeLayout><!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/src/main/res/layout/fragment_mystock_record.xml -->

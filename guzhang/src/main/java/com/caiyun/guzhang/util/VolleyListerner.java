@@ -1,6 +1,5 @@
 package com.caiyun.guzhang.util;
 
-import org.json.JSONObject;
 
 import android.content.Context;
 import android.widget.Toast;
@@ -8,6 +7,8 @@ import android.widget.Toast;
 import com.android.volley.Response.Listener;
 import com.zhaojin.myviews.CustomProgressDialog;
 import com.zhaojin.utils.LogUtils;
+
+import org.json.JSONObject;
 
 public class VolleyListerner implements Listener<JSONObject>{
 	Context context;
@@ -27,13 +28,15 @@ public class VolleyListerner implements Listener<JSONObject>{
 		LogUtils.e("JSONObject", response.toString());
 		CustomProgressDialog.dismissDialog(dialog);
 		try {
-			if (response.getInt("code")!=200) {
-				Toast.makeText(context, ErrorCode.getString(response.getInt("code")), Toast.LENGTH_SHORT).show();
-				onRet_0(response);
+
+			if (response.getInt("ret") != 200) {
+				Toast.makeText(context, ErrorCode.getString(response.getInt("ret")), Toast.LENGTH_SHORT).show();
+				onRet_200(response);
 				return;
+			} else {
+					onSucess(response);
 			}
-			onSucess(response);
-			
+
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -45,15 +48,23 @@ public class VolleyListerner implements Listener<JSONObject>{
 	 * 
 	 * @param response ret=0 成功
 	 */
-	public void onSucess(JSONObject response){
+	public void onSucess(JSONObject response) throws Exception{
 		
 	}
 	/**
 	 * 
-	 * @param response ret!=0 服务器返回数据错误
+	 * @param response ret!=200 服务器返回数据错误
 	 */
-	public void onRet_0(JSONObject response){
+	public void onRet_200(JSONObject response){
 		
+	}
+
+	/**
+	 *
+	 * @param response code!=0 服务器成功返回，但数据错误
+	 */
+	public void onCode_0(JSONObject response){
+
 	}
 
 }

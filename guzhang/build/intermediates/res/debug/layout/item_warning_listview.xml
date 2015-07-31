@@ -33,4 +33,4 @@
         android:layout_centerVertical="true"
         android:background="@drawable/select_del_btn"
         android:layout_height="30dp" />
-</RelativeLayout><!-- From: file:/D:/studiowork/guzhang/guzhang/src/main/res/layout/item_warning_listview.xml -->
+</RelativeLayout><!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/src/main/res/layout/item_warning_listview.xml -->

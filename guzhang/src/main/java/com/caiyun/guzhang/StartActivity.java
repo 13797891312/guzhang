@@ -7,6 +7,8 @@ import com.caiyun.guzhang.util.SaveDate;
 import com.zhaojin.activity.BaseActivity;
 import com.zhaojin.utils.StringUtils;
 
+import cn.jpush.android.api.JPushInterface;
+
 public class StartActivity extends BaseActivity {
 
 	@Override
@@ -27,12 +29,24 @@ public class StartActivity extends BaseActivity {
 			new Handler().postDelayed(new Runnable() {
 				@Override
 				public void run() {
-					StartActivity.this.startActivity(new Intent(StartActivity.this, Activitys.class));
+					StartActivity.this.startActivity(new Intent(StartActivity.this, MainActivity.class));
 					StartActivity.this.finish();
 				}
 			}, 2000);
 		}
 		
+	}
+
+	@Override
+	protected void onResume() {
+		super.onResume();
+		JPushInterface.onResume(this);
+	}
+
+	@Override
+	protected void onPause() {
+		super.onPause();
+		JPushInterface.onPause(this);
 	}
 	
 }

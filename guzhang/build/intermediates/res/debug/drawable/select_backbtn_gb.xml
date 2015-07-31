@@ -3,4 +3,4 @@
     <item android:state_pressed="false"><color android:color="@color/Transparent"/></item>
     <item android:state_pressed="true"><color android:color="@color/black_12"/></item>
 </selector>
-<!-- From: file:/D:/studiowork/guzhang/guzhang/src/main/res/drawable/select_backbtn_gb.xml -->
+<!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/src/main/res/drawable/select_backbtn_gb.xml -->

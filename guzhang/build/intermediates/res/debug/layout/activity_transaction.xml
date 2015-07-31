@@ -21,4 +21,4 @@
         android:keyBackground="@drawable/btn_keyboard_key"
         android:keyTextColor="@color/white"
         android:visibility="gone" />-->
-</LinearLayout><!-- From: file:/D:/studiowork/guzhang/guzhang/src/main/res/layout/activity_transaction.xml -->
+</LinearLayout><!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/src/main/res/layout/activity_transaction.xml -->

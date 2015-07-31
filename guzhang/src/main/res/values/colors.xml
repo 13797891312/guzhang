@@ -3,20 +3,22 @@
 
 白色：[100% 普通文字] [70% 减淡文字] [30% 禁用状态/提示文字] [12% 分隔线] -->
 <resources>
-    <color name="backgroud_tab">#f8f8f8</color>
+    <color name="backgroud_tab">#F7f7f7</color>
      <color name="backgroud">#efeff4</color>
+    <color name="backgroud_50">#8fefeff4</color>
     <color name="white">#fff</color>
     <color name="Transparent">#00000000</color>
     <color name="black_87">#DE000000</color>
     <color name="black_54">#8f000000</color>
     <color name="black_26">#42000000</color>
     <color name="black_12">#1e000000</color>
+    <color name="black_5">#0c000000</color>
     <color name="white_76">#DEffffff</color>
     <color name="white_30">#4cffffff</color>
     <color name="white_12">#1effffff</color>
     <color name="white_50">#8fffffff</color>
-	<color name="red_bg">#fc3d39</color>
-	<color name="green_bg">#4ecb63</color>
+	<color name="red_bg">#F12A34</color>
+	<color name="green_bg">#51bf00</color>
 	<color name="tab_bg">#efeff4</color>
 	<color name="blue_button">#3487e7</color>
 	<color name="red_button_press">#8ffc3d39</color>

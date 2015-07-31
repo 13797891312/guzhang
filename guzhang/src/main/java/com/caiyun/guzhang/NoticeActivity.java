@@ -1,5 +1,6 @@
 package com.caiyun.guzhang;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.View;
@@ -21,6 +22,7 @@ import java.util.ArrayList;
 public class NoticeActivity extends BaseActivity{
 	public MyFragmentLayout_line2 myFragmentLayout;
 	private ArrayList<Fragment> fragBaseFragments = new ArrayList<Fragment>();
+	private TextView textView_config;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
@@ -33,7 +35,7 @@ public class NoticeActivity extends BaseActivity{
 		fragBaseFragments.add(new NoticeFragment_sixing());
 		fragBaseFragments.add(new NoticeFragment_guanzhu());
 		fragBaseFragments.add(new NoticeFragment_notice());
-		myFragmentLayout = (MyFragmentLayout_line2)findViewById(R.id.myFragmentLayout);
+		myFragmentLayout = (MyFragmentLayout_line2) findViewById(R.id.myFragmentLayout);
 		myFragmentLayout.setScorllToNext(true);
 		myFragmentLayout.setScorll(true);
 		myFragmentLayout.setWhereTab(1);
@@ -42,7 +44,7 @@ public class NoticeActivity extends BaseActivity{
 				.setOnChangeFragmentListener(new MyFragmentLayout_line2.ChangeFragmentListener() {
 					@Override
 					public void change(int lastPosition, int positon,
-							View lastTabView, View currentTabView) {
+									   View lastTabView, View currentTabView) {
 						// TODO Auto-generated method stub
 						((TextView) lastTabView.findViewById(R.id.tab_text))
 								.setTextColor(NoticeActivity.this.getResources().getColor(R.color.white_50));
@@ -52,9 +54,14 @@ public class NoticeActivity extends BaseActivity{
 				});
 		myFragmentLayout.setAdapter(fragBaseFragments, R.layout.tablayout_notice,
 				Cantent.VIEWPAGER_ID_NOTICE);
-	}
-	
-	public void reFreshClick(View v){
-		
+
+		textView_config = (TextView) myFragmentLayout.findViewById(R.id.textView_config);
+		textView_config.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent(NoticeActivity.this, NoticeConfigActivity.class);
+				NoticeActivity.this.startActivity(intent);
+			}
+		});
 	}
 }

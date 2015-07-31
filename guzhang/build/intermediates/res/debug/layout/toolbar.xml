@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tab"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res/com.caiyun.app.guzhang"
+        xmlns:app1="http://schemas.android.com/apk/res-auto"
+        android:layout_marginLeft="-6dp"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_height"
+        android:background="@color/red_bg"
+        android:minHeight="@dimen/action_height"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/MyActionBar">
+    </android.support.v7.widget.Toolbar>
+    <com.caiyun.guzhang.view.CircleImageView
+        android:id="@+id/toggleMenu"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="45dp"
+        android:clickable="true"
+        android:scaleType="fitXY" />
+    <LinearLayout
+        android:id="@+id/search_layout"
+        android:layout_toRightOf="@+id/toggleMenu"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_marginLeft="16dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/shape_search_bg"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:paddingLeft="8dp">
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:alpha="0.7"
+            android:src="@drawable/ic_search" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="搜索股票"
+            android:textColor="@color/white_30"
+            android:textSize="16sp" />
+</LinearLayout>
+</RelativeLayout><!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/src/main/res/layout/toolbar.xml -->

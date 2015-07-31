@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/white" />
+    <stroke
+        android:color="@color/black_12"
+        android:width="1px" />
+</shape><!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/src/main/res/drawable/shape_whitle_stock_bg.xml -->

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/layout_backbar_red" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/shape_red_bg"
+        android:layout_marginTop="40dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:text="股票账户"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="20sp"
+            android:text="100,0000.00"
+            android:layout_below="@+id/textView1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="24dp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_2" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_2">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:textColor="@color/red_bg"
+                android:background="@drawable/selector_button_zhuanru"
+                android:text="转入"
+                android:id="@+id/button" />
+
+            <View
+                android:layout_width="1px"
+                android:background="#d2d2d2"
+                android:layout_height="48dp" />
+
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="48dp"
+                android:textSize="18sp"
+                android:textColor="@color/red_bg"
+                android:background="@drawable/selector_button_zhuanchu"
+                android:text="转出"
+                android:id="@+id/button15" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/shape_blue_bg"
+        android:layout_marginTop="40dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:text="我的钱包"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="20sp"
+            android:text="100,0000.00"
+            android:layout_below="@+id/textView3"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="24dp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_4" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_4">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:textColor="@color/blue_button"
+                android:background="@drawable/selector_button_zhuanru"
+                android:text="明细"
+                android:id="@+id/button_record" />
+
+            <View
+                android:layout_width="1px"
+                android:background="#d2d2d2"
+                android:layout_height="48dp" />
+
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="48dp"
+                android:textSize="18sp"
+                android:textColor="@color/blue_button"
+                android:background="@drawable/selector_button_zhuanchu"
+                android:text="兑换"
+                android:id="@+id/button15" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

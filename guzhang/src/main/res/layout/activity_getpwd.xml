@@ -23,6 +23,7 @@
             layout="@layout/base_getpwd_layout" />
     </RelativeLayout>
     <com.caiyun.guzhang.view.OtherLoginLayout
+        android:id="@+id/otherLayout"
         android:layout_width="match_parent"
         android:orientation="vertical"
         android:layout_height="wrap_content"/>

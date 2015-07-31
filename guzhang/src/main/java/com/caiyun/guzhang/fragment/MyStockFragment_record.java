@@ -23,7 +23,6 @@ public class MyStockFragment_record extends BaseFragment implements ExpandableLi
     private IphoneTreeView treeView;
     View view;
     Context context;
-    private PullToRefreshListView mListView;
     private Fragment_MyStock_Record_Tree adapter;
 
     @Override
@@ -42,8 +41,6 @@ public class MyStockFragment_record extends BaseFragment implements ExpandableLi
     private void initTreeView() {
         treeView.setHeaderView(View.inflate(this.getActivity(),
                 R.layout.header_tree_contact, null));
-//		treeView.setHeaderView(View.inflate( this.getActivity(),
-//				R.layout.header_tree, treeView));
         treeView.setGroupIndicator(null);
         adapter = new Fragment_MyStock_Record_Tree(this.getActivity(), treeView, new ArrayList(), new HashMap());
         treeView.setAdapter(adapter);

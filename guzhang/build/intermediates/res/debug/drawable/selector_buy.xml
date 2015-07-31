@@ -2,10 +2,10 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:state_pressed="true" >
         <shape>
-            <corners android:radius="2dp" />
+            <corners android:radius="4dp" />
             <solid android:color="@color/Transparent" />
             <stroke android:color="@color/blue_button" android:width="2dp"/>
         </shape>
     </item>
     <item android:state_pressed="false" android:drawable="@drawable/shape_buy" />
-</selector><!-- From: file:/D:/studiowork/guzhang/guzhang/src/main/res/drawable/selector_buy.xml -->
+</selector><!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/src/main/res/drawable/selector_buy.xml -->

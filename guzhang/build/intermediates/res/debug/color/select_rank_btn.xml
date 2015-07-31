@@ -5,4 +5,4 @@
     <item android:state_selected="false" android:color="@color/red_bg"/>
     <item android:color="@color/white" />
 </selector>
-<!-- From: file:/D:/studiowork/guzhang/guzhang/src/main/res/color/select_rank_btn.xml -->
+<!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/src/main/res/color/select_rank_btn.xml -->

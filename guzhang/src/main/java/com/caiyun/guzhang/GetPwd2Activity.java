@@ -13,14 +13,22 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.GridView;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.android.volley.RequestQueue;
+import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 import com.caiyun.app.guzhang.R;
 import com.caiyun.app.guzhang.R.id;
+import com.caiyun.guzhang.util.MyAPP;
+import com.caiyun.guzhang.util.UrlUtils;
+import com.caiyun.guzhang.util.VolleyErrorListoner;
+import com.caiyun.guzhang.util.VolleyListerner;
 import com.zhaojin.activity.BaseActivity;
 import com.zhaojin.myviews.CustomProgressDialog;
 import com.zhaojin.utils.StringUtils;
+
+import org.json.JSONObject;
 
 public class GetPwd2Activity extends BaseActivity implements OnClickListener,
 		OnFocusChangeListener {
@@ -33,12 +41,15 @@ public class GetPwd2Activity extends BaseActivity implements OnClickListener,
 	private CustomProgressDialog progressDialog;
 	/**0代表找回密码，1代表注册**/
 	private int type;
+	private CustomProgressDialog dialog;
+	private String phone;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		type=getIntent().getIntExtra("type", 0);
+		phone = getIntent().getStringExtra("phone");
 		if (type==0) {
 			setContentView(R.layout.activity_getpwd2);
 			setTitle(R.id.title, "找回密码(第二步)");
@@ -137,8 +148,35 @@ public class GetPwd2Activity extends BaseActivity implements OnClickListener,
 		case id.login_btn://下一步
 			// login(idEdit.getText().toString(), pwdEdit.getText().toString(),
 			// "3");//
+			if (type == 1) {
+				register();
+			} else {
+
+			}
 			break;
 		}
+	}
+
+	public void register() {
+		if (edit1.getText().toString().equals("")) {
+			Toast.makeText(this, "请输入昵称", Toast.LENGTH_SHORT).show();
+			return;
+		}
+		if (!StringUtils.isGoodPWD(edit2.getText().toString())) {
+			Toast.makeText(this, "密码为6-16为字母或数字组成", Toast.LENGTH_SHORT).show();
+			return;
+		}
+		dialog = CustomProgressDialog.startProgressDialog(dialog, this, "正在注册...");
+		JsonObjectRequest request = new JsonObjectRequest(UrlUtils.getHttpUrl("User_User_Register.mobile", new String[]{"mobile", "password","nickname"}, new String[]{phone, edit2.getText().toString(),edit1.getText().toString()}), null, new VolleyListerner(this, dialog) {
+			@Override
+			public void onSucess(JSONObject response) throws Exception {
+				super.onSucess(response);
+				MyAPP.token=response.getJSONObject("data").getJSONObject("info").getString("token");
+				GetPwd2Activity.this.finish();
+			}
+		}, new VolleyErrorListoner(this, dialog));
+
+		mQueue.add(request);
 	}
 
 	/**

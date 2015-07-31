@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="40dp"
-    android:background="@drawable/shape_main_tab"
+    android:background="@color/backgroud_tab"
     android:gravity="center_vertical"
     android:minHeight="40dp"
     android:orientation="horizontal" >
@@ -11,6 +11,7 @@
         android:id="@+id/lin1"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
+        android:clickable="true"
         android:layout_weight="1"
         android:gravity="center"
         android:orientation="vertical" >
@@ -21,13 +22,14 @@
             android:layout_height="match_parent"
             android:enabled="true"
             android:gravity="center_vertical"
-            android:text="牛人交易"
+            android:text="最近交易"
             android:textColor="@color/select_tab_color"
             android:textSize="14.0sp" />
     </LinearLayout>
 
     <LinearLayout
          android:id="@+id/lin2"
+        android:clickable="true"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_weight="1"
@@ -66,6 +68,7 @@
 
     <LinearLayout
          android:id="@+id/lin4"
+        android:clickable="true"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_weight="1"
@@ -88,6 +91,7 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_weight="1"
+        android:clickable="true"
         android:gravity="center"
         android:orientation="vertical" >
 

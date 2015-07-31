@@ -8,13 +8,14 @@ package com.android.futures.entity;
  */
 public class TimesEntity {
 	private String time;// 时间
-	private double weightedIndex;// 大盘加权指数
-	private double nonWeightedIndex;// 大盘不加权指数
+	private double weightedIndex;// 均价
+	private double nonWeightedIndex;// 现价
 	private int buy;// 买入量
 	private int sell;// 卖出量
 	private int volume;// 交易量
 	private float buyRatio;// 买入率
 	private float sellRatio;// 卖出率
+	private double yesterdayPrice; //昨收
 
 	public TimesEntity() {
 		super();
@@ -31,6 +32,14 @@ public class TimesEntity {
 		this.volume = volume;
 		this.buyRatio = buy * 10.0f / 10.0f / (buy + sell);
 		this.sellRatio = sell * 10.0f / 10.0f / (buy + sell);
+	}
+
+	public double getYesterdayPrice() {
+		return yesterdayPrice;
+	}
+
+	public void setYesterdayPrice(double yesterdayPrice) {
+		this.yesterdayPrice = yesterdayPrice;
 	}
 
 	public String getTime() {

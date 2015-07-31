@@ -31,4 +31,4 @@
         android:layout_height="match_parent"
         android:layout_below="@+id/tab"
         android:visibility="gone" />
-</RelativeLayout><!-- From: file:/D:/studiowork/guzhang/guzhang/src/main/res/layout/activity_warninglist.xml -->
+</RelativeLayout><!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/src/main/res/layout/activity_warninglist.xml -->

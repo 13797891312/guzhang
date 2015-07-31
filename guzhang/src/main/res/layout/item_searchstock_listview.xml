@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:textColor="@color/black_87"
+        android:text="宁波海运  （00020）"
+        android:textSize="16sp"
+        android:gravity="center_vertical"
+        android:paddingLeft="8dp"
+        android:layout_weight="1"
+        android:layout_height="48dp" />
+    <Button
+        android:id="@+id/button"
+        android:layout_width="24dp"
+        android:background="@drawable/select_zixuan_btn"
+        android:layout_marginRight="16dp"
+        android:layout_height="24dp" />
+
+</LinearLayout>

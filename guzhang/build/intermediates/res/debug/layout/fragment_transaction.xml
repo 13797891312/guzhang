@@ -244,7 +244,7 @@
         android:layout_height="44dp"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/select_red_button"
         android:text="买入"
         android:textColor="@color/white"
@@ -253,8 +253,8 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_marginTop="16dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="20dp"
         android:background="@color/tab_bg">
 
         <TextView
@@ -323,4 +323,4 @@
         android:fastScrollEnabled="false"
         android:scrollbars="none" />
 
-</LinearLayout><!-- From: file:/D:/studiowork/guzhang/guzhang/src/main/res/layout/fragment_transaction.xml -->
+</LinearLayout><!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/src/main/res/layout/fragment_transaction.xml -->

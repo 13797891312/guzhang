@@ -51,7 +51,7 @@ public class ImageUtils {
         android.support.v8.renderscript. Allocation allOut = android.support.v8.renderscript.Allocation.createFromBitmap(rs, outBitmap);  
           
         //Set the radius of the blur  
-        blurScript.setRadius(20.f);  
+        blurScript.setRadius(20.f);
         //Perform the Renderscript  
         blurScript.setInput(allIn);  
         blurScript.forEach(allOut);  

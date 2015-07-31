@@ -30,7 +30,7 @@ public class GridChart extends View {
 	public static final int DEFAULT_BACKGROUD = R.drawable.shape_bg;
 
 	/** 默认XY轴字体大小 **/
-	public static final int DEFAULT_AXIS_TITLE_SIZE = 20;
+	public static final int DEFAULT_AXIS_TITLE_SIZE = 26;
 
 	/** 默认XY坐标轴颜色 */
 	private static final int DEFAULT_AXIS_COLOR = 0xfffc3d39;
@@ -48,7 +48,7 @@ public class GridChart extends View {
 	public static final int DEFAULT_LOGITUDE_NUM = 3;
 
 	/** 默认边框的颜色 */
-	public static final int DEFAULT_BORDER_COLOR = 0xfffc3d39;
+	public static final int DEFAULT_BORDER_COLOR = 0xffa5a6ad;
 
 	/** 默认虚线效果 */
 	public static final PathEffect DEFAULT_DASH_EFFECT = new DashPathEffect(new float[] { 4, 4,4,4}, 1);
@@ -227,10 +227,11 @@ public class GridChart extends View {
 		Paint paint = new Paint();
 		paint.setColor(mBorderColor);
 		paint.setStrokeWidth(2);
-//		canvas.drawLine(start, 1, viewWidth - 1, 1, paint);
-		canvas.drawLine(start, 1, start, viewHeight - 1, paint);
+		canvas.drawLine(start, 1, viewWidth - 1, 1, paint);
 		canvas.drawLine(viewWidth - 1, viewHeight - 1, viewWidth - 1, 1, paint);
 		canvas.drawLine(viewWidth - 1, viewHeight - 1, start, viewHeight - 1, paint);
+		paint.setStrokeWidth(4);
+		canvas.drawLine(start, 1, start, viewHeight - 1, paint);
 	}
 
 	/**

@@ -2,13 +2,16 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.caiyun.app.guzhang"
     android:installLocation="auto"
-    android:versionCode="1"
+    android:versionCode="12"
     android:versionName="1.0.0">
 
     <uses-sdk
         android:minSdkVersion="11"
         android:targetSdkVersion="22" />
+    <!-- Required -->
 
+    <permission android:name="com.caiyun.app.guzhang.permission.JPUSH_MESSAGE" android:protectionLevel="signature" />
+    <uses-permission android:name="com.caiyun.app.guzhang.permission.JPUSH_MESSAGE" />
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.FLASHLIGHT" />
@@ -31,6 +34,7 @@
     <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
 
     <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <!--  创建和删除快捷方式权限-->
@@ -51,6 +55,74 @@
         <meta-data
             android:name="UMENG_CHANNEL"
             android:value="Channel ID" />
+
+        <meta-data android:name="JPUSH_CHANNEL" android:value="developer-default"/>
+        <!-- Required. AppKey copied from Portal -->
+        <meta-data android:name="JPUSH_APPKEY" android:value="c979531aae3bf59c05afa9b4"/>
+
+        <!-- Required -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+        <!-- Required -->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true" >
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />
+                <category android:name="com.caiyun.app.guzhang"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <!-- Required SDK核心功能-->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="orientation|keyboardHidden" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.caiyun.app.guzhang" />
+            </intent-filter>
+        </activity>
+        <!-- Required SDK核心功能-->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false" >
+        </service>
+        <!-- Required SDK核心功能-->
+        <receiver android:name="cn.jpush.android.service.AlarmReceiver" />
+        <receiver
+            android:name="com.caiyun.guzhang.util.JpushReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" />
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+                <category android:name="com.caiyun.app.guzhang" />
+            </intent-filter>
+        </receiver>
+
+
 
         <activity
             android:name="com.caiyun.guzhang.StartActivity"
@@ -83,7 +155,7 @@
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppNoTitle"></activity>
         <activity
-            android:name="com.caiyun.guzhang.GetPwdActivity"
+            android:name="com.caiyun.guzhang.GetCodeActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppNoTitle"></activity>
@@ -112,7 +184,7 @@
             android:label="@string/app_name"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppNoTitle"
+            android:theme="@style/AppCompatTheme"
             android:windowSoftInputMode="adjustResize"></activity>
         <activity
             android:name="com.caiyun.guzhang.RankActivity"
@@ -123,7 +195,7 @@
             android:name="com.caiyun.guzhang.TiCaiInfoActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppNoTitle"></activity>
+            android:theme="@style/AppCompatTheme"></activity>
         <activity
             android:name="com.caiyun.guzhang.TrendsActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
@@ -169,6 +241,72 @@
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppNoTitle"></activity>
+        <activity
+            android:name="com.caiyun.guzhang.UpdataActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppNoTitle"></activity>
+        <activity
+            android:name="com.caiyun.guzhang.ChangeImageActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppNoTitle"></activity>
+        <activity
+            android:name="com.caiyun.guzhang.ChangeNickNameActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppNoTitle"></activity>
+        <activity
+            android:name="com.caiyun.guzhang.ChangePWDActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppNoTitle"></activity>
+        <activity
+            android:name="com.caiyun.guzhang.NoticeConfigActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppNoTitle"></activity>
+        <activity
+            android:name="com.caiyun.guzhang.MyAccountActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppNoTitle"></activity>
+        <activity
+            android:name="com.caiyun.guzhang.NewsInfoActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppNoTitle"></activity>
+        <activity
+            android:name="com.caiyun.guzhang.QuZhuanQianActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppNoTitle"></activity>
+        <activity
+            android:name="com.caiyun.guzhang.AccountRecordActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppNoTitle"></activity>
+        <activity
+            android:name="com.caiyun.guzhang.SearchStockActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+            android:theme="@style/Theme.AppNoTitle"></activity>
+        <activity
+            android:name="com.caiyun.guzhang.PeopleInfoActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppNoTitle"></activity>
+        <activity
+            android:name="com.caiyun.guzhang.view.GongGaoInfoActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppNoTitle"></activity>
+        <activity
+            android:name="com.caiyun.guzhang.KChartActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppNoTitle"></activity>
         <!-- ############ QQ空间和QQ SSO授权的Activity注册 ############ -->
         <activity
             android:name="com.tencent.tauth.AuthActivity"
@@ -200,6 +338,15 @@
               android:exported="true"
               android:screenOrientation="portrait"
               android:theme="@android:style/Theme.Translucent.NoTitleBar" />-->
+
+        <service
+            android:name="com.umeng.update.net.DownloadingService"
+            android:process=":DownloadingService" >
+        </service>
+        <activity
+            android:name="com.umeng.update.UpdateDialogActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
     </application>
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />

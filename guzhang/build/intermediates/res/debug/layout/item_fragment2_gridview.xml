@@ -12,9 +12,8 @@
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/black_54"
-        android:textSize="14sp"
-        android:text="水利建设" />
+        android:textColor="@color/black_87"
+        android:textSize="14sp"/>
 
     <TextView
         android:id="@+id/textView2"
@@ -22,17 +21,15 @@
         android:layout_height="wrap_content"
         android:textColor="@color/red_bg"
         android:layout_marginTop="4dp"
-        android:textSize="18sp"
-        android:text="+3.19%" />
+        android:textSize="22sp"/>
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/red_bg"
+        android:textColor="@color/black_54"
         android:textSize="12sp"
-        android:layout_marginTop="4dp"
-        android:text="新疆天业" />
+        android:layout_marginTop="4dp"/>
 
     <TextView
         android:id="@+id/textView4"
@@ -40,8 +37,7 @@
         android:layout_height="wrap_content"
           android:textColor="@color/red_bg"
         android:textSize="12sp"
-        android:layout_marginTop="4dp"
-        android:text="12.6\t1.08%" />
+        android:layout_marginTop="4dp" />
 
 </LinearLayout>
-<!-- From: file:/D:/studiowork/guzhang/guzhang/src/main/res/layout/item_fragment2_gridview.xml -->
+<!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/src/main/res/layout/item_fragment2_gridview.xml -->

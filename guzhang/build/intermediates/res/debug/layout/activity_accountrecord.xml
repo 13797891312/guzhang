@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_backbar_red"
+        android:id="@+id/tab"/>
+    <com.caiyun.guzhang.view.IphoneTreeView
+        android:listSelector="@color/Transparent"
+        android:layout_below="@+id/tab"
+        android:id="@+id/iphone_tree_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@color/black_12"
+        android:dividerHeight="1px"
+        android:scrollbars="none"
+        android:transcriptMode="normal" />
+
+    <include
+        android:id="@+id/list_result_cover"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tab"
+        layout="@layout/layout_no_data" />
+    <include
+        android:id="@+id/list_loading_cover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tab"
+        android:visibility="gone"
+        layout="@layout/layout_show_loading" />
+</RelativeLayout><!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/src/main/res/layout/activity_accountrecord.xml -->

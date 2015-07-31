@@ -10,21 +10,26 @@ import com.zhaojin.utils.LogUtils;
 import android.content.Context;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.SwitchCompat;
 import android.text.InputType;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemLongClickListener;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.lang.reflect.Method;
 
-public class TransactionFragment_transaction extends BaseFragment implements View.OnClickListener {
+public class TransactionFragment_transaction extends BaseFragment implements View.OnClickListener ,AdapterView.OnItemClickListener,OnItemLongClickListener{
     View view;
     Context context;
     /**
@@ -76,6 +81,7 @@ public class TransactionFragment_transaction extends BaseFragment implements Vie
         add.setOnClickListener(this);
         submit = (Button) view.findViewById(R.id.button_submit);
         mListView = (PullToRefreshListView) view.findViewById(R.id.mListView);
+        mListView.setOnItemClickListener(this);
         mListView.setAdapter(new Fragment_transaction_listview(this.getActivity(), null));
         setViewValues();
         for (int i = 0; i < layout_buy.getChildCount(); i++) {
@@ -125,6 +131,35 @@ public class TransactionFragment_transaction extends BaseFragment implements Vie
         } catch (NumberFormatException e) {
             e.printStackTrace();
         }
+    }
+
+
+    boolean flag=false;
+    boolean isDouble=false;
+    Handler hd = new Handler();
+    @Override
+    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+        if (!flag) {
+            flag = true;
+            hd.postDelayed(new Runnable() {
+                public void run() {
+                    flag = false;
+                    if (!isDouble){
+                        Toast.makeText(context, "单击", Toast.LENGTH_SHORT).show();
+                    }
+                    isDouble=false;
+                }
+            }, 400);
+        } else {
+            Toast.makeText(context, "双击", Toast.LENGTH_SHORT).show();
+            isDouble=true;
+        }
+
+    }
+
+    @Override
+    public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
+        return false;
     }
 
     class MyLisener implements View.OnClickListener {

@@ -30,7 +30,7 @@ public class KeyboardUtil {
 
 	private EditText ed;
 
-	public KeyboardUtil(final Activity act, final Context ctx, final EditText edit) {
+	public  KeyboardUtil(final Activity act, final Context ctx, final EditText edit) {
 		this.act = act;
 		this.ctx = ctx;
 		this.ed = edit;
@@ -41,28 +41,6 @@ public class KeyboardUtil {
 		keyboardView.setEnabled(true);
 		keyboardView.setPreviewEnabled(false);
 		keyboardView.setOnKeyboardActionListener(listener);
-		edit.setOnTouchListener(new View.OnTouchListener() {
-
-			@Override
-			public boolean onTouch(View v, MotionEvent event) {
-				int sdkInt = Build.VERSION.SDK_INT;
-				if (sdkInt >= 11) {
-					Class<EditText> cls = EditText.class;
-					try {
-						Method setShowSoftInputOnFocus = cls.getMethod(
-								"setShowSoftInputOnFocus", boolean.class);
-						setShowSoftInputOnFocus.setAccessible(false);
-						setShowSoftInputOnFocus.invoke(edit, false);
-						setShowSoftInputOnFocus.invoke(edit, false);
-					} catch (Exception e) {
-					}
-				} else {
-					edit.setInputType(InputType.TYPE_NULL);
-				}
-				new KeyboardUtil(act, ctx, edit).showKeyboard();
-				return false;
-			}
-		});
 	}
 
 	private OnKeyboardActionListener listener = new OnKeyboardActionListener() {
@@ -174,7 +152,7 @@ public class KeyboardUtil {
 	public void hideKeyboard() {
 		int visibility = keyboardView.getVisibility();
 		if (visibility == View.VISIBLE) {
-			keyboardView.setVisibility(View.INVISIBLE);
+			keyboardView.setVisibility(View.GONE);
 		}
 	}
 

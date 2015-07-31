@@ -18,6 +18,9 @@ import org.jose4j.jwt.consumer.JwtConsumerBuilder;
 import org.jose4j.keys.HmacKey;
 import org.jose4j.lang.JoseException;
 
+import java.util.HashMap;
+import java.util.Map;
+
 
 public class Activitys extends BaseActivity {
     @Override
@@ -67,7 +70,7 @@ public class Activitys extends BaseActivity {
                 break;
             case R.id.button11:
                 // Generate an RSA key pair, which will be used for signing and verification of the JWT, wrapped in a JWK
-                HmacKey key = new HmacKey("guzhangappguzhangappguzhangappgz".getBytes());
+                HmacKey key = new HmacKey("qt734TTNYRsal72x4Wbs5uab4CAlXNfx".getBytes());
                 // Give the JWK a Key ID (kid), which is just the polite thing to do
                 JwtClaims claims = new JwtClaims();
 //                claims.set
@@ -78,7 +81,12 @@ public class Activitys extends BaseActivity {
 //                claims.setIssuedAtToNow();  // when the token was issued/created (now)
 //                claims.setNotBeforeMinutesInThePast(2); // time before which the token is not yet valid (2 minutes ago)
 //                claims.setSubject("subject"); // the subject/principal is whom the token is about
-                claims.setClaim("email", "mail@example.com"); // additional claims/attributes about the subject can be added
+//                claims.setClaim("parames","pwd, 123456"); // additional claims/attributes about the subject can be added
+//                claims.setClaim("mb", "13797891312");
+                HashMap map=new HashMap();
+                map.put("md","13797891312");
+                map.put("pwd","123456");
+                claims.setClaim("params",map);
 //                List<String> groups = Arrays.asList("group-one", "other-group", "group-three");
 //                claims.setStringListClaim("groups", groups); // multi-valued claims work too and will end up as a JSON array
 
@@ -133,8 +141,7 @@ public class Activitys extends BaseActivity {
 
                 try {
                     //  Validate the JWT and process it to the Claims
-//                    JwtClaims jwtClaims = jwtConsumer.processToClaims(jwt);
-                    JwtClaims jwtClaims = jwtConsumer.processToClaims("eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOjEsInVuYW1lIjoiXHU2OGE2XHU2OGE2XHU5Zjk5XHU5Zjk5IiwidXJsIjoiaHR0cDpcL1wvYXBpLmd1emhhbmcuY29tXC9pbmZvXC8xMjM0XC9hc2RcL2FzZCJ9.Il2IDwtvR7UJcVa5LMk9fnqvx2u07Jd-zO8Qhd4jslw");
+                    JwtClaims jwtClaims = jwtConsumer.processToClaims(jwt);
                     LogUtils.e("++++", "解密" + jwtClaims);
                 } catch (Exception e) {
                     // InvalidJwtException will be thrown, if the JWT failed processing or validation in anyway.

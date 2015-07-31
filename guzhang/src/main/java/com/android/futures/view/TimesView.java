@@ -7,11 +7,13 @@ import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
+import android.graphics.Path;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 
 import com.android.futures.entity.TimesEntity;
 import com.caiyun.app.guzhang.R;
+import com.zhaojin.utils.LogUtils;
 
 public class TimesView extends GridChart {
 	private final int DATA_MAX_COUNT = 4 * 60;
@@ -120,6 +122,7 @@ public class TimesView extends GridChart {
 			paint.setAlpha(150);
 			canvas.drawLine(touchX, 2.0f, touchX, UPER_CHART_BOTTOM, paint);
 			canvas.drawLine(touchX, lowerBottom - lowerHeight, touchX, lowerBottom, paint);
+
 			canvas.drawRect(left, top, right, bottom, paint);
 
 			Paint borderPaint = new Paint();
@@ -139,7 +142,10 @@ public class TimesView extends GridChart {
 				TimesEntity fenshiData = timesList.get((int) ((touchX -start-2) / dataSpacing));
 				canvas.drawText("时间: " + fenshiData.getTime(), left + 1, top
 						+ DEFAULT_AXIS_TITLE_SIZE, textPaint);
-
+				float endWhiteY = (float) (uperBottom - (fenshiData.getNonWeightedIndex()
+						+ uperHalfHigh - initialWeightedIndex)
+						* uperRate);
+				canvas.drawLine(2.0f,endWhiteY,getWidth(),endWhiteY,paint);
 				canvas.drawText("价格:", left + 1, top + DEFAULT_AXIS_TITLE_SIZE * 2.0f, textPaint);
 				double price = fenshiData.getWeightedIndex();
 				if (price >= initialWeightedIndex) {
@@ -223,6 +229,7 @@ public class TimesView extends GridChart {
 			canvas.drawText(text5, 2,
 					DEFAULT_AXIS_TITLE_SIZE, paint);
 			text = new DecimalFormat("#.##%").format(uperHalfHigh / initialWeightedIndex);
+			LogUtils.e("*****",text);
 			canvas.drawText(text, viewWidth - 6 - text.length() * DEFAULT_AXIS_TITLE_SIZE / 2.0f,
 					DEFAULT_AXIS_TITLE_SIZE, paint);
 		}else{
@@ -278,6 +285,8 @@ public class TimesView extends GridChart {
 		float uperYellowY = 0;
 		Paint paint = new Paint();
 		paint.setAntiAlias(true);
+		Path path = new Path();
+		path.moveTo(0,uperBottom);// 此点为多边形的起点
 		for (int i = 0; i < timesList.size() && i < DATA_MAX_COUNT; i++) {
 			TimesEntity fenshiData = timesList.get(i);
 
@@ -289,10 +298,12 @@ public class TimesView extends GridChart {
 					* uperRate);
 
 			if (i != 0) {
-				paint.setColor(this.getContext().getResources().getColor(R.color.black_54));
-				canvas.drawLine(x, uperWhiteY, 3 +start+ dataSpacing * i, endWhiteY, paint);
 				paint.setColor(this.getContext().getResources().getColor(R.color.blue_button));
-				canvas.drawLine(x, uperYellowY, 3+start + dataSpacing * i, endYelloY, paint);
+				canvas.drawLine(x, uperWhiteY, 3 + start + dataSpacing * i, endWhiteY, paint);
+
+				path.lineTo(3 + start + dataSpacing * i, endWhiteY);
+//				paint.setColor(this.getContext().getResources().getColor(R.color.blue_button));
+//				canvas.drawLine(x, uperYellowY, 3+start + dataSpacing * i, endYelloY, paint);
 			}
 
 			x = start+3 + dataSpacing * i;
@@ -311,6 +322,12 @@ public class TimesView extends GridChart {
 			}
 			canvas.drawLine(x, lowerBottom, x, lowerBottom - buy * lowerRate, paint);
 		}
+
+		paint.setColor(this.getContext().getResources().getColor(R.color.black_5));
+		path.lineTo(3 + start + dataSpacing * timesList.size() - 1, uperBottom);
+		path.lineTo(x, uperBottom);
+		path.close(); // 使这些点构成封闭的多边形
+		canvas.drawPath(path, paint);
 
 	}
 
@@ -365,6 +382,7 @@ public class TimesView extends GridChart {
 					: Math.abs(weightedIndex - initialWeightedIndex));
 			lowerHigh = lowerHigh > buy ? lowerHigh : buy;
 		}
+		uperHalfHigh += uperHalfHigh*0.2;
 		postInvalidate();
 
 	}

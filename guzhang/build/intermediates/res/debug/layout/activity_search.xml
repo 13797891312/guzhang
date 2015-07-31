@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_height"
+        android:background="@color/red_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="40dp"
+            android:layout_height="@dimen/action_height"
+            android:background="@drawable/select_backbtn_gb"
+            android:clickable="true"
+            android:onClick="backClick">
+
+            <ImageView
+                android:id="@+id/back_image"
+                android:layout_width="@dimen/back_image_width"
+                android:layout_height="@dimen/back_image_height"
+                android:layout_centerInParent="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/last" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/search_layout"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/shape_search_bg"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_search" />
+
+            <EditText
+                android:id="@+id/seach_edit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:background="@color/Transparent"
+                android:gravity="center_vertical"
+                android:hint="输入股票代码或拼音首字母"
+                android:textColor="@color/white_76"
+                android:textColorHint="@color/white_50"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:id="@+id/histoty_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:background="@color/backgroud_tab"
+                android:gravity="center_vertical"
+                android:paddingLeft="8dp"
+                android:text="最近收索记录"
+                android:textColor="@color/black_54"
+                android:textSize="14sp" />
+
+            <ListView
+                android:id="@+id/mListView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:divider="@color/black_12"
+                android:dividerHeight="1px"></ListView>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/mListView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/black_12"
+            android:background="@color/white"
+            android:dividerHeight="1px"></ListView>
+    </RelativeLayout>
+
+    <android.inputmethodservice.KeyboardView
+        android:id="@+id/keyboard_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2c3241"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:keyBackground="@drawable/btn_keyboard_key"
+        android:keyTextColor="@color/white"/>
+
+</LinearLayout><!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/src/main/res/layout/activity_search.xml -->

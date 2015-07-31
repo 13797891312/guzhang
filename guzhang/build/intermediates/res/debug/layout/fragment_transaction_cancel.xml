@@ -19,4 +19,4 @@
         android:id="@+id/list_loading_cover"
         android:visibility="gone"
         layout="@layout/layout_show_loading" />
-</RelativeLayout><!-- From: file:/D:/studiowork/guzhang/guzhang/src/main/res/layout/fragment_transaction_cancel.xml -->
+</RelativeLayout><!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/src/main/res/layout/fragment_transaction_cancel.xml -->

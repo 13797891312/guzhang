@@ -28,15 +28,9 @@ public class SaveDate {
 	
 	//登陆密码
 	private String pwd;
-	
-	//token
-	private String token;
-	
-	//手机号
-	private String phone;
-	
-	//角色 1为家长，2为老师
-	private String role;
+
+	//是否有模拟插入股票数据
+	private boolean isInsertData;
 	
 	//############################参数区 结束#############################################
 	
@@ -65,26 +59,18 @@ public class SaveDate {
 	public void saveDate() {
 		Editor ed = sharedPreferences.edit();
 		ed.putBoolean("isOnce", isOnce);
-		
-		ed.putString("token", token);
+		ed.putBoolean("isInsertData", isInsertData);
 		ed.putString("version", version);
-		
-		ed.putString("phone", phone);
-		
 		ed.putString("uid", uid);
 		ed.putString("pwd", pwd);
-		ed.putString("role", role);
-		
 		ed.commit();
 	}
 	public void readDate() {
 		isOnce = sharedPreferences.getBoolean("isOnce", true);
-		token = sharedPreferences.getString("token", "");
 		version = sharedPreferences.getString("version", "");
-		phone = sharedPreferences.getString("phone", "");
 		uid = sharedPreferences.getString("uid", "");
 		pwd = sharedPreferences.getString("pwd", "");
-		role = sharedPreferences.getString("role", "1");
+		isInsertData=sharedPreferences.getBoolean("isInsertData", false);
 	}
 	//######################读数据/写数据 结束################################################
 	
@@ -94,6 +80,20 @@ public class SaveDate {
 	/**
 	 * 
 	 * @return isOnce  
+	 */
+	public boolean isInsertData() {
+		readDate();
+		return isInsertData;
+	}
+
+	public void setIsInsertData(boolean isInsertData) {
+		this.isInsertData = isInsertData;
+		saveDate();
+	}
+
+	/**
+	 *
+	 * @return isOnce
 	 */
 	public boolean isOnce() {
 		readDate();
@@ -119,14 +119,6 @@ public class SaveDate {
 		saveDate();
 	}
 	
-	public String getRole() {
-		readDate();
-		return role;
-	}
-	public void setRole(String role) {
-		this.role = role;
-		saveDate();
-	}
 	public String getUid() {
 		readDate();
 		return uid;
@@ -143,24 +135,6 @@ public class SaveDate {
 		this.pwd = pwd;
 		saveDate();
 	}
-	public String getToken() {
-		readDate();
-		return token;
-	}
-	public void setToken(String token) {
-		this.token = token;
-		saveDate();
-	}
-	
-	public String getPhone() {
-		readDate();
-		return phone;
-	}
-	public void setPhone(String phone) {
-		this.phone = phone;
-		saveDate();
-	}
-	
-	
+
 	//##########################get/set方法区 结束###############################################
 }

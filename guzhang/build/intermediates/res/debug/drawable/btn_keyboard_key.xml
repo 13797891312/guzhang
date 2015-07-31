@@ -3,4 +3,4 @@
   xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:state_pressed="true" android:drawable="@drawable/normal_key_hl_bg" />
     <item android:drawable="@drawable/normal_key_bg" />
-</selector><!-- From: file:/D:/studiowork/guzhang/guzhang/src/main/res/drawable/btn_keyboard_key.xml -->
+</selector><!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/src/main/res/drawable/btn_keyboard_key.xml -->

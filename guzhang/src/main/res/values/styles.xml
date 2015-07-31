@@ -7,6 +7,9 @@
         <item name="android:windowBackground">@color/white_76</item>
         <item name="android:windowNoTitle">true</item>
     </style>
+
+    <style name="AppCompatTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    </style>
     <!-- ################ -->
     <style name="AppTheme" parent="AppBaseTheme">
         <item name="android:windowNoTitle">true</item>
@@ -14,6 +17,9 @@
         <!--<item name="android:actionBarStyle">@style/myActionBarStyle</item>-->
     </style>
 
+    <style name="MyActionBar" parent="Base.ThemeOverlay.AppCompat.Dark">
+        <item name="android:colorForeground">@color/blue_button</item>
+</style>
     <style name="myActionBarStyle" parent="android:Widget.ActionBar">
         <item name="android:height">@dimen/action_height</item>
         <item name="android:background">@color/backgroud</item>

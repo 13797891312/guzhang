@@ -1,18 +1,18 @@
 package com.caiyun.guzhang.adapter;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 import com.caiyun.app.guzhang.R;
-import com.caiyun.guzhang.fragment.Fragment1;
-import com.caiyun.guzhang.fragment.Fragment3;
-import com.caiyun.guzhang.fragment.GoodPeopleRecordFragment;
-import com.caiyun.guzhang.fragment.TimeLineFragment_small;
-import com.caiyun.guzhang.view.IphoneTreeView;
-import com.caiyun.guzhang.view.IphoneTreeView.IphoneTreeHeaderAdapter;
+import com.caiyun.guzhang.KChartActivity;
+import com.caiyun.guzhang.StockInfoActivity;
+import com.caiyun.guzhang.fragment.BaseFragment;
+import com.caiyun.guzhang.view.IphoneTreeView_stockinfo.IphoneTreeHeaderAdapter;
+import com.caiyun.guzhang.view.IphoneTreeView_stockinfo;
 import com.zhaojin.activity.BaseActivity;
 
 import android.content.Context;
-import android.support.v4.app.Fragment;
+import android.content.Intent;
 import android.support.v4.app.FragmentManager;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -27,7 +27,7 @@ public class StockInfoTreeViewAdapter extends BaseExpandableListAdapter
 	private HashMap<Integer, Integer> groupStatusMap;
 
 	private Context context;
-	private IphoneTreeView iphoneTreeView;
+	private IphoneTreeView_stockinfo iphoneTreeView;
 	FragmentManager manager;
 	/*** 第二个group项 ****/
 	private LinearLayout tabView2,tabView1;
@@ -36,13 +36,18 @@ public class StockInfoTreeViewAdapter extends BaseExpandableListAdapter
 	/****第一个group当前选中项****/
 	private int frame1position=0;
 
+	private ArrayList<BaseFragment> fragments1;
+	private ArrayList<BaseFragment> fragments2;
+
 	public StockInfoTreeViewAdapter(Context context,
-			IphoneTreeView iphoneTreeView) {
+									IphoneTreeView_stockinfo iphoneTreeView,ArrayList<BaseFragment> fragments1,ArrayList<BaseFragment> fragments2) {
 		// TODO Auto-generated constructor stub
 		groupStatusMap = new HashMap<Integer, Integer>();
 		this.context = context;
 		this.iphoneTreeView = iphoneTreeView;
 		manager = ((BaseActivity) context).getSupportFragmentManager();
+		this.fragments1 = fragments1;
+		this.fragments2 = fragments2;
 	}
 
 	public Object getChild(int groupPosition, int childPosition) {
@@ -91,6 +96,7 @@ public class StockInfoTreeViewAdapter extends BaseExpandableListAdapter
 							.setOnClickListener(new Mylistener1(i));
 				}
 				initFragment1(convertView);
+				convertView.findViewById(R.id.frame1).setOnClickListener(new KLintClicklistener(frame1position));
 				break;
 			case 1:
 				convertView = View.inflate(context,
@@ -109,28 +115,19 @@ public class StockInfoTreeViewAdapter extends BaseExpandableListAdapter
 	 */
 	private void initFragment1(View convertView) {
 		manager.beginTransaction()
-		.replace(R.id.frame1, new TimeLineFragment_small()).commit();
+		.replace(R.id.frame1, fragments1.get(0)).commit();
 	}
 	
 	/**
 	 * 切换第一个fragmeng容器内容
 	 */
 	
-	private Class[] fragments1={TimeLineFragment_small.class,Fragment1.class,TimeLineFragment_small.class,Fragment1.class,TimeLineFragment_small.class};
 	public void setCurrentFrame1(int position) {
 		for (int i = 0; i < tabView1.getChildCount(); i++) {
 			if (i==position) {
 				((LinearLayout)(tabView1.getChildAt(i))).getChildAt(0).setEnabled(true);
-				try {
 					manager.beginTransaction()
-					.replace(R.id.frame1, (Fragment) (fragments1[i].newInstance())).commit();
-				} catch (InstantiationException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				} catch (IllegalAccessException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
+					.replace(R.id.frame1,fragments1.get(i)).commit();
 			}else {
 				((LinearLayout)(tabView1.getChildAt(i))).getChildAt(0).setEnabled(false);
 			}
@@ -144,32 +141,23 @@ public class StockInfoTreeViewAdapter extends BaseExpandableListAdapter
 	 */
 	private void initFragment2(View convertView) {
 		manager.beginTransaction()
-				.replace(R.id.frame, new GoodPeopleRecordFragment()).commit();
+				.replace(R.id.frame, fragments2.get(0)).commit();
 	}
 
 	/**
 	 * 切换第二个fragmeng容器内容
 	 */
-	
-	private Class[] fragments={GoodPeopleRecordFragment.class,Fragment1.class,Fragment1.class,Fragment3.class,Fragment1.class};
+
 	public void setCurrentFrame2(int position) {
 		for (int i = 0; i < tabView2.getChildCount(); i++) {
-			if (i==position) {
-				((LinearLayout)(tabView2.getChildAt(i))).getChildAt(0).setEnabled(true);
-				try {
+			if (i == position) {
+				((LinearLayout) (tabView2.getChildAt(i))).getChildAt(0).setEnabled(true);
 					manager.beginTransaction()
-					.replace(R.id.frame, (Fragment) (fragments[i].newInstance())).commit();
-				} catch (InstantiationException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				} catch (IllegalAccessException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-				((LinearLayout)(((LinearLayout)(iphoneTreeView.getHeaderView())).getChildAt(i))).getChildAt(0).setEnabled(true);
-			}else {
-				((LinearLayout)(tabView2.getChildAt(i))).getChildAt(0).setEnabled(false);
-				((LinearLayout)(((LinearLayout)(iphoneTreeView.getHeaderView())).getChildAt(i))).getChildAt(0).setEnabled(false);
+							.replace(R.id.frame, fragments2.get(i)).commit();
+				((LinearLayout) (((LinearLayout) (iphoneTreeView.getHeaderView())).getChildAt(i))).getChildAt(0).setEnabled(true);
+			} else {
+				((LinearLayout) (tabView2.getChildAt(i))).getChildAt(0).setEnabled(false);
+				((LinearLayout) (((LinearLayout) (iphoneTreeView.getHeaderView())).getChildAt(i))).getChildAt(0).setEnabled(false);
 			}
 		}
 	}
@@ -215,10 +203,26 @@ public class StockInfoTreeViewAdapter extends BaseExpandableListAdapter
 			int childPosition, int alpha) {
 		switch (groupPosition) {
 		case 0:
+			header.findViewById(R.id.tab1).setVisibility(View.INVISIBLE);
+			header.findViewById(R.id.tab2).setVisibility(View.INVISIBLE);
+			header.findViewById(R.id.tab3).setVisibility(View.INVISIBLE);
+			header.findViewById(R.id.tab4).setVisibility(View.INVISIBLE);
+			header.findViewById(R.id.tab5).setVisibility(View.INVISIBLE);
 			header.setAlpha(0);
+			header.setVisibility(View.INVISIBLE);
 			break;
 		case 1:
+			header.findViewById(R.id.tab1).setVisibility(View.VISIBLE);
+			header.findViewById(R.id.tab2).setVisibility(View.VISIBLE);
+			header.findViewById(R.id.tab3).setVisibility(View.VISIBLE);
+			header.findViewById(R.id.tab4).setVisibility(View.VISIBLE);
+			header.findViewById(R.id.tab5).setVisibility(View.VISIBLE);
 			header.setAlpha(255);
+			header.setVisibility(View.VISIBLE);
+			for (int i = 0; i < ((LinearLayout) header).getChildCount(); i++) {
+				((LinearLayout) header).getChildAt(i)
+						.setOnClickListener(new Mylistener(i));
+			}
 			break;
 		}
 		// ((TextView) header).setText(groups[groupPosition]);
@@ -273,4 +277,21 @@ public class StockInfoTreeViewAdapter extends BaseExpandableListAdapter
 			frame1position=position;
 		}
 	}
+
+
+	public class KLintClicklistener implements OnClickListener{
+		int position;
+		public KLintClicklistener(int position) {
+			this.position=position;
+		}
+		@Override
+		public void onClick(View v) {
+			Intent intent = new Intent(context, KChartActivity.class);
+			intent.putExtra("position", frame1position);
+			intent.putExtra("code", ((StockInfoActivity) context).getStockCode());
+			context.startActivity(intent);
+		}
+	}
+
+
 }

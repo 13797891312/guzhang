@@ -15,4 +15,4 @@
         android:topLeftRadius="@dimen/indicator_corner_radius"
         android:topRightRadius="@dimen/indicator_corner_radius" />
 
-</shape><!-- From: file:/D:/studiowork/guzhang/library/src/main/res/drawable/indicator_bg_bottom.xml --><!-- From: file:/D:/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/guzhang/library/unspecified/res/drawable/indicator_bg_bottom.xml -->
+</shape><!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/library/src/main/res/drawable/indicator_bg_bottom.xml --><!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/guzhang/library/unspecified/res/drawable/indicator_bg_bottom.xml -->

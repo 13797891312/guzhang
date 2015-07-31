@@ -2,4 +2,4 @@
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
     <corners android:radius="3dp" />
     <solid android:color="#c22f2c" />
-</shape><!-- From: file:/D:/studiowork/guzhang/guzhang/src/main/res/drawable/shape_search_bg.xml -->
+</shape><!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/src/main/res/drawable/shape_search_bg.xml -->

@@ -4,11 +4,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <View
-        android:layout_width="1px"
+        android:layout_width="2px"
         android:layout_below="@+id/tab"
         android:layout_marginLeft="21dp"
         android:layout_height="match_parent"
-        android:background="@color/black_26" />
+        android:background="#e7eaef" />
     <com.handmark.pulltorefresh.library.PullToRefreshListView
         android:id="@+id/mListView"
         android:layout_width="fill_parent"

@@ -39,7 +39,7 @@ public class KChartsView extends GridChart implements
 	private final static int MIN_CANDLE_NUM = 10;
 
 	/** 默认显示的Candle数 */
-	private final static int DEFAULT_CANDLE_NUM = 50;
+	private final static int DEFAULT_CANDLE_NUM = 80;
 
 	/** 最小可识别的移动距离 */
 	private final static int MIN_MOVE_DISTANCE = 15;

@@ -32,7 +32,10 @@ public class MyStockFragment_has extends BaseFragment{
 		mListView=(PullToRefreshListView) view.findViewById(R.id.mListView);
 		mListView.setAdapter(new Fragment_MyStock_Has_Listview(this.getActivity(), null));
 		mListView.getRefreshableView().setDivider(new ColorDrawable(getResources().getColor(R.color.backgroud)));
-		mListView.getRefreshableView().setDividerHeight(16);
+		mListView.getRefreshableView().setDividerHeight(24);
+		mListView.getLoadingLayoutProxy().setPullLabel("下拉刷新");
+		mListView.getLoadingLayoutProxy().setRefreshingLabel("正在加载");
+		mListView.getLoadingLayoutProxy().setReleaseLabel("松开刷新");
 	}
 	/**
 	 * 每次显示时调用的方法

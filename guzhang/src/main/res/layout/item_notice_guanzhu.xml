@@ -20,13 +20,16 @@
             android:layout_marginRight="8dp"
             android:orientation="horizontal">
 
-            <ImageView
+            <com.caiyun.guzhang.view.CircleImageView
+                android:id="@+id/imageView"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
+                android:clickable="true"
                 android:scaleType="fitXY"
                 android:src="@drawable/qq" />
 
             <TextView
+                android:id="@+id/txt_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="4dp"
@@ -49,6 +52,7 @@
                     android:textSize="12sp" />
 
                 <TextView
+                    android:id="@+id/txt_zsy"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="22000.45"
@@ -73,6 +77,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:id="@+id/txt_zsyl"
                     android:text="1000.24%"
                     android:textColor="@color/red_bg"
                     android:textSize="16sp" />
@@ -148,6 +153,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
             <Button
+                android:id="@+id/btn_buy"
                 android:layout_width="72dp"
                 android:layout_centerVertical="true"
                 android:layout_marginRight="8dp"
@@ -156,7 +162,7 @@
                 android:background="@drawable/selector_buy"
                 android:textSize="16sp"
                 android:text="买入"
-                android:layout_height="36dp" />
+                android:layout_height="32dp" />
         </RelativeLayout>
 
     </LinearLayout>

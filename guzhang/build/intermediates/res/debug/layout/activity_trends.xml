@@ -34,4 +34,4 @@
         android:layout_below="@+id/tab"
         android:visibility="gone"
         layout="@layout/layout_show_loading" />
-</RelativeLayout><!-- From: file:/D:/studiowork/guzhang/guzhang/src/main/res/layout/activity_trends.xml -->
+</RelativeLayout><!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/src/main/res/layout/activity_trends.xml -->

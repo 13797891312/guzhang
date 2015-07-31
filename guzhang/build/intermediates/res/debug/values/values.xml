@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/D:/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/guzhang/SMSSDK/unspecified/res/values/values.xml -->
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/guzhang/SMSSDK/unspecified/res/values/values.xml -->
     <eat-comment/>
     <string-array name="smssdk_country_group_a">
 		<item>阿尔巴尼亚,355,110,27601|27602|27603|27604</item>
@@ -274,14 +274,14 @@
 		<item>中非共和国,236,71,62301|62302|62303|62304</item>
 		<item>中国,86,42,46006|46007|46005|46002|46003|46000|46001</item>
     </string-array>
-    <!-- From: file:/D:/studiowork/guzhang/guzhang/src/main/res/values/attrs.xml -->
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/src/main/res/values/attrs.xml -->
     <eat-comment/>
     <attr format="boolean" name="centered"/>
     <attr format="dimension" name="clipPadding"/>
-    <!-- From: file:/D:/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <attr format="reference" name="drawerArrowStyle"/>
-    <!-- From: file:/D:/studiowork/guzhang/guzhang/src/main/res/values/attrs.xml -->
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/src/main/res/values/attrs.xml -->
     <eat-comment/>
     <attr format="integer" name="fadeDelay"/>
     <attr format="integer" name="fadeLength"/>
@@ -298,11 +298,11 @@
     <attr format="dimension" name="footerLineHeight"/>
     <attr format="dimension" name="footerPadding"/>
     <attr format="dimension" name="gapWidth"/>
-    <!-- From: file:/D:/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <attr format="dimension" name="height"/>
     <attr format="boolean" name="isLightTheme"/>
-    <!-- From: file:/D:/studiowork/guzhang/guzhang/src/main/res/values/attrs.xml -->
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/src/main/res/values/attrs.xml -->
     <eat-comment/>
     <attr name="linePosition">
         <enum name="bottom" value="0"/>
@@ -316,10 +316,10 @@
     <attr format="boolean" name="snap"/>
     <attr format="color" name="strokeColor"/>
     <attr format="dimension" name="strokeWidth"/>
-    <!-- From: file:/D:/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <attr format="string" name="title"/>
-    <!-- From: file:/D:/studiowork/guzhang/guzhang/src/main/res/values/attrs.xml -->
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/src/main/res/values/attrs.xml -->
     <eat-comment/>
     <attr format="dimension" name="titlePadding"/>
     <attr format="dimension" name="topPadding"/>
@@ -330,19 +330,19 @@
     <attr format="reference" name="vpiTabPageIndicatorStyle"/>
     <attr format="reference" name="vpiTitlePageIndicatorStyle"/>
     <attr format="reference" name="vpiUnderlinePageIndicatorStyle"/>
-    <!-- From: file:/D:/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <bool name="abc_action_bar_embed_tabs">true</bool>
-    <!-- From: file:/D:/studiowork/guzhang/guzhang/src/main/res/values/bools.xml -->
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/src/main/res/values/bools.xml -->
     <eat-comment/>
     <bool name="abc_action_bar_embed_tabs_pre_jb">false</bool>
     <bool name="abc_action_bar_expanded_action_views_exclusive">true</bool>
     <bool name="abc_config_actionMenuItemAllCaps">true</bool>
     <bool name="abc_config_allowActionMenuItemTextWithIcon">false</bool>
-    <!-- From: file:/D:/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <bool name="abc_config_closeDialogWhenTouchOutside">true</bool>
-    <!-- From: file:/D:/studiowork/guzhang/guzhang/src/main/res/values/bools.xml -->
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/src/main/res/values/bools.xml -->
     <eat-comment/>
     <bool name="abc_config_showMenuShortcutsWhenKeyboardPresent">false</bool>
     <bool name="abc_split_action_bar_is_narrow">true</bool>
@@ -351,10 +351,10 @@
     <bool name="default_line_indicator_centered">true</bool>
     <bool name="default_title_indicator_selected_bold">true</bool>
     <bool name="default_underline_indicator_fades">true</bool>
-    <!-- From: file:/D:/studiowork/guzhang/guzhang/src/main/res/values/colors.xml -->
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="Transparent">#00000000</color>
-    <!-- From: file:/D:/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <color name="abc_input_method_navigation_guard">@android:color/black</color>
     <color name="abc_search_url_text_normal">#7fa87f</color>
@@ -362,25 +362,27 @@
     <color name="abc_search_url_text_selected">@android:color/black</color>
     <color name="accent_material_dark">@color/material_deep_teal_200</color>
     <color name="accent_material_light">@color/material_deep_teal_500</color>
-    <!-- From: file:/D:/studiowork/guzhang/guzhang/src/main/res/values/colors.xml -->
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="backgroud">#efeff4</color>
-    <color name="backgroud_tab">#f8f8f8</color>
-    <!-- From: file:/D:/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
+    <color name="backgroud_50">#8fefeff4</color>
+    <color name="backgroud_tab">#F7f7f7</color>
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <color name="background_floating_material_dark">#ff424242</color>
     <color name="background_floating_material_light">#ffeeeeee</color>
     <color name="background_material_dark">#ff303030</color>
     <color name="background_material_light">#ffeeeeee</color>
-    <!-- From: file:/D:/studiowork/guzhang/guzhang/src/main/res/values/colors.xml -->
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="black_12">#1e000000</color>
     <color name="black_26">#42000000</color>
+    <color name="black_5">#0c000000</color>
     <color name="black_54">#8f000000</color>
     <color name="black_87">#DE000000</color>
     <color name="blue_button">#3487e7</color>
     <color name="blue_button_press">#8f3487e7</color>
-    <!-- From: file:/D:/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <color name="bright_foreground_disabled_material_dark">#80ffffff</color>
     <color name="bright_foreground_disabled_material_light">#80000000</color>
@@ -394,10 +396,10 @@
     <color name="dim_foreground_disabled_material_light">#80323232</color>
     <color name="dim_foreground_material_dark">#ffbebebe</color>
     <color name="dim_foreground_material_light">#ff323232</color>
-    <!-- From: file:/D:/studiowork/guzhang/guzhang/src/main/res/values/colors.xml -->
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/src/main/res/values/colors.xml -->
     <eat-comment/>
-    <color name="green_bg">#4ecb63</color>
-    <!-- From: file:/D:/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
+    <color name="green_bg">#51bf00</color>
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <color name="highlighted_text_material_dark">#6680cbc4</color>
     <color name="highlighted_text_material_light">#66009688</color>
@@ -418,11 +420,11 @@
     <color name="primary_text_default_material_light">#de000000</color>
     <color name="primary_text_disabled_material_dark">#4Dffffff</color>
     <color name="primary_text_disabled_material_light">#39000000</color>
-    <!-- From: file:/D:/studiowork/guzhang/guzhang/src/main/res/values/colors.xml -->
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/src/main/res/values/colors.xml -->
     <eat-comment/>
-    <color name="red_bg">#fc3d39</color>
+    <color name="red_bg">#F12A34</color>
     <color name="red_button_press">#8ffc3d39</color>
-    <!-- From: file:/D:/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <color name="ripple_material_dark">#4dffffff</color>
     <color name="ripple_material_light">#1f000000</color>
@@ -430,7 +432,7 @@
     <color name="secondary_text_default_material_light">#8a000000</color>
     <color name="secondary_text_disabled_material_dark">#36ffffff</color>
     <color name="secondary_text_disabled_material_light">#24000000</color>
-    <!-- From: file:/D:/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/guzhang/SMSSDK/unspecified/res/values/values.xml -->
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/guzhang/SMSSDK/unspecified/res/values/values.xml -->
     <eat-comment/>
     <color name="smssdk_black">#ff000000</color>
     <color name="smssdk_gray">#ff898989</color>
@@ -441,22 +443,25 @@
     <color name="smssdk_lv_tv_color">#ff353535</color>
     <color name="smssdk_transparent">#00000000</color>
     <color name="smssdk_white">#ffffffff</color>
-    <!-- From: file:/D:/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <color name="switch_thumb_disabled_material_dark">#ff616161</color>
     <color name="switch_thumb_disabled_material_light">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_dark">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_light">#fff1f1f1</color>
-    <!-- From: file:/D:/studiowork/guzhang/guzhang/src/main/res/values/colors.xml -->
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="tab_bg">#efeff4</color>
-    <!-- From: file:/D:/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/guzhang/zhaojin_Library/unspecified/res/values/values.xml -->
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/src/main/res/values/tb_munion_strings.xml -->
+    <eat-comment/>
+    <color name="tb_munion_item_force">#e3e3e3</color>
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/guzhang/zhaojin_Library/unspecified/res/values/values.xml -->
     <eat-comment/>
     <color name="text_dark_blue">#ff01446d</color>
     <color name="text_green_normal">#ff558b2f</color>
     <color name="text_hint">#42000000</color>
     <color name="text_normal1">#de000000</color>
-    <!-- From: file:/D:/studiowork/guzhang/guzhang/src/main/res/values/umeng_socialize_colors.xml -->
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/src/main/res/values/umeng_socialize_colors.xml -->
     <eat-comment/>
     <color name="umeng_socialize_color_group">#2c3035</color>
     <color name="umeng_socialize_comments_bg">#F4F4F4</color>
@@ -471,7 +476,7 @@
     <color name="umeng_socialize_text_title">#464f61</color>
     <color name="umeng_socialize_text_ucenter">#595959</color>
     <color name="umeng_socialize_ucenter_bg">#EEEEEE</color>
-    <!-- From: file:/D:/studiowork/guzhang/guzhang/src/main/res/values/colors.xml -->
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="white">#fff</color>
     <color name="white_12">#1effffff</color>
@@ -491,7 +496,7 @@
     <declare-styleable name="FlowLayout"><attr name="android:orientation"/><attr format="enum" name="layoutDirection"><enum name="ltr" value="0"/><enum name="rtl" value="1"/></attr><attr format="boolean" name="debugDraw"/><attr format="float" name="weightDefault"/><attr name="android:gravity"/></declare-styleable>
     <declare-styleable name="FlowLayout_LayoutParams"><attr format="boolean" name="layout_newLine"/><attr format="float" name="layout_weight"/><attr name="android:layout_gravity"/></declare-styleable>
     <declare-styleable name="GridLayout"><attr name="orientation"><enum name="horizontal" value="0"/><enum name="vertical" value="1"/></attr><attr format="integer" name="rowCount"/><attr format="integer" name="columnCount"/><attr format="boolean" name="useDefaultMargins"/><attr name="alignmentMode"><enum name="alignBounds" value="0"/><enum name="alignMargins" value="1"/></attr><attr format="boolean" name="rowOrderPreserved"/><attr format="boolean" name="columnOrderPreserved"/></declare-styleable>
-    <declare-styleable name="GridLayout_Layout"><attr name="android:layout_width"/><attr name="android:layout_height"/><attr name="android:layout_margin"/><attr name="android:layout_marginLeft"/><attr name="android:layout_marginTop"/><attr name="android:layout_marginRight"/><attr name="android:layout_marginBottom"/><attr format="integer" name="layout_row"/><attr format="integer" min="1" name="layout_rowSpan"/><attr format="integer" name="layout_column"/><attr format="integer" min="1" name="layout_columnSpan"/><attr name="layout_gravity"><flag name="top" value="0x30"/><flag name="bottom" value="0x50"/><flag name="left" value="0x03"/><flag name="right" value="0x05"/><flag name="center_vertical" value="0x10"/><flag name="fill_vertical" value="0x70"/><flag name="center_horizontal" value="0x01"/><flag name="fill_horizontal" value="0x07"/><flag name="center" value="0x11"/><flag name="fill" value="0x77"/><flag name="clip_vertical" value="0x80"/><flag name="clip_horizontal" value="0x08"/><flag name="start" value="0x00800003"/><flag name="end" value="0x00800005"/></attr></declare-styleable>
+    <declare-styleable name="GridLayout_Layout"><attr name="android:layout_width"/><attr name="android:layout_height"/><attr name="android:layout_margin"/><attr name="android:layout_marginLeft"/><attr name="android:layout_marginTop"/><attr name="android:layout_marginRight"/><attr name="android:layout_marginBottom"/><attr format="integer" name="layout_row"/><attr format="integer" min="1" name="layout_rowSpan"/><attr format="float" name="layout_rowWeight"/><attr format="integer" name="layout_column"/><attr format="integer" min="1" name="layout_columnSpan"/><attr format="float" name="layout_columnWeight"/><attr name="layout_gravity"><flag name="top" value="0x30"/><flag name="bottom" value="0x50"/><flag name="left" value="0x03"/><flag name="right" value="0x05"/><flag name="center_vertical" value="0x10"/><flag name="fill_vertical" value="0x70"/><flag name="center_horizontal" value="0x01"/><flag name="fill_horizontal" value="0x07"/><flag name="center" value="0x11"/><flag name="fill" value="0x77"/><flag name="clip_vertical" value="0x80"/><flag name="clip_horizontal" value="0x08"/><flag name="start" value="0x00800003"/><flag name="end" value="0x00800005"/></attr></declare-styleable>
     <declare-styleable name="LinearLayoutCompat"><attr name="android:orientation"/><attr name="android:gravity"/><attr name="android:baselineAligned"/><attr name="android:baselineAlignedChildIndex"/><attr name="android:weightSum"/><attr format="boolean" name="measureWithLargestChild"/><attr name="divider"/><attr name="showDividers"><flag name="none" value="0"/><flag name="beginning" value="1"/><flag name="middle" value="2"/><flag name="end" value="4"/></attr><attr format="dimension" name="dividerPadding"/></declare-styleable>
     <declare-styleable name="LinearLayoutCompat_Layout"><attr name="android:layout_width"/><attr name="android:layout_height"/><attr name="android:layout_weight"/><attr name="android:layout_gravity"/></declare-styleable>
     <declare-styleable name="ListPopupWindow"><attr name="android:dropDownVerticalOffset"/><attr name="android:dropDownHorizontalOffset"/></declare-styleable>
@@ -501,15 +506,15 @@
     <declare-styleable name="PopupWindow"><attr format="boolean" name="overlapAnchor"/><attr name="android:popupBackground"/></declare-styleable>
     <declare-styleable name="PopupWindowBackgroundState"><attr format="boolean" name="state_above_anchor"/></declare-styleable>
     <declare-styleable name="PullToRefresh"><attr format="reference|color" name="ptrRefreshableViewBackground"/><attr format="reference|color" name="ptrHeaderBackground"/><attr format="reference|color" name="ptrHeaderTextColor"/><attr format="reference|color" name="ptrHeaderSubTextColor"/><attr name="ptrMode"><flag name="disabled" value="0x0"/><flag name="pullFromStart" value="0x1"/><flag name="pullFromEnd" value="0x2"/><flag name="both" value="0x3"/><flag name="manualOnly" value="0x4"/><flag name="pullDownFromTop" value="0x1"/><flag name="pullUpFromBottom" value="0x2"/></attr><attr format="reference|boolean" name="ptrShowIndicator"/><attr format="reference" name="ptrDrawable"/><attr format="reference" name="ptrDrawableStart"/><attr format="reference" name="ptrDrawableEnd"/><attr format="reference|boolean" name="ptrOverScroll"/><attr format="reference" name="ptrHeaderTextAppearance"/><attr format="reference" name="ptrSubHeaderTextAppearance"/><attr name="ptrAnimationStyle"><flag name="rotate" value="0x0"/><flag name="flip" value="0x1"/></attr><attr format="reference|boolean" name="ptrScrollingWhileRefreshingEnabled"/><attr format="reference|boolean" name="ptrListViewExtrasEnabled"/><attr format="reference|boolean" name="ptrRotateDrawableWhilePulling"/><attr format="reference|color" name="ptrAdapterViewBackground"/><attr format="reference" name="ptrDrawableTop"/><attr format="reference" name="ptrDrawableBottom"/></declare-styleable>
-    <declare-styleable name="SearchView"><attr format="reference" name="layout"/><attr format="boolean" name="iconifiedByDefault"/><attr name="android:maxWidth"/><attr format="string" name="queryHint"/><attr name="android:imeOptions"/><attr name="android:inputType"/><attr format="reference" name="closeIcon"/><attr format="reference" name="goIcon"/><attr format="reference" name="searchIcon"/><attr format="reference" name="searchHintIcon"/><attr format="reference" name="voiceIcon"/><attr format="reference" name="commitIcon"/><attr format="reference" name="suggestionRowLayout"/><attr format="reference" name="queryBackground"/><attr format="reference" name="submitBackground"/><attr name="android:focusable"/></declare-styleable>
+    <declare-styleable name="SearchView"><attr format="reference" name="layout"/><attr format="boolean" name="iconifiedByDefault"/><attr name="android:maxWidth"/><attr format="string" name="queryHint"/><attr format="string" name="defaultQueryHint"/><attr name="android:imeOptions"/><attr name="android:inputType"/><attr format="reference" name="closeIcon"/><attr format="reference" name="goIcon"/><attr format="reference" name="searchIcon"/><attr format="reference" name="searchHintIcon"/><attr format="reference" name="voiceIcon"/><attr format="reference" name="commitIcon"/><attr format="reference" name="suggestionRowLayout"/><attr format="reference" name="queryBackground"/><attr format="reference" name="submitBackground"/><attr name="android:focusable"/></declare-styleable>
     <declare-styleable name="Spinner"><attr format="reference" name="prompt"/><attr format="enum" name="spinnerMode"><enum name="dialog" value="0"/><enum name="dropdown" value="1"/></attr><attr name="android:dropDownSelector"/><attr name="android:popupBackground"/><attr name="android:dropDownVerticalOffset"/><attr name="android:dropDownHorizontalOffset"/><attr name="android:dropDownWidth"/><attr format="reference" name="popupPromptView"/><attr name="android:gravity"/><attr format="boolean" name="disableChildrenWhenDisabled"/><attr name="android:background"/></declare-styleable>
     <declare-styleable name="SwitchCompat"><attr name="android:thumb"/><attr format="reference" name="track"/><attr name="android:textOn"/><attr name="android:textOff"/><attr format="dimension" name="thumbTextPadding"/><attr format="reference" name="switchTextAppearance"/><attr format="dimension" name="switchMinWidth"/><attr format="dimension" name="switchPadding"/><attr format="boolean" name="splitTrack"/><attr format="boolean" name="showText"/></declare-styleable>
     <declare-styleable name="TextAppearance"><attr name="android:textSize"/><attr name="android:textColor"/><attr name="android:textStyle"/><attr name="android:typeface"/><attr name="textAllCaps"/></declare-styleable>
-    <declare-styleable name="Theme"><attr format="boolean" name="windowActionBar"/><attr format="boolean" name="windowNoTitle"/><attr format="boolean" name="windowActionBarOverlay"/><attr format="boolean" name="windowActionModeOverlay"/><attr format="dimension|fraction" name="windowFixedWidthMajor"/><attr format="dimension|fraction" name="windowFixedHeightMinor"/><attr format="dimension|fraction" name="windowFixedWidthMinor"/><attr format="dimension|fraction" name="windowFixedHeightMajor"/><attr format="dimension|fraction" name="windowMinWidthMajor"/><attr format="dimension|fraction" name="windowMinWidthMinor"/><attr name="android:windowIsFloating"/><attr name="android:windowAnimationStyle"/><attr format="reference" name="actionBarTabStyle"/><attr format="reference" name="actionBarTabBarStyle"/><attr format="reference" name="actionBarTabTextStyle"/><attr format="reference" name="actionOverflowButtonStyle"/><attr format="reference" name="actionOverflowMenuStyle"/><attr format="reference" name="actionBarPopupTheme"/><attr format="reference" name="actionBarStyle"/><attr format="reference" name="actionBarSplitStyle"/><attr format="reference" name="actionBarTheme"/><attr format="reference" name="actionBarWidgetTheme"/><attr format="dimension" name="actionBarSize"><enum name="wrap_content" value="0"/></attr><attr format="reference" name="actionBarDivider"/><attr format="reference" name="actionBarItemBackground"/><attr format="reference" name="actionMenuTextAppearance"/><attr format="color|reference" name="actionMenuTextColor"/><attr format="reference" name="actionModeStyle"/><attr format="reference" name="actionModeCloseButtonStyle"/><attr format="reference" name="actionModeBackground"/><attr format="reference" name="actionModeSplitBackground"/><attr format="reference" name="actionModeCloseDrawable"/><attr format="reference" name="actionModeCutDrawable"/><attr format="reference" name="actionModeCopyDrawable"/><attr format="reference" name="actionModePasteDrawable"/><attr format="reference" name="actionModeSelectAllDrawable"/><attr format="reference" name="actionModeShareDrawable"/><attr format="reference" name="actionModeFindDrawable"/><attr format="reference" name="actionModeWebSearchDrawable"/><attr format="reference" name="actionModePopupWindowStyle"/><attr format="reference" name="textAppearanceLargePopupMenu"/><attr format="reference" name="textAppearanceSmallPopupMenu"/><attr format="reference" name="dialogTheme"/><attr format="dimension" name="dialogPreferredPadding"/><attr format="reference" name="listDividerAlertDialog"/><attr format="reference" name="actionDropDownStyle"/><attr format="dimension" name="dropdownListPreferredItemHeight"/><attr format="reference" name="spinnerDropDownItemStyle"/><attr format="reference" name="homeAsUpIndicator"/><attr format="reference" name="actionButtonStyle"/><attr format="reference" name="buttonBarStyle"/><attr format="reference" name="buttonBarButtonStyle"/><attr format="reference" name="selectableItemBackground"/><attr format="reference" name="selectableItemBackgroundBorderless"/><attr format="reference" name="dividerVertical"/><attr format="reference" name="dividerHorizontal"/><attr format="reference" name="activityChooserViewStyle"/><attr format="reference" name="toolbarStyle"/><attr format="reference" name="toolbarNavigationButtonStyle"/><attr format="reference" name="popupMenuStyle"/><attr format="reference" name="popupWindowStyle"/><attr format="reference|color" name="editTextColor"/><attr format="reference" name="editTextBackground"/><attr format="reference" name="textAppearanceSearchResultTitle"/><attr format="reference" name="textAppearanceSearchResultSubtitle"/><attr format="reference|color" name="textColorSearchUrl"/><attr format="reference" name="searchViewStyle"/><attr format="dimension" name="listPreferredItemHeight"/><attr format="dimension" name="listPreferredItemHeightSmall"/><attr format="dimension" name="listPreferredItemHeightLarge"/><attr format="dimension" name="listPreferredItemPaddingLeft"/><attr format="dimension" name="listPreferredItemPaddingRight"/><attr format="reference" name="dropDownListViewStyle"/><attr format="reference" name="listPopupWindowStyle"/><attr format="reference" name="textAppearanceListItem"/><attr format="reference" name="textAppearanceListItemSmall"/><attr format="reference" name="panelBackground"/><attr format="dimension" name="panelMenuListWidth"/><attr format="reference" name="panelMenuListTheme"/><attr format="reference" name="listChoiceBackgroundIndicator"/><attr format="color" name="colorPrimary"/><attr format="color" name="colorPrimaryDark"/><attr format="color" name="colorAccent"/><attr format="color" name="colorControlNormal"/><attr format="color" name="colorControlActivated"/><attr format="color" name="colorControlHighlight"/><attr format="color" name="colorButtonNormal"/><attr format="color" name="colorSwitchThumbNormal"/><attr format="reference" name="alertDialogStyle"/><attr format="reference" name="alertDialogButtonGroupStyle"/><attr format="boolean" name="alertDialogCenterButtons"/><attr format="reference" name="alertDialogTheme"/><attr format="reference|color" name="textColorAlertDialogListItem"/><attr format="reference" name="buttonBarPositiveButtonStyle"/><attr format="reference" name="buttonBarNegativeButtonStyle"/><attr format="reference" name="buttonBarNeutralButtonStyle"/><attr format="reference" name="autoCompleteTextViewStyle"/><attr format="reference" name="buttonStyle"/><attr format="reference" name="buttonStyleSmall"/><attr format="reference" name="checkboxStyle"/><attr format="reference" name="checkedTextViewStyle"/><attr format="reference" name="editTextStyle"/><attr format="reference" name="radioButtonStyle"/><attr format="reference" name="ratingBarStyle"/><attr format="reference" name="spinnerStyle"/><attr format="reference" name="switchStyle"/></declare-styleable>
+    <declare-styleable name="Theme"><attr format="boolean" name="windowActionBar"/><attr format="boolean" name="windowNoTitle"/><attr format="boolean" name="windowActionBarOverlay"/><attr format="boolean" name="windowActionModeOverlay"/><attr format="dimension|fraction" name="windowFixedWidthMajor"/><attr format="dimension|fraction" name="windowFixedHeightMinor"/><attr format="dimension|fraction" name="windowFixedWidthMinor"/><attr format="dimension|fraction" name="windowFixedHeightMajor"/><attr format="dimension|fraction" name="windowMinWidthMajor"/><attr format="dimension|fraction" name="windowMinWidthMinor"/><attr name="android:windowIsFloating"/><attr name="android:windowAnimationStyle"/><attr format="reference" name="actionBarTabStyle"/><attr format="reference" name="actionBarTabBarStyle"/><attr format="reference" name="actionBarTabTextStyle"/><attr format="reference" name="actionOverflowButtonStyle"/><attr format="reference" name="actionOverflowMenuStyle"/><attr format="reference" name="actionBarPopupTheme"/><attr format="reference" name="actionBarStyle"/><attr format="reference" name="actionBarSplitStyle"/><attr format="reference" name="actionBarTheme"/><attr format="reference" name="actionBarWidgetTheme"/><attr format="dimension" name="actionBarSize"><enum name="wrap_content" value="0"/></attr><attr format="reference" name="actionBarDivider"/><attr format="reference" name="actionBarItemBackground"/><attr format="reference" name="actionMenuTextAppearance"/><attr format="color|reference" name="actionMenuTextColor"/><attr format="reference" name="actionModeStyle"/><attr format="reference" name="actionModeCloseButtonStyle"/><attr format="reference" name="actionModeBackground"/><attr format="reference" name="actionModeSplitBackground"/><attr format="reference" name="actionModeCloseDrawable"/><attr format="reference" name="actionModeCutDrawable"/><attr format="reference" name="actionModeCopyDrawable"/><attr format="reference" name="actionModePasteDrawable"/><attr format="reference" name="actionModeSelectAllDrawable"/><attr format="reference" name="actionModeShareDrawable"/><attr format="reference" name="actionModeFindDrawable"/><attr format="reference" name="actionModeWebSearchDrawable"/><attr format="reference" name="actionModePopupWindowStyle"/><attr format="reference" name="textAppearanceLargePopupMenu"/><attr format="reference" name="textAppearanceSmallPopupMenu"/><attr format="reference" name="dialogTheme"/><attr format="dimension" name="dialogPreferredPadding"/><attr format="reference" name="listDividerAlertDialog"/><attr format="reference" name="actionDropDownStyle"/><attr format="dimension" name="dropdownListPreferredItemHeight"/><attr format="reference" name="spinnerDropDownItemStyle"/><attr format="reference" name="homeAsUpIndicator"/><attr format="reference" name="actionButtonStyle"/><attr format="reference" name="buttonBarStyle"/><attr format="reference" name="buttonBarButtonStyle"/><attr format="reference" name="selectableItemBackground"/><attr format="reference" name="selectableItemBackgroundBorderless"/><attr format="reference" name="borderlessButtonStyle"/><attr format="reference" name="dividerVertical"/><attr format="reference" name="dividerHorizontal"/><attr format="reference" name="activityChooserViewStyle"/><attr format="reference" name="toolbarStyle"/><attr format="reference" name="toolbarNavigationButtonStyle"/><attr format="reference" name="popupMenuStyle"/><attr format="reference" name="popupWindowStyle"/><attr format="reference|color" name="editTextColor"/><attr format="reference" name="editTextBackground"/><attr format="reference" name="textAppearanceSearchResultTitle"/><attr format="reference" name="textAppearanceSearchResultSubtitle"/><attr format="reference|color" name="textColorSearchUrl"/><attr format="reference" name="searchViewStyle"/><attr format="dimension" name="listPreferredItemHeight"/><attr format="dimension" name="listPreferredItemHeightSmall"/><attr format="dimension" name="listPreferredItemHeightLarge"/><attr format="dimension" name="listPreferredItemPaddingLeft"/><attr format="dimension" name="listPreferredItemPaddingRight"/><attr format="reference" name="dropDownListViewStyle"/><attr format="reference" name="listPopupWindowStyle"/><attr format="reference" name="textAppearanceListItem"/><attr format="reference" name="textAppearanceListItemSmall"/><attr format="reference" name="panelBackground"/><attr format="dimension" name="panelMenuListWidth"/><attr format="reference" name="panelMenuListTheme"/><attr format="reference" name="listChoiceBackgroundIndicator"/><attr format="color" name="colorPrimary"/><attr format="color" name="colorPrimaryDark"/><attr format="color" name="colorAccent"/><attr format="color" name="colorControlNormal"/><attr format="color" name="colorControlActivated"/><attr format="color" name="colorControlHighlight"/><attr format="color" name="colorButtonNormal"/><attr format="color" name="colorSwitchThumbNormal"/><attr format="reference" name="alertDialogStyle"/><attr format="reference" name="alertDialogButtonGroupStyle"/><attr format="boolean" name="alertDialogCenterButtons"/><attr format="reference" name="alertDialogTheme"/><attr format="reference|color" name="textColorAlertDialogListItem"/><attr format="reference" name="buttonBarPositiveButtonStyle"/><attr format="reference" name="buttonBarNegativeButtonStyle"/><attr format="reference" name="buttonBarNeutralButtonStyle"/><attr format="reference" name="autoCompleteTextViewStyle"/><attr format="reference" name="buttonStyle"/><attr format="reference" name="buttonStyleSmall"/><attr format="reference" name="checkboxStyle"/><attr format="reference" name="checkedTextViewStyle"/><attr format="reference" name="editTextStyle"/><attr format="reference" name="radioButtonStyle"/><attr format="reference" name="ratingBarStyle"/><attr format="reference" name="spinnerStyle"/><attr format="reference" name="switchStyle"/></declare-styleable>
     <declare-styleable name="Toolbar"><attr format="reference" name="titleTextAppearance"/><attr format="reference" name="subtitleTextAppearance"/><attr name="title"/><attr name="subtitle"/><attr name="android:gravity"/><attr format="dimension" name="titleMargins"/><attr format="dimension" name="titleMarginStart"/><attr format="dimension" name="titleMarginEnd"/><attr format="dimension" name="titleMarginTop"/><attr format="dimension" name="titleMarginBottom"/><attr name="contentInsetStart"/><attr name="contentInsetEnd"/><attr name="contentInsetLeft"/><attr name="contentInsetRight"/><attr format="dimension" name="maxButtonHeight"/><attr format="reference" name="collapseIcon"/><attr format="string" name="collapseContentDescription"/><attr name="popupTheme"/><attr format="reference" name="navigationIcon"/><attr format="string" name="navigationContentDescription"/><attr name="android:minHeight"/></declare-styleable>
     <declare-styleable name="View"><attr format="dimension" name="paddingStart"/><attr format="dimension" name="paddingEnd"/><attr name="android:focusable"/><attr format="reference" name="theme"/><attr name="android:theme"/><attr format="color" name="backgroundTint"/><attr name="backgroundTintMode"><enum name="src_over" value="3"/><enum name="src_in" value="5"/><enum name="src_atop" value="9"/><enum name="multiply" value="14"/><enum name="screen" value="15"/></attr></declare-styleable>
     <declare-styleable name="ViewStubCompat"><attr name="android:layout"/><attr name="android:inflatedId"/><attr name="android:id"/></declare-styleable>
-    <!-- From: file:/D:/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <dimen name="abc_action_bar_content_inset_material">16dp</dimen>
     <dimen name="abc_action_bar_default_height_material">56dp</dimen>
@@ -571,99 +576,133 @@
     <dimen name="abc_text_size_subtitle_material_toolbar">16dp</dimen>
     <dimen name="abc_text_size_title_material">20sp</dimen>
     <dimen name="abc_text_size_title_material_toolbar">20dp</dimen>
-    <!-- From: file:/D:/studiowork/guzhang/guzhang/src/main/res/values/dimens.xml -->
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="action_height">48.0dip</dimen>
-    <!-- From: file:/D:/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/guzhang/zhaojin_Library/unspecified/res/values/values.xml -->
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/guzhang/zhaojin_Library/unspecified/res/values/values.xml -->
     <eat-comment/>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
-    <!-- From: file:/D:/studiowork/guzhang/guzhang/src/main/res/values/umeng_socialize_strings.xml -->
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/src/main/res/values/umeng_socialize_strings.xml -->
     <eat-comment/>
     <dimen name="alphabet_size">12dip</dimen>
-    <!-- From: file:/D:/studiowork/guzhang/guzhang/src/main/res/values/dimens.xml -->
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/src/main/res/values/dimens.xml -->
     <eat-comment/>
-    <dimen name="back_image_height">20dp</dimen>
-    <dimen name="back_image_width">20dp</dimen>
-    <!-- From: file:/D:/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/com.android.support/gridlayout-v7/19.1.0/res/values/values.xml -->
+    <dimen name="back_image_height">22dp</dimen>
+    <dimen name="back_image_width">22dp</dimen>
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/com.android.support/gridlayout-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
-    <dimen name="default_gap">16dip</dimen>
-    <!-- From: file:/D:/studiowork/guzhang/guzhang/src/main/res/values/dimens.xml -->
+    <dimen name="default_gap">8dip</dimen>
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <item name="dialog_fixed_height_major" type="dimen">79.99999%</item>
     <item name="dialog_fixed_height_minor" type="dimen">100.0%</item>
-    <!-- From: file:/D:/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <item name="dialog_fixed_width_major" type="dimen">320dp</item>
     <item name="dialog_fixed_width_minor" type="dimen">320dp</item>
     <item format="float" name="disabled_alpha_material_dark" type="dimen">0.30</item>
     <item format="float" name="disabled_alpha_material_light" type="dimen">0.26</item>
-    <!-- From: file:/D:/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/guzhang/library/unspecified/res/values/values.xml -->
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/guzhang/library/unspecified/res/values/values.xml -->
     <eat-comment/>
     <dimen name="header_footer_left_right_padding">50dp</dimen>
     <dimen name="header_footer_top_bottom_padding">12dp</dimen>
     <dimen name="indicator_corner_radius">12dp</dimen>
     <dimen name="indicator_internal_padding">4dp</dimen>
     <dimen name="indicator_right_padding">10dp</dimen>
-    <!-- From: file:/D:/studiowork/guzhang/guzhang/src/main/res/values/dimens.xml -->
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="key_height">50.0dip</dimen>
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
+    <eat-comment/>
+    <dimen name="notification_large_icon_height">64dp</dimen>
+    <dimen name="notification_large_icon_width">64dp</dimen>
+    <dimen name="notification_subtext_size">12dp</dimen>
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/src/main/res/values/dimens.xml -->
+    <eat-comment/>
     <dimen name="txt_10">10sp</dimen>
     <dimen name="txt_12">12sp</dimen>
     <dimen name="txt_14">14sp</dimen>
     <dimen name="txt_16">16sp</dimen>
     <dimen name="txt_18">18sp</dimen>
     <dimen name="txt_20">20sp</dimen>
-    <!-- From: file:/D:/studiowork/guzhang/guzhang/src/main/res/values/umeng_socialize_strings.xml -->
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/src/main/res/values/umeng_socialize_strings.xml -->
     <eat-comment/>
     <dimen name="umeng_socialize_pad_window_height">350dip</dimen>
     <dimen name="umeng_socialize_pad_window_width">580dip</dimen>
-    <!-- From: file:/D:/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/guzhang/SMSSDK/unspecified/res/values/values.xml -->
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
+    <eat-comment/>
+    <drawable name="notification_template_icon_bg">#3333B5E5</drawable>
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/guzhang/SMSSDK/unspecified/res/values/values.xml -->
     <eat-comment/>
     <drawable name="smssdk_dialog_btn_nor">#00000000</drawable>
     <drawable name="smssdk_dialog_btn_pre">#ff282a2b</drawable>
-    <!-- From: file:/D:/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <item name="action_bar_activity_content" type="id"/>
     <item name="action_bar_spinner" type="id"/>
     <item name="action_menu_divider" type="id"/>
     <item name="action_menu_presenter" type="id"/>
-    <!-- From: file:/D:/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/guzhang/library/unspecified/res/values/values.xml -->
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/guzhang/library/unspecified/res/values/values.xml -->
     <eat-comment/>
     <item name="gridview" type="id"/>
-    <!-- From: file:/D:/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <item name="home" type="id"/>
-    <!-- From: file:/D:/studiowork/guzhang/guzhang/src/main/res/values/ids.xml -->
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/src/main/res/values/ids.xml -->
     <eat-comment/>
     <item name="keyboard_view" type="id"/>
-    <!-- From: file:/D:/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <item name="progress_circular" type="id"/>
     <item name="progress_horizontal" type="id"/>
-    <!-- From: file:/D:/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/guzhang/library/unspecified/res/values/values.xml -->
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/guzhang/library/unspecified/res/values/values.xml -->
     <eat-comment/>
     <item name="scrollview" type="id"/>
-    <!-- From: file:/D:/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <item name="split_action_bar" type="id"/>
     <item name="up" type="id"/>
-    <!-- From: file:/D:/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/guzhang/library/unspecified/res/values/values.xml -->
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/guzhang/library/unspecified/res/values/values.xml -->
     <eat-comment/>
     <item name="webview" type="id"/>
-    <!-- From: file:/D:/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <integer name="abc_config_activityDefaultDur">220</integer>
     <integer name="abc_config_activityShortDur">150</integer>
-    <!-- From: file:/D:/studiowork/guzhang/guzhang/src/main/res/values/integers.xml -->
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/src/main/res/values/integers.xml -->
     <eat-comment/>
     <integer name="abc_max_action_buttons">2</integer>
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
+    <eat-comment/>
+    <integer name="cancel_button_image_alpha">127</integer>
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/src/main/res/values/integers.xml -->
+    <eat-comment/>
     <integer name="default_circle_indicator_orientation">0</integer>
     <integer name="default_title_indicator_footer_indicator_style">2</integer>
     <integer name="default_title_indicator_line_position">0</integer>
     <integer name="default_underline_indicator_fade_delay">300</integer>
     <integer name="default_underline_indicator_fade_length">400</integer>
-    <!-- From: file:/D:/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
+    <eat-comment/>
+    <integer name="status_bar_notification_info_maxnum">999</integer>
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/src/main/res/values/umeng_update_string.xml -->
+    <eat-comment/>
+    <string name="UMAppUpdate">App updating</string>
+    <string name="UMBreak_Network">Please make sure you are connected to internet,update failed</string>
+    <string name="UMDialog_InstallAPK">The lastest version has been downloaded, install now ?</string>
+    <string name="UMGprsCondition">(Warning: Not WIFI Condition)</string>
+    <string name="UMIgnore">Ingore this</string>
+    <string name="UMNewVersion">Latest version: </string>
+    <string name="UMNotNow">Not now</string>
+    <string name="UMTargetSize">Target size: </string>
+    <string name="UMToast_IsUpdating">Updating....</string>
+    <string name="UMUpdateCheck">2.6.0.1.20150312</string>
+    <string name="UMUpdateContent">Update Content</string>
+    <string name="UMUpdateNow">Update now</string>
+    <string name="UMUpdateSize">Update size: </string>
+    <string name="UMUpdateTitle">New version found</string>
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <string name="abc_action_bar_home_description">Navigate home</string>
     <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
@@ -682,27 +721,29 @@
     <string name="abc_shareactionprovider_share_with">Share with</string>
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
-    <!-- From: file:/D:/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/guzhang/zhaojin_Library/unspecified/res/values/values.xml -->
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/guzhang/zhaojin_Library/unspecified/res/values/values.xml -->
     <eat-comment/>
     <string name="action_settings">Settings</string>
-    <!-- From: file:/D:/studiowork/guzhang/guzhang/src/main/res/values/strings.xml -->
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/src/main/res/values/strings.xml -->
     <eat-comment/>
-    <string name="app_name">股掌</string>
-    <!-- From: file:/D:/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/guzhang/zhaojin_Library/unspecified/res/values/values.xml -->
+    <string name="app_name">爱鼓掌</string>
+    <string name="drawer_close">关闭</string>
+    <string name="drawer_open">打开</string>
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/guzhang/zhaojin_Library/unspecified/res/values/values.xml -->
     <eat-comment/>
     <string name="hello_world">Hello world!</string>
-    <!-- From: file:/D:/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/guzhang/library/unspecified/res/values/values.xml -->
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/guzhang/library/unspecified/res/values/values.xml -->
     <eat-comment/>
     <string name="pull_to_refresh_from_bottom_pull_label">@string/pull_to_refresh_pull_label</string>
     <string name="pull_to_refresh_from_bottom_refreshing_label">@string/pull_to_refresh_refreshing_label</string>
     <string name="pull_to_refresh_from_bottom_release_label">@string/pull_to_refresh_release_label</string>
-    <!-- From: file:/D:/studiowork/guzhang/guzhang/src/main/res/values/umeng_socialize_strings.xml -->
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/src/main/res/values/umeng_socialize_strings.xml -->
     <eat-comment/>
     <string name="pull_to_refresh_pull_label" translatable="false">向下拉动可以刷新</string>
     <string name="pull_to_refresh_refreshing_label" translatable="false">加载中…</string>
     <string name="pull_to_refresh_release_label" translatable="false">松开可以刷新</string>
     <string name="pull_to_refresh_tap_label" translatable="false">点击刷新</string>
-    <!-- From: file:/D:/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/guzhang/SMSSDK/unspecified/res/values/values.xml -->
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/guzhang/SMSSDK/unspecified/res/values/values.xml -->
     <eat-comment/>
     <string name="smssdk_add_contact">添加</string>
     <string name="smssdk_back">返回 </string>
@@ -781,7 +822,30 @@
     <string name="smssdk_write_mobile_phone">请填写手机号码</string>
     <string name="smssdk_write_right_mobile_phone">请填写正确的手机号码</string>
     <string name="smssdk_your_ccount_is_verified">验证成功</string>
-    <!-- From: file:/D:/studiowork/guzhang/guzhang/src/main/res/values/umeng_socialize_strings.xml -->
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
+    <eat-comment/>
+    <string name="status_bar_notification_info_overflow">999+</string>
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/src/main/res/values/tb_munion_strings.xml -->
+    <eat-comment/>
+    <string name="tb_munion_tip_download_prefix">正在下载:</string>
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/src/main/res/values/umeng_common_strings.xml -->
+    <eat-comment/>
+    <string name="umeng_common_action_cancel">Cancel</string>
+    <string name="umeng_common_action_continue">Continue</string>
+    <string name="umeng_common_action_info_exist">The app is already in downloading list.</string>
+    <string name="umeng_common_action_pause">Pause</string>
+    <string name="umeng_common_download_failed">Download Failed! </string>
+    <string name="umeng_common_download_finish">Download finished,click to install it.</string>
+    <string name="umeng_common_download_notification_prefix">Downloading: </string>
+    <string name="umeng_common_icon">icon</string>
+    <string name="umeng_common_info_interrupt">dowload interrupted.</string>
+    <string name="umeng_common_network_break_alert">Please make sure you are connected to internet, download failed</string>
+    <string name="umeng_common_patch_finish">Patch finished,click to install it.</string>
+    <string name="umeng_common_pause_notification_prefix">Pause: </string>
+    <string name="umeng_common_silent_download_finish">New version is ready,click to install it.</string>
+    <string name="umeng_common_start_download_notification">Download start.</string>
+    <string name="umeng_common_start_patch_notification">Patch start.</string>
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/src/main/res/values/umeng_socialize_strings.xml -->
     <eat-comment/>
     <string name="umeng_example_home_btn_plus">社交分享</string>
     <string name="umeng_socialize_back" translatable="false">返回</string>
@@ -840,27 +904,29 @@
     <string name="umeng_socialize_tip_loginfailed" translatable="false">登录失败…</string>
     <string name="umeng_socialize_ucenter_login_title_guide" translatable="false">游客登录</string>
     <string name="umeng_socialize_ucenter_login_title_platform" translatable="false">登录帐号</string>
-    <!-- From: file:/D:/studiowork/guzhang/guzhang/src/main/res/values/styles.xml -->
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="AcBar_titleStyle">
         <item name="android:textSize">18sp</item>
         <item name="android:textColor">#FFFFFF</item>
     </style>
-    <!-- From: file:/D:/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>
     <style name="Animation.AppCompat.DropDownUp" parent="Base.Animation.AppCompat.DropDownUp"/>
-    <!-- From: file:/D:/studiowork/guzhang/guzhang/src/main/res/values/styles.xml -->
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="AppBaseTheme" parent="@android:style/Theme.Light"/>
+    <style name="AppCompatTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    </style>
     <style name="AppTheme" parent="AppBaseTheme">
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowContentOverlay">@null</item>
         <!--<item name="android:actionBarStyle">@style/myActionBarStyle</item>-->
     </style>
-    <!-- From: file:/D:/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <style name="Base.AlertDialog.AppCompat" parent="android:Widget">
         <item name="android:layout">@layout/abc_alert_dialog_material</item>
@@ -1093,7 +1159,7 @@
         <item name="colorControlNormal">?android:attr/textColorPrimary</item>
         <item name="searchViewStyle">@style/Widget.AppCompat.SearchView.ActionBar</item>
     </style>
-    <style name="Base.ThemeOverlay.AppCompat.Dark">
+    <style name="Base.ThemeOverlay.AppCompat.Dark" parent="Platform.ThemeOverlay.AppCompat.Dark">
         <item name="android:windowBackground">@color/background_material_dark</item>
         <item name="android:colorForeground">@color/bright_foreground_material_dark</item>
         <item name="android:colorForegroundInverse">@color/bright_foreground_material_light</item>
@@ -1161,6 +1227,7 @@
 
         <item name="selectableItemBackground">@drawable/abc_item_background_holo_dark</item>
         <item name="selectableItemBackgroundBorderless">?attr/selectableItemBackground</item>
+        <item name="borderlessButtonStyle">@style/Widget.AppCompat.Button.Borderless</item>
         <item name="homeAsUpIndicator">@drawable/abc_ic_ab_back_mtrl_am_alpha</item>
 
         <item name="dividerVertical">@drawable/abc_list_divider_mtrl_alpha</item>
@@ -1302,10 +1369,11 @@
         <item name="android:colorBackgroundCacheHint">@null</item>
 
         <item name="android:windowFrame">@null</item>
-        <item name="android:windowTitleStyle">@style/Base.DialogWindowTitle.AppCompat</item>
+        <item name="android:windowTitleStyle">@style/RtlOverlay.DialogWindowTitle.AppCompat</item>
         <item name="android:windowTitleBackgroundStyle">@style/Base.DialogWindowTitleBackground.AppCompat</item>
         <item name="android:windowBackground">@drawable/abc_dialog_material_background_dark</item>
         <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
         <item name="android:windowContentOverlay">@null</item>
         <item name="android:windowAnimationStyle">@style/Animation.AppCompat.Dialog</item>
         <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
@@ -1327,6 +1395,7 @@
 
         <item name="selectableItemBackground">@drawable/abc_item_background_holo_light</item>
         <item name="selectableItemBackgroundBorderless">?attr/selectableItemBackground</item>
+        <item name="borderlessButtonStyle">@style/Widget.AppCompat.Button.Borderless</item>
         <item name="homeAsUpIndicator">@drawable/abc_ic_ab_back_mtrl_am_alpha</item>
 
         <item name="dividerVertical">@drawable/abc_list_divider_mtrl_alpha</item>
@@ -1468,10 +1537,11 @@
         <item name="android:colorBackgroundCacheHint">@null</item>
 
         <item name="android:windowFrame">@null</item>
-        <item name="android:windowTitleStyle">@style/Base.DialogWindowTitle.AppCompat</item>
+        <item name="android:windowTitleStyle">@style/RtlOverlay.DialogWindowTitle.AppCompat</item>
         <item name="android:windowTitleBackgroundStyle">@style/Base.DialogWindowTitleBackground.AppCompat</item>
         <item name="android:windowBackground">@drawable/abc_dialog_material_background_light</item>
         <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
         <item name="android:windowContentOverlay">@null</item>
         <item name="android:windowAnimationStyle">@style/Animation.AppCompat.Dialog</item>
         <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
@@ -1483,6 +1553,18 @@
         <item name="listPreferredItemPaddingRight">24dip</item>
 
         <item name="android:listDivider">@null</item>
+    </style>
+    <style name="Base.V7.Widget.AppCompat.AutoCompleteTextView" parent="android:Widget.AutoCompleteTextView">
+        <item name="android:dropDownSelector">?attr/listChoiceBackgroundIndicator</item>
+        <item name="android:popupBackground">@drawable/abc_popup_background_mtrl_mult</item>
+        <item name="android:background">?attr/editTextBackground</item>
+        <item name="android:textColor">?attr/editTextColor</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMediumInverse</item>
+    </style>
+    <style name="Base.V7.Widget.AppCompat.EditText" parent="android:Widget.EditText">
+        <item name="android:background">?attr/editTextBackground</item>
+        <item name="android:textColor">?attr/editTextColor</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMediumInverse</item>
     </style>
     <style name="Base.Widget.AppCompat.ActionBar" parent="">
         <item name="displayOptions">showTitle</item>
@@ -1571,13 +1653,7 @@
         <item name="showDividers">middle</item>
         <item name="dividerPadding">6dip</item>
     </style>
-    <style name="Base.Widget.AppCompat.AutoCompleteTextView" parent="android:Widget.AutoCompleteTextView">
-        <item name="android:dropDownSelector">?attr/listChoiceBackgroundIndicator</item>
-        <item name="android:popupBackground">@drawable/abc_popup_background_mtrl_mult</item>
-        <item name="android:background">?attr/editTextBackground</item>
-        <item name="android:textColor">?attr/editTextColor</item>
-        <item name="android:textAppearance">?android:attr/textAppearanceMediumInverse</item>
-    </style>
+    <style name="Base.Widget.AppCompat.AutoCompleteTextView" parent="Base.V7.Widget.AppCompat.AutoCompleteTextView"/>
     <style name="Base.Widget.AppCompat.Button" parent="android:Widget">
         <item name="android:background">@drawable/abc_btn_default_mtrl_shape</item>
         <item name="android:textAppearance">?android:attr/textAppearanceButton</item>
@@ -1622,7 +1698,7 @@
         <item name="switchTextAppearance">@style/TextAppearance.AppCompat.Widget.Switch</item>
         <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
         <item name="showText">false</item>
-        <item name="android:padding">@dimen/abc_switch_padding</item>
+        <item name="switchPadding">@dimen/abc_switch_padding</item>
     </style>
     <style name="Base.Widget.AppCompat.DrawerArrowToggle" parent="Base.Widget.AppCompat.DrawerArrowToggle.Common">
         <item name="barSize">18dp</item>
@@ -1642,11 +1718,7 @@
         <item name="android:paddingRight">8dp</item>
         <item name="android:gravity">center_vertical</item>
     </style>
-    <style name="Base.Widget.AppCompat.EditText" parent="android:Widget.EditText">
-        <item name="android:background">?attr/editTextBackground</item>
-        <item name="android:textColor">?attr/editTextColor</item>
-        <item name="android:textAppearance">?android:attr/textAppearanceMediumInverse</item>
-    </style>
+    <style name="Base.Widget.AppCompat.EditText" parent="Base.V7.Widget.AppCompat.EditText"/>
     <style name="Base.Widget.AppCompat.Light.ActionBar" parent="Base.Widget.AppCompat.ActionBar">
         <item name="actionButtonStyle">@style/Widget.AppCompat.Light.ActionButton</item>
         <item name="actionOverflowButtonStyle">@style/Widget.AppCompat.Light.ActionButton.Overflow</item>
@@ -1681,7 +1753,6 @@
     </style>
     <style name="Base.Widget.AppCompat.ListView" parent="android:Widget.ListView">
         <item name="android:listSelector">?attr/listChoiceBackgroundIndicator</item>
-        <item name="android:divider">?attr/dividerHorizontal</item>
     </style>
     <style name="Base.Widget.AppCompat.ListView.DropDown">
         <item name="android:divider">@null</item>
@@ -1726,7 +1797,7 @@
         <item name="queryBackground">@null</item>
         <item name="submitBackground">@null</item>
         <item name="searchHintIcon">@null</item>
-        <item name="queryHint">@string/abc_search_hint</item>
+        <item name="defaultQueryHint">@string/abc_search_hint</item>
     </style>
     <style name="Base.Widget.AppCompat.Spinner" parent="android:Widget.Spinner">
         <item name="android:background">@drawable/abc_spinner_mtrl_am_alpha</item>
@@ -1771,13 +1842,13 @@
         <item name="android:scaleType">center</item>
         <item name="android:background">?attr/selectableItemBackground</item>
     </style>
-    <!-- From: file:/D:/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/guzhang/SMSSDK/unspecified/res/values/values.xml -->
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/guzhang/SMSSDK/unspecified/res/values/values.xml -->
     <eat-comment/>
     <style name="CommonDialog" parent="@android:style/Theme.Dialog">
         <item name="android:windowBackground">@drawable/smssdk_dialog_bg</item>
         <item name="android:windowNoTitle">true</item>
     </style>
-    <!-- From: file:/D:/studiowork/guzhang/guzhang/src/main/res/values/styles.xml -->
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="CustomDialog1" parent="@android:style/Theme.Dialog">
         <item name="android:windowFrame">@null</item>
@@ -1791,6 +1862,9 @@
         <item name="android:backgroundDimEnabled">false</item>
         <item name="android:windowNoTitle">true</item>
     </style>
+    <style name="MyActionBar" parent="Base.ThemeOverlay.AppCompat.Dark">
+        <item name="android:colorForeground">@color/blue_button</item>
+</style>
     <style name="MyDialogStyle" parent="@android:style/Theme.Dialog">
         <item name="android:windowFrame">@null</item>
         <item name="android:windowNoTitle">true</item>
@@ -1803,7 +1877,7 @@
         <item name="android:backgroundDimEnabled">true</item>
         <!-- 模糊 -->
     </style>
-    <!-- From: file:/D:/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <style name="Platform.AppCompat" parent="android:Theme">
         <item name="android:windowNoTitle">true</item>
@@ -1901,6 +1975,8 @@
         <item name="android:autoCompleteTextViewStyle">@style/Widget.AppCompat.Light.AutoCompleteTextView</item>
         <item name="android:dropDownItemStyle">@style/Widget.AppCompat.DropDownItem.Spinner</item>
     </style>
+    <style name="RtlOverlay.DialogWindowTitle.AppCompat" parent="Base.DialogWindowTitle.AppCompat">
+    </style>
     <style name="RtlOverlay.Widget.AppCompat.ActionBar.TitleItem" parent="android:Widget">
         <item name="android:layout_gravity">center_vertical|left</item>
         <item name="android:paddingRight">8dp</item>
@@ -1908,6 +1984,9 @@
     <style name="RtlOverlay.Widget.AppCompat.ActionButton.Overflow" parent="Base.Widget.AppCompat.ActionButton.Overflow">
         <item name="android:paddingLeft">@dimen/abc_action_bar_overflow_padding_start_material</item>
         <item name="android:paddingRight">@dimen/abc_action_bar_overflow_padding_end_material</item>
+    </style>
+    <style name="RtlOverlay.Widget.AppCompat.DialogTitle.Icon" parent="android:Widget">
+        <item name="android:layout_marginRight">8dp</item>
     </style>
     <style name="RtlOverlay.Widget.AppCompat.PopupMenuItem" parent="android:Widget">
         <item name="android:paddingRight">16dp</item>
@@ -1997,6 +2076,11 @@
     </style>
     <style name="TextAppearance.AppCompat.Widget.Switch" parent="Base.TextAppearance.AppCompat.Widget.Switch"/>
     <style name="TextAppearance.AppCompat.Widget.TextView.SpinnerItem" parent="Base.TextAppearance.AppCompat.Widget.TextView.SpinnerItem"/>
+    <style name="TextAppearance.StatusBar.EventContent" parent=""/>
+    <style name="TextAppearance.StatusBar.EventContent.Info" parent=""/>
+    <style name="TextAppearance.StatusBar.EventContent.Line2" parent=""/>
+    <style name="TextAppearance.StatusBar.EventContent.Time" parent=""/>
+    <style name="TextAppearance.StatusBar.EventContent.Title" parent=""/>
     <style name="TextAppearance.Widget.AppCompat.ExpandedMenu.Item" parent="Base.TextAppearance.Widget.AppCompat.ExpandedMenu.Item">
     </style>
     <style name="TextAppearance.Widget.AppCompat.Toolbar.Subtitle" parent="Base.TextAppearance.Widget.AppCompat.Toolbar.Subtitle">
@@ -2025,27 +2109,27 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
-    <!-- From: file:/D:/studiowork/guzhang/guzhang/src/main/res/values/styles.xml -->
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="Theme.AppNoTitle" parent="@style/AppBaseTheme">
         <item name="android:windowBackground">@color/white_76</item>
         <item name="android:windowNoTitle">true</item>
     </style>
-    <!-- From: file:/D:/studiowork/guzhang/guzhang/src/main/res/values/umeng_socialize_style.xml -->
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/src/main/res/values/umeng_socialize_style.xml -->
     <eat-comment/>
     <style name="Theme.UMDefault" parent="android:style/Theme.NoTitleBar"/>
     <style name="Theme.UMDialog" parent="android:style/Theme.Dialog">
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowBackground">@android:color/transparent</item>
     </style>
-    <!-- From: file:/D:/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <style name="ThemeOverlay.AppCompat" parent="Base.ThemeOverlay.AppCompat"/>
     <style name="ThemeOverlay.AppCompat.ActionBar" parent="Base.ThemeOverlay.AppCompat.ActionBar"/>
     <style name="ThemeOverlay.AppCompat.Dark" parent="Base.ThemeOverlay.AppCompat.Dark"/>
     <style name="ThemeOverlay.AppCompat.Dark.ActionBar" parent="Base.ThemeOverlay.AppCompat.Dark.ActionBar"/>
     <style name="ThemeOverlay.AppCompat.Light" parent="Base.ThemeOverlay.AppCompat.Light"/>
-    <!-- From: file:/D:/studiowork/guzhang/guzhang/src/main/res/values/styles.xml -->
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="Transparent">
         <item name="android:windowBackground">@android:color/transparent</item>
@@ -2062,7 +2146,7 @@
         <!-- <item name="android:windowIsTranslucent">true</item> -->
         <!-- <item name="android:backgroundDimEnabled">true</item>模糊 -->
     </style>
-    <!-- From: file:/D:/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <style name="Widget.AppCompat.ActionBar" parent="Base.Widget.AppCompat.ActionBar">
     </style>
@@ -2097,8 +2181,7 @@
         <item name="color">?attr/colorControlNormal</item>
     </style>
     <style name="Widget.AppCompat.DropDownItem.Spinner" parent="RtlOverlay.Widget.AppCompat.Search.DropDown.Text"/>
-    <style name="Widget.AppCompat.EditText" parent="Base.Widget.AppCompat.EditText">
-    </style>
+    <style name="Widget.AppCompat.EditText" parent="Base.Widget.AppCompat.EditText"/>
     <style name="Widget.AppCompat.Light.ActionBar" parent="Base.Widget.AppCompat.Light.ActionBar">
     </style>
     <style name="Widget.AppCompat.Light.ActionBar.Solid" parent="Base.Widget.AppCompat.Light.ActionBar.Solid">
@@ -2155,7 +2238,7 @@
     <style name="Widget.AppCompat.TextView.SpinnerItem" parent="Base.Widget.AppCompat.TextView.SpinnerItem"/>
     <style name="Widget.AppCompat.Toolbar" parent="Base.Widget.AppCompat.Toolbar"/>
     <style name="Widget.AppCompat.Toolbar.Button.Navigation" parent="RtlOverlay.Widget.AppCompat.Toolbar.Button.Navigation"/>
-    <!-- From: file:/D:/studiowork/guzhang/guzhang/src/main/res/values/styles.xml -->
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="blackDialog" parent="Transparent">
         <item name="android:windowBackground">@color/black_87</item>
@@ -2165,7 +2248,7 @@
         <item name="android:background">@color/backgroud</item>
         <item name="android:titleTextStyle">@style/AcBar_titleStyle </item>
     </style>
-    <!-- From: file:/D:/studiowork/guzhang/guzhang/src/main/res/values/umeng_socialize_style.xml -->
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/src/main/res/values/umeng_socialize_style.xml -->
     <eat-comment/>
     <style name="umeng_socialize_action_bar_item_im">
         <item name="android:layout_width">25dp</item>
@@ -2238,7 +2321,7 @@
         <item name="android:windowEnterAnimation">@anim/umeng_socialize_shareboard_animation_in</item>
         <item name="android:windowExitAnimation">@anim/umeng_socialize_shareboard_animation_out</item>
     </style>
-    <!-- From: file:/D:/studiowork/guzhang/guzhang/src/main/res/values/styles.xml -->
+    <!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="whiteDialog" parent="Transparent">
         <item name="android:windowBackground">@color/white_76</item>

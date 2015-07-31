@@ -3,27 +3,27 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="@dimen/action_height"
-        android:background="@color/red_bg" >
+        android:background="@color/red_bg">
 
         <RelativeLayout
             android:layout_width="40dp"
             android:layout_height="@dimen/action_height"
             android:background="@drawable/select_backbtn_gb"
             android:clickable="true"
-            android:onClick="backClick" >
+            android:onClick="backClick">
 
             <ImageView
-                android:layout_width="@dimen/back_image_width"
                 android:id="@+id/back_image"
+                android:layout_width="@dimen/back_image_width"
                 android:layout_height="@dimen/back_image_height"
                 android:layout_centerInParent="true"
                 android:scaleType="fitXY"
-                android:src="@drawable/last"/>
+                android:src="@drawable/last" />
 
             <TextView
                 android:id="@+id/back"
@@ -45,7 +45,7 @@
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
             android:gravity="center_horizontal"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/title"
@@ -67,11 +67,11 @@
         <RelativeLayout
             android:id="@+id/reFresh_layout"
             android:layout_width="54dp"
-            android:background="@drawable/select_backbtn_gb"
             android:layout_height="@dimen/action_height"
             android:layout_alignParentRight="true"
+            android:background="@drawable/select_backbtn_gb"
             android:clickable="true"
-            android:onClick="reFreshClick" >
+            android:onClick="reFreshClick">
 
             <ImageView
                 android:id="@+id/refresh_image"
@@ -83,58 +83,174 @@
     </RelativeLayout>
 
     <LinearLayout
+        android:id="@+id/info_layout"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/action_height"
-        android:background="@color/red_bg"
+        android:layout_height="wrap_content"
+        android:background="@drawable/select_backbtn_gb"
+        android:clickable="true"
         android:gravity="center_vertical"
-        android:orientation="horizontal" >
+        android:orientation="horizontal"
+        android:paddingRight="8dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="16dp">
 
-        <TextView
+        <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
+            android:paddingLeft="16dp"
+            android:layout_weight="2.0">
+
+            <TextView
+                android:id="@+id/txt_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="18.12"
+                android:textColor="@color/red_bg"
+                android:textSize="40sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_price"
+                android:textSize="14sp"
+                android:paddingLeft="4dp"
+                android:textColor="@color/red_bg"
+                android:text="+0.17     +0.63%" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="18.12"
-            android:textColor="@color/white"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+            android:gravity="left"
+            android:orientation="vertical">
 
-        <TextView
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:paddingTop="4dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="最低"
+                    android:textColor="@color/black_54"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="6.91"
+                    android:textColor="@color/red_bg"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="最高"
+                    android:textColor="@color/black_54"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="1.18"
+                    android:textColor="@color/red_bg"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="8dp"
-            android:text="+0.17"
-            android:textColor="@color/white"
-            android:textSize="16sp"
-            android:textStyle="bold" />
+            android:gravity="left"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="8dp"
-            android:text="0.13%"
-            android:textColor="@color/white"
-            android:textSize="16sp"
-            android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="换手率"
+                    android:textColor="@color/black_54"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="12.46%"
+                    android:textColor="@color/black_87"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="成交量"
+                    android:textColor="@color/black_54"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="11.11万手"
+                    android:textColor="@color/black_87"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView
+            android:layout_width="12dp"
+            android:src="@drawable/icon_go"
+            android:layout_height="12dp" />
     </LinearLayout>
 
-    <com.caiyun.guzhang.view.IphoneTreeView
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+    <com.caiyun.guzhang.view.IphoneTreeView_stockinfo
         android:id="@+id/iphone_tree_view"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_height="match_parent"
         android:background="@android:color/transparent"
         android:cacheColorHint="@android:color/transparent"
         android:divider="@color/black_12"
         android:dividerHeight="1px"
         android:scrollbars="none"
         android:transcriptMode="normal" />
+        <include layout="@layout/tablayout_treeview_group"
+            android:id="@+id/header"
+            />
+    </RelativeLayout>
 
     <View
         android:layout_width="match_parent"
         android:layout_height="1px"
         android:background="#e1e1e1" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="60dp"
@@ -143,20 +259,20 @@
         android:minHeight="60dp"
         android:orientation="horizontal"
         android:paddingLeft="24dp"
-        android:paddingRight="24dp" >
+        android:paddingRight="24dp">
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <ImageView
                 android:layout_width="30.0dip"
                 android:layout_height="30.0dip"
-                android:scaleType="fitXY"
                 android:clickable="true"
+                android:scaleType="fitXY"
                 android:src="@drawable/select_buy_btn" />
 
             <TextView
@@ -173,13 +289,13 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <ImageView
                 android:layout_width="30.0dip"
                 android:layout_height="30.0dip"
-                android:scaleType="fitXY"
                 android:clickable="true"
+                android:scaleType="fitXY"
                 android:src="@drawable/select_sell_btn" />
 
             <TextView
@@ -196,7 +312,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <ImageView
                 android:layout_width="30.0dip"
@@ -219,13 +335,13 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <ImageView
                 android:layout_width="30.0dip"
                 android:layout_height="30.0dip"
-                android:scaleType="fitXY"
                 android:clickable="true"
+                android:scaleType="fitXY"
                 android:src="@drawable/select_tixing_btn" />
 
             <TextView

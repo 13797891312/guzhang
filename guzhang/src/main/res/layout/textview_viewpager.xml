@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/txt_news"
+    android:layout_width="wrap_content"
+    android:layout_weight="1"
+    android:layout_height="30dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:background="@drawable/select_backbtn_gb"
+    android:clickable="true"
+    android:gravity="center_vertical"
+    android:singleLine="true"
+    android:textColor="#666"
+    android:textSize="14sp" />

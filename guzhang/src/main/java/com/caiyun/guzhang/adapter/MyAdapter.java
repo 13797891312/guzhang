@@ -3,8 +3,11 @@ package com.caiyun.guzhang.adapter;
 import java.util.ArrayList;
 
 import com.caiyun.app.guzhang.R;
+import com.nostra13.universalimageloader.core.DisplayImageOptions;
+import com.nostra13.universalimageloader.core.assist.ImageScaleType;
 
 import android.content.Context;
+import android.graphics.Bitmap;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -52,6 +55,18 @@ public class MyAdapter extends BaseAdapter {
 	
 	static class HolderView{
 		
+	}
+
+	public DisplayImageOptions getOption() {
+		DisplayImageOptions displayImageOptions = new DisplayImageOptions.Builder()
+//				.showImageForEmptyUri(R.drawable.defalut_user_icon)
+				// 地址为空时加载的图片
+//				.showImageOnFail(R.drawable.defalut_user_icon)
+				// 加载失败显示的图片
+				.imageScaleType(ImageScaleType.EXACTLY)
+				.bitmapConfig(Bitmap.Config.RGB_565)// 图片显示清晰度
+				.cacheInMemory(true).cacheOnDisk(true).build();
+		return displayImageOptions;
 	}
 
 }

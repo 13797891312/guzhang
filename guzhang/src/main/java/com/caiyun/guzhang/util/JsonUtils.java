@@ -53,9 +53,8 @@ public class JsonUtils {
         return null;  
     }  
     
-    public static<T> List<T> listFromJsonWithSubKey(String json,Class<T> clz,String key)
+    public static<T> List<T> listFromJsonWithSubKey(String json,Class<T> clz,String key,List<T> retList )
     {
-    	List<T> retList=new ArrayList<T>();
     	try{
 	    	JsonParser parser=new JsonParser();
 	    	JsonElement el=parser.parse(json);

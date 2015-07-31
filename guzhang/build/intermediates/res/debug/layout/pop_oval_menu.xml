@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/pop_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/buy"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="增持"
+            android:background="@drawable/select_backbtn_gb"
+            android:textColor="@color/white_76"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="20dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/white_12" />
+
+        <TextView
+            android:id="@+id/sell"
+            android:layout_width="50dp"
+            android:clickable="true"
+            android:background="@drawable/select_backbtn_gb"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="卖出"
+            android:textColor="@color/white_76"
+            android:textSize="16sp" />
+        android:layout_height="30dp" />
+    </LinearLayout>
+</LinearLayout><!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/src/main/res/layout/pop_oval_menu.xml -->

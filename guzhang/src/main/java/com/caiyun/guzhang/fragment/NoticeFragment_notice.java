@@ -34,6 +34,14 @@ public class NoticeFragment_notice extends BaseFragment{
 		mListView.setAdapter(new Fragment_Notice_Notice_Listview(this.getActivity(), null));
 		mListView.getRefreshableView().setDivider(new ColorDrawable(getResources().getColor(R.color.black_12)));
 		mListView.getRefreshableView().setDividerHeight(0);
+		mListView.getLoadingLayoutProxy(true, false).setPullLabel("下拉刷新");
+		mListView.getLoadingLayoutProxy(false, true).setPullLabel("上拉加载");
+		mListView.getLoadingLayoutProxy(true, false).setRefreshingLabel(
+				"正在刷新");
+		mListView.getLoadingLayoutProxy(false, true).setRefreshingLabel(
+				"正在加载");
+		mListView.getLoadingLayoutProxy(true, false).setReleaseLabel("松开刷新");
+		mListView.getLoadingLayoutProxy(false, true).setReleaseLabel("松开加载");
 	}
 	/**
 	 * 每次显示时调用的方法

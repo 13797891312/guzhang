@@ -56,4 +56,4 @@
 		<Key android:keyWidth="20.000004%p" android:codes="-3"
 			android:keyEdgeFlags="right" android:keyLabel="完成" />
 	</Row>
-</Keyboard><!-- From: file:/D:/studiowork/guzhang/guzhang/src/main/res/xml/qwerty.xml -->
+</Keyboard><!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/src/main/res/xml/qwerty.xml -->

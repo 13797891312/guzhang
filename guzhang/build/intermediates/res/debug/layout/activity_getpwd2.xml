@@ -22,4 +22,4 @@
             android:layout_height="wrap_content"
             layout="@layout/base_getpwd2_layout" />
     </RelativeLayout>
-</LinearLayout><!-- From: file:/D:/studiowork/guzhang/guzhang/src/main/res/layout/activity_getpwd2.xml -->
+</LinearLayout><!-- From: file:/Users/zhaojin/Documents/studiowork/guzhang/guzhang/src/main/res/layout/activity_getpwd2.xml -->

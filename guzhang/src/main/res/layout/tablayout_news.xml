@@ -85,7 +85,7 @@
                     android:layout_marginRight="16dp"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="股票"
+                    android:text="研报"
                     android:textColor="@color/white_50"
                     android:textSize="@dimen/txt_18" />
             </LinearLayout>
