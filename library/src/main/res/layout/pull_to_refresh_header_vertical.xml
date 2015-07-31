@@ -51,8 +51,9 @@
                     android:id="@+id/pull_to_refresh_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
                     android:singleLine="true"
-                    android:textSize="16sp"
+                    android:textSize="14sp"
                     android:textStyle="normal" />
 
                 <TextView
